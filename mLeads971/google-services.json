@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "746519021306",
+    "project_id": "com-triforce-mleads"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746519021306:android:6f09b4fe2fbcbafc",
+        "android_client_info": {
+          "package_name": "com.triforce.mobileapps.mleadsenterprise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746519021306-pfmqhjh10q1cdghkgfdvu979m2ci7ugt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpncdfWFnHPi-ATGk4rWEK_7U0GsPFYAc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-90890019-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/REl_ViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#4d4d4d" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Lin_FromView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:id="@+id/Lin_prof_from"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgFromProfileImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/barchartbyevent" />
+
+            <TextView
+                android:id="@+id/txtUserName_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="You" />
+        </LinearLayout>
+
+        <!--
+             <TextView
+            android:id="@+id/txtFromChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.60"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        -->
+
+        <TextView
+            android:id="@+id/txt_from_ChatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/chat_bsocial_bubble_from"
+            android:gravity="left|center_vertical"
+            android:maxWidth="290dp"
+            android:minWidth="150dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="Hello Gautam. How are you? Mleads is Superb Application. it have not Chat Functionality. Do you know this?"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lin_FromView_M"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:id="@+id/Lin_prof_from"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgFromProfileImg_M"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/barchartbyevent" />
+
+            <TextView
+                android:id="@+id/txtUserName_from_M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="You" />
+        </LinearLayout>
+
+        <!--
+             <TextView
+            android:id="@+id/txtFromChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.60"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        -->
+
+        <RelativeLayout
+            android:id="@+id/txt_from_ChatText"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/chat_bsocial_bubble_from"
+            android:maxWidth="290dp"
+            android:minWidth="150dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="Hello Gautam. How are you? Mleads is Superb Application. it have not Chat Functionality. Do you know this?"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" >
+
+            <ImageView
+                android:id="@+id/img_from_typ_M"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon2final" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Lin_MyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="3dp"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:id="@+id/Lin_prof"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgMyProfileImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/barchartbyevent" />
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Me" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_My_ChatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/Lin_prof"
+            android:background="@drawable/chat_bsocial_bubble_to"
+            android:gravity="right|center_vertical"
+            android:maxWidth="300dp"
+            android:minWidth="150dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="Doba me to Banavi 6e."
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Lin_MyView_M"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="3dp"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:id="@+id/Lin_prof"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgMyProfileImg_M"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/barchartbyevent" />
+
+            <TextView
+                android:id="@+id/txtUserName_M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Me" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/txt_My_ChatText"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/Lin_prof"
+            android:background="@drawable/chat_bsocial_bubble_to"
+            android:maxWidth="300dp"
+            android:minWidth="150dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="Doba me to Banavi 6e."
+            android:textColor="@android:color/black"
+            android:textSize="14sp" >
+
+            <ImageView
+                android:id="@+id/img_Me_img_M"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon2final" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

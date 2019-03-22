@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/EditGroupLabel"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:onClick="saveEventData"
+            android:text="@string/SaveButtonLabel"
+            android:textColor="#000" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/EventAutoCompleteTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:completionThreshold="1"
+                    android:hint="@string/GROUP_ADD_EDIT"
+                    android:inputType="textCapWords"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="13dip" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/Group_Source_AutoCompleteTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:completionThreshold="1"
+                    android:hint="@string/GROUP_source_ADD_EDIT"
+                    android:inputType="textCapWords"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="13dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/DateEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/AddEventDateLabel"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <EditText
+                    android:id="@+id/PurposeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/AddEventPurposeLabel"
+                    android:inputType="textCapWords"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <EditText
+                    android:id="@+id/ContactPersonEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/AddEventContactPersonLabel"
+                    android:inputType="textCapWords"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/PhoneEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/PhoneExt"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/Phone_Extension_EditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="10dp"
+                    android:inputType="phone"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textSize="12dip" />
+            </LinearLayout> -->
+
+            <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/OtherPhone"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/Phone_other_EditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="10dp"
+                    android:hint="(e.g. (012)345-6789)"
+                    android:inputType="phone"
+                    android:maxLength="14"
+                    android:singleLine="true"
+                    android:textSize="12dip" />
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <TextView
+                    android:id="@+id/txt_eventradio"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/addgroupGroupType"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/mpSelection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radioAndroid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/addeventPublic_new"
+                        android:textColor="#000000" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioIOS"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addeventPrivate_new"
+                        android:textColor="#000000" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <!-- <TextView
+                    android:id="@+id/txt_notes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadNotesLabel"
+                    android:textColor="#000000" /> -->
+
+                <Button
+                    android:id="@+id/NotesButton"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/neweightattachmentbtn"
+                    android:gravity="center"
+                    android:text="@string/editNoteLabel"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

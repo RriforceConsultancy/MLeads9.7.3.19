@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+     >
+
+    <FrameLayout
+        android:id="@+id/myFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/event_sponsors"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="80dp"
+            android:layout_height="38dip"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:onClick="addLead"
+            android:text="@string/SaveButtonLabel"
+            android:textColor="#000" /> -->
+    </FrameLayout>
+    
+    <TextView
+            android:id="@+id/txt_No_SponsorFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myFrame"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/no_sponsor_info"
+            android:textColor="#000000"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:visibility="gone" >
+        </TextView>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myFrame"
+        android:layout_above="@+id/gallery" />
+    
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:background="#ededed"
+        android:spacing="1dip" />
+
+</RelativeLayout>

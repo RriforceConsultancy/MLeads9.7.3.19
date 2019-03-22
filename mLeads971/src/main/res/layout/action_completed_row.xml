@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Lin_main"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/list_bg"
+    android:gravity="center"
+    android:weightSum="3"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/txtLeadName"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:text="dfdsf"
+        android:textColor="#000000" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtsendDate"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="dfdsf"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/txttoEmail"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="dsfsd"
+        android:textColor="#000000" />
+
+</LinearLayout>

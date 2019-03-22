@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:onClick="onClick"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/IconImageView"
+            android:layout_width="155dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/MyVideoProfile"
+            android:textColor="#fff"
+            android:textSize="18dp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/AddFollowupActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="8dp"
+            android:onClick="addFollowupAction"
+            android:src="@drawable/add"
+            android:text="@string/SaveButtonLabel"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" />
+
+</LinearLayout>

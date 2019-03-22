@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/commonlayout"
+        layout="@layout/commonlayoutseperate" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <!--
+             <Button
+            android:id="@+id/BackButton"
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="@string/BackButtonLabel"
+            android:textColor="#FFFFFF" />
+        -->
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/accountpage"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:weightSum="4"
+             > <!-- android:weightSum="4" -->
+
+            <!--
+        <FrameLayout
+            android:id="@+id/MyProfileButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/middle_home_xml" >
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left"
+                android:background="@drawable/profile_home" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:text="@string/myProfileTitle"
+                android:textColor="#000000"
+                android:textSize="16dip" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:background="@drawable/right_home_arrow" >
+            </ImageView>
+        </FrameLayout>
+            -->
+
+<!-- android:layout_weight="1" -->
+            <RelativeLayout
+                android:id="@+id/MyProfileButton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/neweighthomebg"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txt_myprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/myProfileTitle"
+                    android:textColor="#000000"
+                    android:textSize="19dip"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/neweightmyprofile"
+                    android:layout_marginLeft="5dp" />
+
+            </RelativeLayout>
+
+            <!--
+        <FrameLayout
+            android:id="@+id/myqrcode"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/middle_home_xml" >
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left"
+                android:background="@drawable/myqrcode12" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="58dp"
+                android:text="@string/myqrcode2"
+                android:textColor="#000000"
+                android:textSize="16dip" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageView152"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:background="@drawable/right_home_arrow" >
+            </ImageView>
+        </FrameLayout>
+            -->
+
+            <RelativeLayout
+                android:id="@+id/myqrcode"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/neweighthomebg"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txt_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/myqrcode2"
+                    android:textColor="#000000"
+                    android:textSize="19dip"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/neweightmyqrcode"
+                     />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myvideoprofile"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/neweighthomebg" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/myvideoprofile"
+                    android:textColor="#000000"
+                    android:textSize="19dip"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/neweightvideoprofile"
+                    android:layout_marginLeft="5dp"
+                     />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/PasswordResetButton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/neweighthomebg"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txt_re_password"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/TeamManagement"
+                    android:textColor="#000000"
+                    android:textSize="19dip"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/team_management"
+                    android:layout_marginLeft="5dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/neweightfooter"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/neweightfooter_logo" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

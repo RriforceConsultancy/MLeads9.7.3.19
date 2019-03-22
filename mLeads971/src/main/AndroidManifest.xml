@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.triforce.mobileapps.mleadsenterprise"
+    android:versionCode="105"
+    android:versionName="9.7.3.27">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!--
+    <compatible-screens>
+	
+        all normal size screens
+	    <screen android:screenSize="normal" android:screenDensity="mdpi" />
+	    <screen android:screenSize="normal" android:screenDensity="hdpi" />
+	    <screen android:screenSize="normal" android:screenDensity="xhdpi" /> 
+	    
+	    all large size screens
+	    <screen android:screenSize="large" android:screenDensity="mdpi" />
+	    <screen android:screenSize="large" android:screenDensity="hdpi" />
+	    <screen android:screenSize="large" android:screenDensity="xhdpi" />
+	    all xlarge size screens
+	    <screen android:screenSize="xlarge" android:screenDensity="mdpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="hdpi" />
+	    <screen android:screenSize="xlarge" android:screenDensity="xhdpi" />
+	</compatible-screens>
+    -->
+
+    <permission
+        android:name="com.triforce.mobileapps.mleadsenterprise.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+ <!--   <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />-->
+    <uses-permission android:name="com.triforce.mobileapps.mleadsenterprise.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--denisha-->
+   <!-- <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Wifi related -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- <uses-feature android:name="android.hardware.camera.autofocus" /> -->
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- Permission For GCM Service -->
+
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.triforce.mobileapps.mleadsenterprise.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.triforce.mobileapps.mleadsenterprise.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+ <!--   <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>-->
+    <uses-permission android:name="android.permission.SEND_SMS" tools:node="remove"/>
+    <!--<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>-->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" tools:node="remove"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" tools:node="remove"/>
+
+
+    <application
+        android:name=".utils.AppUtils"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@drawable/icon2final"
+        android:keepScreenOn="true"
+        android:label="@string/app_name_manifest"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar"
+        tools:replace="android:icon, android:label, android:theme">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
+        <!--deni-->
+      <!--  <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />-->
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.codepath.android.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GcmMessageHandler" />
+
+        <!-- Google Analytics -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!--
+             Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <!-- Google Analytics Over -->
+
+
+        <!-- Referrer Brodcast Reister -->
+        <receiver
+            android:name=".ReferrerCatcher"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- final Debug key -->
+        <!--
+            <meta-data
+			android:name="com.google.android.maps.v2.API_KEY"
+			android:value="AIzaSyCHrOcd78qBGfTuFS6h43iaCSs62DyqEBA" />
+        -->
+
+
+        <!-- Final live key -->
+        <!--
+             <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBQKvkE36ZOAKNMQDfFvEaSRzeIaxi7Jo4" />
+        -->
+
+
+        <!-- Google any reference key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDkuklfVGDQwoI_XwJquOVrOkqcdxXZz78" />
+
+        <!-- Facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_fb_id" />
+
+        <receiver android:name=".NWChangeReceiver">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            -->
+        </receiver>
+
+        <!--deni-->
+        <!--<activity
+            android:name="com.easylinkedin.EasyLinkedInAuthActivity"
+            android:screenOrientation="portrait" />-->
+
+        <!-- For Moxtra Default Activitys -->
+
+
+        <!-- Moxtra Client id -->
+        <meta-data
+            android:name="com.moxtra.sdk.ClientId"
+            android:value="uG98VKpYdMg" />
+        <meta-data
+            android:name="com.moxtra.sdk.ClientSecret"
+            android:value="hpywfeT1VFw" />
+        <meta-data
+            android:name="com.moxtra.sdk.SandboxEnv"
+            android:value="true" />
+
+        <!--
+            <activity
+            android:name="com.moxtra.binder.util.MXAlertDialog"
+            android:theme="@style/MoxFullTranslucentActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.moxtra.binder.livemeet.MXSDKMeetActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MoxtraTheme" >
+        </activity>
+
+        <activity
+            android:name="com.moxtra.binder.activity.MXStackActivity"
+            android:theme="@style/MXActivityDialog"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".InviteParticipantsActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        -->
+
+
+        <!--
+        <activity
+            android:name="com.keyes.youtube.OpenYouTubePlayerActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black" >
+        </activity>
+        <activity
+            android:name="com.artfulbits.aiCharts.ChartView"
+            android:configChanges="orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black" >
+        </activity>
+        <actvity
+            android:name="org.achartengine.GraphicalActivity"
+            andiroid:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black" >
+        </activity>
+        -->
+
+        <activity
+            android:name=".modules.AppTourActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.event.ShareLeads"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.event.SelectLeads"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".GoogleMap_version"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".modules.addteammember.AddTeamMember"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- add the below additional intent-filter -->
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="mleads" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <!--
+            <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        -->
+        <activity
+            android:name=".Pushnotification_dialog"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <!-- android:windowSoftInputMode="adjustResize|stateHidden" -->
+
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="myleadssite.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MleadsTutorial"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".NoteActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+
+
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize|adjustPan" -->
+        <activity
+            android:name=".UpgradeEnterprise"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize|adjustPan" />
+        <activity
+            android:name=".ReferFriend"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize|adjustPan" />
+        <activity
+            android:name=".modules.email_statistics.emailStatisticsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.lead.PlayRecordedLead"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize|adjustPan" -->
+
+        <activity
+            android:name=".modules.lead.FingerPaintActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.lead.ViewQuickLead"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <!--new-->
+        <activity
+            android:name=".modules.lead.MapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.lead.Surveyquestionnaire"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermsAndConditions"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageLeadsonWeb"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HelpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.meeting.AddMeetingSchedule"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.meeting.EditMeetingSchedule"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.meeting.MeetingScheduleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.task.AddTaskSchedule"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.task.EditTaskSchedule"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.task.TaskListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.registration.RegistrationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".modules.home.HomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.home.AttendeesCharts"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.home.BarChart"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.home.SponsorsClicks"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!--SponsorsClicks-->
+        <activity
+            android:name=".modules.home.Guidelines"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.home.FeedBack"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.home.ReportButtons"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.home.Settings"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.videoprofile.VideoProfile"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.videoprofile.VideoDescription"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.videoprofile.EditLink"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".modules.videoprofile.ViewLink"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.videoprofile.AddLink"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".UserManual"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".FAQ"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".TermsPrivacy"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".UserManualDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".modules.event.Showalertnote"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <!-- android:screenOrientation="sensor" -->
+
+        <activity
+            android:name=".modules.event.EventsListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <!-- android:screenOrientation="sensor" -->
+        <activity
+            android:name=".modules.event.eventOnMap"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.event.thingsToDo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.event.ViewEvent"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:launchMode="standard"> <!-- android:screenOrientation="portrait" -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.event.NewAgenda"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <!--
+            <activity
+            android:name="com.triforce.mobileapps.mleadsenterprise.modules.event.viewEventActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+             />
+        -->
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.event.ViewNote"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.event.AddEventActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.event.EditEventActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.LeadsListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"> <!--  -->
+        </activity>
+        <activity
+            android:name=".modules.lead.ViewSurvey"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.PhotoCaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.leadsAttachmentClass"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.Guidelines_Attendees"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.viewLeadActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"> <!-- android:label="@string/app_name_manifest" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.AffiliateLink"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.AffiliatScript"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.ViewLeadAddress"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.ViewLeadOpportunity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.ViewMeetingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.EditAddress"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.EditOpportunity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".charts.PieChartDemo01Activity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".charts.BarChartDemo01Activity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".modules.lead.ReportsTaskListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.ReportsMeetingScheduleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.BumpTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+
+        <!--
+        <service android:name="com.bump.api.BumpAPI" >
+            <intent-filter>
+                <action android:name="com.bump.api.IBumpAPI" />
+            </intent-filter>
+        </service>
+        -->
+
+        <activity
+            android:name=".modules.lead.MyAccount"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"> <!--  -->
+        </activity>
+        <activity
+            android:name=".modules.lead.viewpage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.LeadsReport"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.AddLeadFirstPageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.SpeakLeadPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.Addresslead"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.Opportunity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.NewMessage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.SearchClass"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.event.LeadsListActivity2"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"> <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name=".modules.lead.ActionCompleted"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.lead.ViewTaskActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.AddLeadActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.ViewNote"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.EditLeadActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.RecordVoiceMemoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+
+        <activity
+            android:name=".modules.lead.QuickRecordLeads"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.QuickRecord"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.ZoomImage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.CaptureImageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.followup.message.FollowupMessagesListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <!--  -->
+        <activity
+            android:name=".modules.followup.message.editAttachmentTemplate"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.followup.message.addAttachmentTemplate"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.followup.message.ViewFollowupMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.followup.message.AddFollowupMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.followup.message.EditFollowupMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.followup.action.FollowupActionsListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.followup.action.AddFollowupActionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".modules.followup.action.EditFollowupActionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".modules.forgot.password.ForgotPasswordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".modules.reset.password.ResetPasswordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".modules.myprofile.MyProfile"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+            <!-- android:screenOrientation="landscape" -->
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--
+				Allow web apps to launch Barcode Scanner by linking to
+				http://zxing.appspot.com/scan.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="zxing.appspot.com"
+                    android:path="/scan"
+                    android:scheme="http" />
+            </intent-filter>
+            <!-- We also support a Google Product Search URL. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.google.com"
+                    android:path="/m/products/scan"
+                    android:scheme="http" />
+            </intent-filter>
+            <!-- And the UK version. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.google.co.uk"
+                    android:path="/m/products/scan"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name="com.triforce.mobileapps.mleadsenterprise.PreferencesActivity"
+            android:label="@string/preferences_name" >
+        </activity>
+        -->
+        <activity
+            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+            android:label="@string/share_name">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- This allows us to handle the Share button in Contacts. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/x-vcard" />
+            </intent-filter>
+            <!-- This allows us to handle sharing any plain text . -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name=".book.SearchBookContentsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sbc_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wifi.WifiActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/wa_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".share.ShareActivity"
+            android:label="@string/share_name"
+            android:screenOrientation="user"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SHARE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".share.BookmarkPickerActivity"
+            android:label="@string/bookmark_picker_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".share.AppPickerActivity"
+            android:configChanges="orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".modules.lead.MultiLeadSelection_Activity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.event.ViewSponsorsList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+
+        <!--deni-->
+        <receiver android:name=".NWChangeReceiver" />
+
+        <activity
+            android:name=".modules.followup.message.Preview_Followup_Template"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.CustomFollowupActionCompleted"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.groups.AddGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".modules.groups.GroupsListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.groups.ViewGroup"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".modules.groups.EditGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".modules.groups.TaskListGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".modules.groups.LeadsListGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".modules.lead.addLeadsAttachmentTemplate"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.View_Attachment_File"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.StopDripEmailList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.View_Drip_Message"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.event.UnSharedLead"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.event.ViewSponsorsListNew"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name="com.nostra13.example.universalimageloader.ImagePagerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.followup.action.CustomProducts"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.followup.action.AddCustomProduct"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.followup.action.EditCustomProducts"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity android:name=".modules.registration.Facebook_MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="Facebook Login" >
+        </activity>
+        -->
+
+       <!-- <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="title_facebook_login" >
+        </activity>-->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="my_channel_01" />
+        <activity
+            android:name=".modules.registration.Registration_Using_Opten_source"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.registration.Twitter_MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gmailauth.WebViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <activity
+            android:name=".modules.lead.SnapShot_Lead"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity android:name="edu.sfsu.cs.orange.ocr.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        -->
+        <activity
+            android:name=".modules.home.ManageExportAbility"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.home.TeamManagement"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.lead.QRScanActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.ActionCompletedNoteAdding"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".modules.lead.BusinessCardCorrection"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.lead.WebViewActivityBuy"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.home.SalesReport"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.followup.action.Custom_Lead_Status_Listing"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.followup.action.AddCustomLeadStatus"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.followup.action.EditCustomLeadStatus"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.lead.MoxtraMeeting"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.lead.BumpTestNew"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.home.TeamMemberManagement"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.Expense.ExpenseList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.Expense.AddExpense"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.Expense.EditExpense"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.B_Social.B_Chat"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.B_Social.Badge_Catagory_List"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".modules.B_Social.AttendeeListing"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.B_Social.ViewFullScreenImage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.B_Social.LeaderBoard"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--
+        <activity android:name="GautamSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".modules.event.BadgeEntryCheck.BadgeTicketListing"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.event.ViewEventRegister"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.event.BadgeEntryCheck.SessionListing"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.event.BadgeEntryCheck.PurchaseHistoryListing"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.MyTutorialPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.lead.Followup_For_Lead"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.lead.SalesforceListing"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".modules.lead.YahooScreen" />
+        <activity
+            android:name=".modules.lead.BusinessCardCropping"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.lead.OpportunityList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.memtrip.picsy.activity.PhotoCaptureActivity" />
+        <activity
+            android:name=".modules.home.Dashboard"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".modules.home.Request_For_Demo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name_manifest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- MOXTRA Activity Declaration START -->
+
+
+        <!--
+        <activity
+            android:name="com.moxtra.binder.activity.DialogFragmentActivity"
+            android:theme="@style/MoxtraTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.moxtra.binder.meet.MXLiveShareViewActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MoxtraTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.moxtra.binder.MXTransparentActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MoxFullTranslucentActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.moxtra.binder.livemeet.MXSDKMeetActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MoxtraTheme">
+        </activity>
+        <service android:name="com.moxtra.sdk.MoxtraMeetSdkService" />
+        <activity
+            android:name="com.moxtra.binder.activity.MXStackActivity"
+            android:theme="@style/MXActivityDialog"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.moxtra.binder.member.MXInviteActivity"
+            android:theme="@style/MXActivityDialog"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.moxtra.binder.conversation.MXConversationActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/MoxtraTheme" >
+        </activity>
+        <activity android:name="com.moxtra.binder.pageview.PageViewActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@style/MoxtraTheme" >
+        </activity>
+        <activity android:name="com.moxtra.binder.livemeet.LiveMeetActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MoxtraTheme" >
+        </activity>
+        <activity android:name="com.moxtra.binder.multiimagepicker.MultiImagePickerActivity"
+            android:theme="@style/MoxtraTheme" >
+        </activity>
+        <activity
+            android:name="com.moxtra.binder.util.MXAlertDialog"
+            android:theme="@style/MoxFullTranslucentActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.moxtra.binder.search.MXSearchActivity" android:theme="@style/MoxtraTheme"/>
+        <activity android:name="com.moxtra.binder.webnote.MXWebNoteActivity" android:theme="@style/MoxtraTheme"/>
+        <activity android:name="com.moxtra.binder.webclip.MXWebClipActivity" android:theme="@style/MoxtraTheme"/>
+        <activity android:name="com.moxtra.binder.livemeet.MeetRingActivity" android:theme="@style/MoxtraTheme"/>
+        <service android:name=".service.AudioPlayerService" />
+        -->
+
+
+        <!-- MOXTRA Activity Declaration END -->
+
+        <activity android:name=".modules.home.ChangeLanguage" />
+        <activity android:name=".UpdatedTermsservice"></activity>
+
+        <!--denisha-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.triforce.mobileapps.mleadsenterprise.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

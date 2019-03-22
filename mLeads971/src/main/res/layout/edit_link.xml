@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/IconImageView"
+            android:layout_width="155dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/MyVideoProfile"
+            android:textColor="#fff"
+            android:textSize="18dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="80dp"
+            android:layout_height="38dip"
+           android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/SaveButtonLabel"
+            android:textColor="#000" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/edit_video_link_label"
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtxt_videoLink_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="@string/video_name_hint"
+                android:inputType="textMultiLine"
+                android:textColorHint="#000" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtxt_videoLink_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:hint="@string/video_description_hint"
+                android:minHeight="120dp"
+                android:singleLine="false"
+                android:textColorHint="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtxt_videoLink"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="@string/video_link_hint"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:textColorHint="#000" >
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

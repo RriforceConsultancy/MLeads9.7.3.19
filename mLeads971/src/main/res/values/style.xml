@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LabelStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dip</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">154dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@drawable/optionbg1</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!-- <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item> -->
+
+    </style>
+
+    <style name="marqueeText_style">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="todo_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top|center</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="todo_leftBtn_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+    </style>
+
+    <style name="todo_rightBtn_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+    
+    
+    <style name="SettingCodeFontBold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+	</style> 
+	<style name="SettingCodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+
+   <!-- <style name="MoxtraTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/MoxActivityAnimation</item>
+        <item name="android:textViewStyle">@style/MoxTextViewBase</item>
+        <item name="android:listViewStyle">@style/MoxListViewBase</item>
+    </style>-->
+
+
+</resources>

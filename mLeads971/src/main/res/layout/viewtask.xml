@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/neweightfooter" >
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/BackButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="2dip"
+                    android:background="@drawable/neweightback_l"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BackButtonLabel"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/task_details"
+                android:textColor="#fff"
+                android:textSize="19dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+                android:id="@+id/SaveButton"
+                android:layout_width="75dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/blue_button"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:onClick="addFollowupAction"
+                android:text="@string/SaveButtonLabel"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" >
+            </Button>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_subject"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/FollowupMessageSubjectLabel"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSubject"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_startdt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/START_DATE"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtStartDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_enddt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/END_DATE"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtEndDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_status"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/STATUS"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_priroty"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/PRIORITY"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPriority"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_leadfristname"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/LeadFirstNameLabel"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtleadfristname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_lastname"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/LeadLastNameLabel"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtlastname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_companyname"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/CompanyNameLabel"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtcompanyname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_Detail_lable"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/event_detail"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtcompanyname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_eventname"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/event_name"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txteventname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_eventdate"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="@string/event_date"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txteventdate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnViewLeadPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/neweightattachmentbtn"
+                    android:text="@string/view_lead_detail"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnMarkAsCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/neweightattachmentbtn"
+                    android:text="@string/mark_as_completed"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImgTut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/swipe" />
+
+</RelativeLayout>

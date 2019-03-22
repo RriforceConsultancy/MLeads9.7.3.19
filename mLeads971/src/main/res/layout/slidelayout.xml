@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="40dp"
+    android:layout_marginTop="40dp"
+    android:background="#FFFFFF"
+    android:gravity="center" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_restaurant"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/restaurant" />
+
+                <ImageView
+                    android:id="@+id/btn_hospital"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/hospital" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_atm"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/atm" />
+
+                <ImageView
+                    android:id="@+id/btn_theater"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/theater" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_airport"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/airport" />
+
+                <ImageView
+                    android:id="@+id/btn_police"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/police" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_mall"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/mall" />
+
+                <ImageView
+                    android:id="@+id/btn_park"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/park" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_subway_station"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/subway_station" />
+
+                <ImageView
+                    android:id="@+id/btn_travel_agent"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/travel_agent" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_bank"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/bank" />
+
+                <ImageView
+                    android:id="@+id/btn_amusement_park"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/amusement_park" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_cafe"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/cafe" />
+
+                <ImageView
+                    android:id="@+id/btn_food"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/food" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/todo_layout_style" >
+
+                <ImageView
+                    android:id="@+id/btn_meal_delivery"
+                    style="@style/todo_leftBtn_style"
+                    android:src="@drawable/meal_delivery" />
+
+                <ImageView
+                    android:id="@+id/btn_meal_takeway"
+                    style="@style/todo_rightBtn_style"
+                    android:src="@drawable/meal_takeaway" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_zoo"
+                android:layout_width="133dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/zoo" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

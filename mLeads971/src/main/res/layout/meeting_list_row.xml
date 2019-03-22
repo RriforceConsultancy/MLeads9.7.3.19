@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/list_bg"
+    android:padding="3dp"
+    android:weightSum="5" >
+
+    <TextView
+        android:id="@+id/meetingSubjectTextView"
+        style="@style/LabelStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/EventTitleLabel"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/meetingLocationTextView"
+        style="@style/LabelStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/AddEventLocationLabel"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/meetingDateTextView"
+        style="@style/LabelStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/AddEventDateLabel"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/meetingstartTimeTextView"
+        style="@style/LabelStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/AddEventDateLabel"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/meetingendTimeTextView"
+        style="@style/LabelStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/AddEventDateLabel"
+        android:textColor="#000000" />
+
+    <!-- @android:drawable/ic_menu_close_clear_cancel -->
+
+</LinearLayout>

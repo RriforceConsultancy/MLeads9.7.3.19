@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <!--
+    android:gravity="center"
+    android:padding="5dp"
+    android:orientation="vertical"
+    -->
+
+    <LinearLayout
+        android:id="@+id/Lin_Regular"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/list_bg"
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/noprofilephoto"
+            android:visibility="gone" />
+
+        <!--
+        <android.webkit.WebView
+            android:id="@+id/web"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        </android.webkit.WebView>
+
+        <ProgressBar
+            android:id="@+id/pbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="25dp" android:layout_gravity="center"/>
+        -->
+
+        <TextView
+            android:id="@+id/FirstNameTextView"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="dfdsf"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/CompanyNameTextView"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="dsfsd"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imgLeadStatus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/noprofilephoto" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lin_Label"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/txtEventLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:maxLength="40"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4d4d4d"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEventDateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4d4d4d"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

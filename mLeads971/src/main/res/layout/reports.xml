@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/commonlayout"
+        layout="@layout/commonlayoutseperate" />
+
+    <FrameLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/neweightfooter"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/TextHome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="center"
+                android:text="@string/reportstitle"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+
+
+
+            <FrameLayout
+                android:id="@+id/dashboad"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/neweighthomebg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/dashboard" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="70dp"
+                    android:text="@string/dashboard_Title"
+                    android:textColor="#000000"
+                    android:textSize="19dip" />
+            </FrameLayout>
+            
+        <FrameLayout
+            android:id="@+id/schduledTask"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/newninesheduletask" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/schdesuledtask"
+                android:textColor="#000000"
+                android:textSize="19dip" />
+        </FrameLayout>
+		
+		
+		<FrameLayout
+            android:id="@+id/schduledMeetings"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/newningmeeting" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/scheduledmeetings"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+
+
+
+            <FrameLayout
+                android:id="@+id/EmailStatisticsLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/neweighthomebg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/imageViewemail"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/email_statistics" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_email_statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="70dp"
+                    android:text="@string/email_statistics"
+                    android:textColor="#000000"
+                    android:textSize="19dip" >
+                </TextView>
+            </FrameLayout>
+
+		
+		<FrameLayout
+            android:id="@+id/frmProductInterestReport"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/product_intrest" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/product_interest_by_per"
+                android:textColor="#000000"
+                android:textSize="19dip"
+                android:paddingRight="40dp" >
+            </TextView>
+        </FrameLayout>
+        
+		
+		<FrameLayout
+            android:id="@+id/frmSalesReport"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sales_report" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/MainTitleSalesReport"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+<FrameLayout
+            android:id="@+id/frmPipeLineSalesReport"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/pipeline_report" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/MainTitlePipeLineSalesReport"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+<FrameLayout
+            android:id="@+id/frmSales_Cycle_Report"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/cycle_report" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/sales_cycle_report"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+		
+		
+		<FrameLayout
+            android:id="@+id/frmConvertCustomerReport"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/lead_to_customer_report" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/converted_leads_to_customer"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+		
+
+        <!-- <FrameLayout
+            android:id="@+id/leadspercentilereport"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/piechart" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="% Leads by lead qualifiers"
+                android:textColor="#000000"
+                android:textSize="16dip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/leadsinlastdays"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/barchartbyevent" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="# of Leads by lead qualifiers"
+                android:textColor="#000000"
+                android:textSize="16dip" />
+        </FrameLayout> -->
+        
+        
+        
+        <FrameLayout
+            android:id="@+id/leadsinlastdaysMarge"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/barchartbyevent" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/leads_by_qua"
+                android:textColor="#000000"
+                android:textSize="19dip" />
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/frmPipeline"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/newninepipereport" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/pipeline_report"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+
+            <!--<FrameLayout
+                android:id="@+id/frmSalesOpportunitybylead"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/neweighthomebg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/sales_opportunity" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="70dp"
+                    android:text="@string/sales_opportunity_by_leads"
+                    android:textColor="#000000"
+                    android:textSize="19dip" >
+                </TextView>
+            </FrameLayout>-->
+        <FrameLayout
+            android:id="@+id/frmSponsorsByEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/newninesponsorslogo" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/clicks_for_sponsors"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frmLeadsByAttendees"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/neweighthomebg"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/newninesponsorslogo" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/MainTitleAttendeeReport"
+                android:textColor="#000000"
+                android:textSize="19dip" >
+            </TextView>
+        </FrameLayout>
+    </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

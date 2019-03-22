@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 15
+        multiDexEnabled true //Add this
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+            debuggable false
+        }
+    }
+    productFlavors {
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    buildToolsVersion = '28.0.3'
+
+}
+
+dependencies {
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+}

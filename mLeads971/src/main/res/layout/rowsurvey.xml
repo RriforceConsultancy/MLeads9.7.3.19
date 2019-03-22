@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+    android:background="@drawable/list_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:weightSum="6" >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/Questiontitle"
+            style="@style/LabelStyle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:text="@string/question_label"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/FirstNameTextView"
+            style="@style/LabelStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:inputType="textMultiLine"
+            android:text="dfdsf"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/FirstNameTextView"
+            style="@style/LabelStyle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:text="@string/answer_label"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CompanyNameTextView"
+            style="@style/LabelStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:inputType="textMultiLine"
+            android:text="dsfsd"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <!--
+     <FrameLayout
+		android:id="@+id/linearAddview"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp" >
+	</FrameLayout>
+    -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/add_expense"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="addFollowupAction"
+            android:text="@string/SaveButtonLabel"
+            android:textColor="#000" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+       <!--  <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:text="@string/AddFollowUpActionLabel"
+            android:textColor="#000000" /> -->
+
+        <EditText
+            android:id="@+id/FollowUpActionEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginRight="5dp"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/exp_name"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:textSize="12dip" />
+        
+        <EditText
+            android:id="@+id/EdtAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="@string/amount"
+            android:inputType="numberDecimal"
+            android:maxLength="100"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="#000"
+            android:textSize="12dip" />
+        
+        <EditText
+            android:id="@+id/EdtDateExp"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginRight="5dp"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/date"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:textSize="12dip" />
+        
+        <EditText
+            android:id="@+id/edtDescExp"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:textColorHint="#000"
+            android:textSize="12dip"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+
+</LinearLayout>

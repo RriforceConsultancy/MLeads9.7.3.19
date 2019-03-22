@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    
+
+    <FrameLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/neweightfooter" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/ADD_MEETING_TITLE"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="80dp"
+            android:layout_height="38dip"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:gravity="center"
+            
+            android:text="@string/SaveButtonLabel"
+            android:textColor="#000" >
+            <!-- android:onClick="addFollowupAction" -->
+        </Button>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/edtSubject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/FollowupMessageSubjectLabel"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/edtLocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/MEETING_LOCATION"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textSize="12dip" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/edtDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/MEETING_DATE"
+                    android:singleLine="true"
+                    android:textSize="12dip" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/edtST"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/MEETING_START_TIME"
+                    android:singleLine="true"
+                    android:textSize="12dip"
+                    android:visibility="gone" >
+                    
+                    
+                </EditText>
+                
+                <EditText
+                    android:id="@+id/edtST_display"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/MEETING_START_TIME"
+                    android:singleLine="true"
+                    android:textSize="12dip"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/edtET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:hint="@string/MEETING_END_TIME"
+                    android:singleLine="true"
+                    android:textSize="12dip"
+                    android:visibility="gone" >
+                </EditText>
+                
+                <EditText
+                    android:id="@+id/edtET_display"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:hint="@string/MEETING_END_TIME"
+                    android:singleLine="true"
+                    android:textSize="12dip"
+                    android:visibility="visible" >
+                </EditText>
+            </LinearLayout>
+            
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/leads"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="12dip" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/edtAlarmTime"
+                    android:layout_width="142dp"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/ALERT_ALARM"
+                    android:singleLine="true"
+                    android:textSize="12dip" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/beforeLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text="@string/BEFORE"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/selectLabel"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left"
+                    android:text="@string/SELECT_LEAD"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/txtmultipleLeads"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/title_bar"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="30dp"
+                        android:singleLine="true"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/notesLabel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadNotesLabel"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnNote"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/addNoteLabel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

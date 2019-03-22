@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/neweightfooter" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <!--
+             <ImageView android:layout_width="wrap_content"
+			android:layout_height="40dip" android:gravity="center_horizontal"
+			android:src="@drawable/top_icon" android:layout_centerHorizontal="true" />
+
+        -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/terms_of_use"
+            android:textColor="#fff"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/white_box"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|left"
+            android:background="@drawable/logo1" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/end_user_license_agreement"
+            android:textColor="#000000"
+            android:textSize="13dip" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <!--
+            <TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="@string/ttt"
+		    android:textColor="#000000"
+		    android:textSize="11dip"
+		     />
+
+            -->
+
+            <Button
+                android:id="@+id/btnIntroduction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/intro_label"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsParties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t1btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsMLeadsService"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t2btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsUseofMLeads"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t3btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsIntellectualProperty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t4btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsLincensedApplication"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t5btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsUserAccount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t6btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsConfidentiality"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t7btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsIntellectualPropertyRights"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t8btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnTermsProductClaims"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/t9btn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+            <!--
+            <Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsAcknowledgement" android:text="@string/TERMSANDCONDITION_ACKNOW" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textStyle="bold"
+				android:textColor="#FFFFFF" android:onClick="onClick" android:id="@+id/btnTermsWiver" android:text="@string/TERMSANDCONDITION_WAIVER" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsChanges" android:text="@string/TERMSANDCONDITION_CHANGES" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textStyle="bold"
+				android:textColor="#FFFFFF" android:onClick="onClick" android:id="@+id/btnTermsLegalCom" android:text="@string/TERMSANDCONDITION_LEGALCOMPLIANCE" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsDeveloper" android:text="@string/TERMSANDCONDITION_DEVELOPER" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textStyle="bold"
+				android:textColor="#FFFFFF" android:onClick="onClick" android:id="@+id/btnTermsThirdPartyTerms" android:text="@string/TERMSANDCONDITION_THIRDPARTYTERMS" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsThirdPartyBenificiary" android:text="@string/TERMSANDCONDITION_THIRDPARTYBENEFICIARY" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textStyle="bold"
+				android:textColor="#FFFFFF" android:onClick="onClick" android:id="@+id/btnTermsPayment" android:text="@string/TERMSANDCONDITION_PAYMENT" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsSalesTax" android:text="@string/TERMSANDCONDITION_SALES" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsOther" android:text="@string/TERMSANDCONDITION_OTHERTERMS" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsGoverning" android:text="@string/TERMSANDCONDITION_GOVERNING" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="left|center_vertical"
+				android:paddingLeft="15dp" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:onClick="onClick" android:id="@+id/btnTermsMiscellenious" android:text="@string/TERMSANDCONDITION_MISS" android:background="@drawable/blue_button_title" android:layout_width="fill_parent"></Button>
+
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,2204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="SyncMessage"> You can have \'t more than 5 events and 5
+Leads. Sync removes the records that you exceed </string>
+    <string-array name="periods">
+        <item>Quarterly</item>
+        <item>Annually</item>
+    </string-array>
+    
+    
+     <!-- New Strings for Mleads Version 8.0 -->
+    
+  <string name="new_Login_text">Piattaforma completa per la gestione dei lead per far crescere le opportunità \n <b>IL MODO DI MLEADS</b></string>
+  <string name="commonAdd">Aggiungi</string>
+   <string name="Internet_available">Connessione a Internet è ora disponibile sul tuo dispositivo.</string>
+   <string name="subscription">abbonamento</string>
+    
+    <!-- End of New String for Mleads Version 8.0 -->
+                  
+     <!-- New strings for MLeads version 7.0 -->
+
+    <string name="fromCamera">da fotocamera</string>
+    <string name="fromFile">da file</string>
+     <string name="JobTitle_hint">Inserisci un titolo di lavoro valido.</string><!--  -->
+    <string name="PhoneHint_New">Si prega di inserire un numero di telefono valido.</string>
+    <string name="OtherPhone">altro Telefono</string>
+    <string name="PhoneExt">Telefono Ext</string>
+    <string name="PhoneExtValidation">Si prega di inserire un interno telefonico valido.</string>
+    <string name="sponsorsclick">Numero di scatti per \n sponsorizzare da Event</string>
+    <string name="sponsorsSelect">sponsor Nome</string>
+    <string name="generateReport">genera rapporto</string>
+    <string name="Nosponsorsfound">Nessun Sponsor trovato</string>
+    <string name="Nosponsorsclickfound">Non ci sono dati Sponsor trovato</string>
+    <string name="ViewSurvey">Vista d\'insieme</string>
+    <string name="Nosurvey">Informazioni Indagine non disponibile</string>
+    <string name="sponsorsname">Sponsor</string>
+    
+    <string name="sponsorslogoMainTitle"># di clic per gli sponsor</string>
+	<string name="MainTitleAttendeeReport"># di Leads dai partecipanti</string><!--  -->
+    <!-- End of strings for MLeads version 7.0 -->  
+    
+     
+    
+    <!-- New String for mleads version 6.0 -->
+ <string name="affiliatlinktitle">Referral e Affiliate Program</string>
+      <string name="affiliatscripttitle">Prendi Script Programma affiliat</string>
+      <string name="affiliatScriptText">copiare o e-mail il vostro script affiliat programma</string>
+      
+    <string name="deripEmailLabel">mettre goutte calendrier électronique</string>
+    <string name="dripEmailTimeInterval">Si prega di selezionare l\'intervallo di tempo ..</string>
+    <string name="LeadMultiSelect">selezionare Leads</string>
+    <string name="ExcessAttachmentSize">Dimensione degli allegati non deve superare 1 MB.</string>
+    <string name="AddAttachment">Aggiungi allegato</string>
+    <string name="EditAttachment">Modifica allegato</string>
+    <string name="event_Eventname">avvenimento *</string>
+    <string name="event_location">posizione *</string>
+    <string name="event_city">città *</string>
+    <string name="event_state">stato</string>
+    <string name="event_country">nazione</string>
+    <string name="event_phone">telefono</string>
+    <string name="event_action_title">eseguire azioni di eventi</string>
+    <string name="event_page_title">Visualizza evento</string>
+    <string name="attachmentClassTitle">allegati</string>
+    <string name="doneButtonLabel">fatto</string>
+    <string name="LooseData2">tutti i lead, follow-up, attività e incontri in questo caso verranno eliminati. Sei sicuro di voler eliminare l\'evento?</string>
+    <string name="LooseData3">Leads in questo caso verranno eliminati insieme ai follow-up, attività e riunioni. Sei sicuro, di voler cancellare questo cavo?</string>
+    <string name="sponsorslist_page_title">Sponsor della manifestazione</string>
+    <string name="noSponsors">Informazioni sponsor non è disponibile per questo evento.</string>
+    <string name="thingsToDo_title">altri eventi nelle vicinanze</string>
+    <string name="moreButtonLabel">più</string>
+    <string name="reports_sendEmail">E-mail Segnala</string>
+    <string name="login_new">Se sei un utente MLeads esistente, si prega di utilizzare il nome utente, la password per effettuare il login, altrimenti clicca su Registrati</string>
+    <string name="sendEmail">Invia Email</string>
+    <string name="noAgendaTitle">non vi è alcun programma caricato per questo evento, tuttavia è possibile caricare documenti agenda dal sito myleadssite.com</string>
+    <string name="AddFollowupMessageSubjectHint_new">Inserisci il soggetto.</string>
+    <string name="AddFollowupMessageMessageHint_new">Inserisci il messaggio.</string>
+    <string name="speakleadtitle_new">Si prega di notare l\'applicazione supporta solo parla inglese</string>
+    <!--<string name="PhoneHint">Si prega di inserire il numero di telefono.</string>-->
+ <!-- this is the old message don't added it just translate it -->
+    <string name="saveExport">Salva. File CSV Per Cartella Documenti</string>
+    <string name="emailExport">inviare e-mail con. file CSV come allegato</string>
+    <string name="passwordDoesNotMatch">La password e la password inserita nuovamente non corrispondono.</string>
+    <string name="emailForgetPasswordWrong">Non siete registrati o indirizzo e-mail corretto.</string>
+  <!--  <string name="forgot_password_success">Le informazioni sulla password vengono inviate al tuo indirizzo email.</string>-->
+ <!-- this is the old message don't added it just translate it -->
+    <string name="enterSecurityAnswer">Inserisci risposta.</string>
+    <string name="invalidEmail_ForgetPasswordActivity">Si prega di inserire un indirizzo email valido.</string>
+    <!--<string name="ReferSuccessfully">Avete consultare con successo al tuo amico.</string>-->
+    <string name="guideTitle_attendees">Guidelines for Importing attendees from .CSV file</string>
+    
+    <!-- String for Video Profile -->
+    <string name="VidName_Validation">Inserisci il nome del video</string>
+    <string name="VidDes_Validation">inserisci descrizione del video</string>
+    <string name="VidLink_Validation">Inserisci il link del video</string>
+    
+    <string name="add_vidLink_success">Video link %1$s aggiunto con successo.</string>
+	<string name="add_vidLink_failure">Video link %1$s non può essere aggiunto con successo.</string>
+	<string name="update_vidLink_success">Video link %1$s aggiornato con successo.</string>
+	<string name="update_vidLink_failure">Video link %1$s non può essere aggiornato con successo.</string>
+    <string name="Acceptterms_new">È necessario accettare Contratto di licenza per l\'utente al fine di registrarsi.</string>
+    
+    <string name="noLeadsinLast30Days">Nessun cavo è stato aggiunto degli ultimi 30 giorni.</string>
+    <!-- End of new String mleads version 6.0 -->
+      
+    
+    
+    
+    
+    
+    
+    <string-array name="probability">
+		<item>90%</item>
+		<item>75%</item>
+		<item>50%</item>
+		<item>25%</item>
+		<item>15%</item>
+		<item>10%</item>
+		<item>0%</item>
+    </string-array>
+
+	<string-array name="probability_status">
+		<item>Qualified</item>
+		<item>Quote submitted</item>
+		<item>Closed</item>
+		<item>Cancelled</item>
+		<item>Lose</item>
+		<item>Won</item>
+	</string-array>
+     
+    <string name="ADD_USER_FAILURE">Impossibile aggiungere% 1 $ s.</string>
+    <string name="ADD_USER_SUCCESS">Aggiunto con successo %1$s come membro della squadra.</string>
+    <string name="select_user">Selezionare Utente</string>
+    <string name="NoUsersTitle">Nessun utente trovato</string>
+    <string name="SEARCH_ALERT">Nessun Leads trovato con la parola serach</string>
+	<string name="loginlabel_new">\ * Se MLeads esistenti pagato edition user, si prega di utilizzare il vostro attuale nome utente, la password per accedere, altrimenti clicca su Registrati</string>
+	<string name="select_team_member">team Member</string>
+		<string name="bottomtypelead">Nota \: OCR-Funziona meglio con le foto scattate con le carte pixel di risoluzione della fotocamera da 8 MB o superiore</string>	
+    	<string name="newTutorialBottom">Grazie per la vostra utilizzando i MLeads e non vediamo l\'ora di averti come nostro utente stimato. Si prega di fare riferimento MLeads ai tuoi amici e fornire il vostro prezioso feedback per migliorare le caratteristiche.</string>
+    	<string name="newstep5"><b>STEP 5</b> Rivedere rapporti statistici. Esportare i dati in cavi. Formato CSV utilizzando il dispositivo mobile o tramite la nostra piattaforma cloud per importare successivamente in sistemi esistenti esterni!</string>
+	    <string name="newstep4"><b>STEP 4</b> Eseguire le azioni di follow-up con i tuoi contatti - inviare e-mail utilizzando i modelli predefiniti messaggi di posta elettronica creati in precedenza, oppure fare una chiamata o inviare Messaging, le attività di pianificazione o riunioni di installazione o di eseguire con un solo clic azioni di ricerca sulle informazioni piombo.</string>
+	    <string name="newstep3"><b>STEP 3</b> Importa o bloccare i cavi informazioni sui dispositivi mobili durante / dopo la sessione di evento o riunione o conferenze si partecipa (Scan Card QR Aziende del piombo, Biglietto da visita OCR del piombo o inserire manualmente le informazioni di piombo). Dettagli importanti registrare la voce sulla tua conversazione con la vostra guida, inserire le informazioni possibilità di generare informazioni pipeline per i tuoi contatti.</string>
+	    <string name="newstep2"><b>STEP 2</b>Crea il tuo follow-up dei modelli predefiniti messaggi di posta elettronica contenenti un messaggio circa il vostro prodotto, servizio o te sul tuo dispositivo mobile o utilizzando la nostra cloud computing http://www.myleadssite.com dalla piattaforma. È possibile creare il modello di molti messaggi e-mail come si richiede che rappresenta il vostro prodotto o servizio che si adatta alle vostre esigenze.</string>
+	    <string name="newstep1"><b>STEP 1</b> Immettere le informazioni sull\'evento o una riunione o una conferenza che si sta frequentando.</string>
+	    <string name="newsteps_follow">Grazie per aver scaricato e registrandosi al MLeads! Si prega di seguire queste semplici 5 passaggi per iniziare a utilizzare MLeads.</string>
+    	<string name="pipelinemailformat">Si prega di trovare la relazione allegata Pipeline, che contiene la consegna da parte della pipeline \'s Opportunità di informazioni. \ n \ n È possibile utilizzare il esportato. relazione csv di rivedere il vostro piombo \'s informazioni Pipeline opportunità su base trimestrale, che può essere successivamente importato in sistemi aziendali esistenti. \ n \ n Ci auguriamo che le informazioni contenute nella presente relazione molto utile e vi aiutano a crescere il vostro business. \ n \ n Questo è un programma che si \'ll custodire e migliorare i vostri sforzi (ROI) in ambito networking, business development, marketing e vendite! Connect, Capture e rapidamente Segui la tua porta modo MLeads! \ n \ n Vorremmo ringraziarvi per l\'utilizzo dell\'applicazione MLeads. Saremo lieti di avervi come nostri utenti valutati e fornire il miglior servizio. \ n \ n Ti chiediamo di fare riferimento MLeads ai tuoi amici o colleghi. Saremmo lieti di avere tutte le risposte si possono avere, per favore</string>
+    	<!-- <string name="pipelinemailformat_two">per fornire il feedback. \ n \ n Grazie. \ n \ n Cordiali saluti, \ n MLeads Support Team \ n https: \ / \ / www.myleadssite.com \ / \ n info@myleadssite.com</string> -->
+    
+    	
+    	<!-- <string name="exportleadsmailformat">Si prega di trovare l\'allegato (s) che contiene le informazioni esportate cavi che hai richiesto per l\'evento. \ n \ n È ora possibile utilizzare il esportato. file csv per importare i dati in uno dei tuoi CRM esistente o sistemi aziendali. \ n \ n Questo è un programma che si \'ll custodire e migliorare i vostri sforzi (ROI) in ambito networking, business development, marketing e vendite! Connect, Capture e rapidamente Segui la tua porta modo MLeads! \ n \ n Vorremmo ringraziarvi per l\'utilizzo dell\'applicazione MLeads. Saremo lieti di avervi come nostri utenti valutati e fornire il miglior servizio.
+     Vi preghiamo di fare riferimento MLeads ai tuoi amici o colleghi. Saremmo lieti di avere tutte le risposte si possono avere, per favore</string> -->
+    	<string name="exportleadsmailformat_two">per fornire il feedback.</string>
+    	<!-- <string name="clickherehref"> "&lt;a href =\"malito:info@myleadssite.com\">click here&lt;/a>"</string> -->
+    
+    
+    
+    
+    
+    <string name="thankslabelEmail">Danke.... </string>
+    <string name="EmailSalute">Cordiali saluti,</string>
+    <string name="EmailName">MLeads Team di supporto</string>
+    <string name="EmailWebsite">https://www.myleadssite.com</string>
+    <string name="EmailEmail">info@myleadssite.com</string>
+    <string name="pipelinemailformat2"> \n \n È possibile utilizzare il esportato. Relazione csv di rivedere il vostro piombo \ \'s informazioni Pipeline opportunità su base trimestrale, che può essere successivamente importato in sistemi aziendali esistenti.</string>
+    <string name="pipelinemailformat3">\n\n Ci auguriamo che le informazioni contenute nella presente relazione molto utile e vi aiutano a crescere il vostro business.</string>
+    <string name="pipelinemailformat4"> \n\n Si tratta di un\'applicazione che si \ \'ll custodire e migliorare i vostri sforzi (ROI) in ambito networking, business development, marketing e vendite! Connect, Capture e rapidamente Segui la tua porta modo MLeads!!!</string>
+    <string name="pipelinemailformat5"> \n\n Vorremmo ringraziarvi per l\'utilizzo dell\'applicazione MLeads. Saremo lieti di avervi come nostri utenti valutati e fornire il miglior servizio.</string>
+    <string name="pipelinemailformat6">\n\n Vi preghiamo di fare riferimento MLeads ai tuoi amici o colleghi. Saremmo lieti di avere tutte le risposte si possono avere, per favore</string>
+    <string name="pipelinemailformat_two">per fornire il feedback.</string>
+    <string name="exportleadsmailformat"> \n\n Si prega di trovare l\'allegato (s) che contiene le informazioni esportate porta si richiesto per l\'evento. </string>
+    <string name="exportleadsmailformat2"><br/><br/> \n È ora possibile utilizzare il esportato. File .csv per importare i dati in uno dei tuoi attuali sistemi CRM o per affari.</string>
+    <string name="exportleadsmailformat3"><br/><br/> \n\n Si tratta di un\'applicazione che si \ \'ll custodire e migliorare i vostri sforzi (ROI) in ambito networking, business development, marketing e vendite! Connect, Capture e rapidamente Segui la tua porta modo MLeads!!! <br/><br/>\n\n Vorremmo ringraziarvi per l\'utilizzo dell\'applicazione MLeads. Saremo lieti di avervi come nostri utenti valutati e fornire il miglior servizio.</string>
+    <string name="exportleadsmailformat4"><br/><br/> Vi preghiamo di fare riferimento MLeads ai tuoi amici o colleghi. Saremmo lieti di avere tutte le risposte si possono avere, per favore</string>
+    <string name="MAP_VALIDATION2">Inserisci l\'indirizzo per la consegna da parte per visualizzare la mappa</string>
+    <string name="delete_link_success">Video Link %1$s deleted successfully.</string>
+    <string name="addvideolink">Aggiungi il tuo link per i video che spiegano il tuo prodotto o servizio, che è possibile mostrare ai tuoi contatti utilizzando il MLeads, una caratteristica molto potente</string>
+    <string name="guidelines">Linee guida per l\'importazione di contatti da file. CSV</string>
+    <string name="editaddress">Modifica indirizzo</string>
+    <string name="editoppotunitybuttontittle">Modifica informazioni Opportunità</string>
+    <string name="manageleadsonweb">Gestione conduce web</string>
+    <string name="now">ora</string>
+    <string name="endtime">Fine</string>
+    <string name="starttime">Ora di inizio</string>
+    <string name="selectdate">Seleziona Data</string>
+    <string name="import_loading">Si prega di attendere durante l\'importazione dei dati ...!</string>
+    <string name="guidelinesContinue">continuare</string>
+    <string name="steps4guidelines">Fase 4: Ora è possibile importare file .CSV tramite l\'applicazione MLeads..</string>
+    <string name="step3g">Passaggio 3: Aggiungere i dati esistenti porta nel formato indicato nelle file "ImportLead_sample.csv", una volta fatto salva il file come nome diverso di gestire versioni dei file.</string>
+    <string name="steps3guidelines">Passaggio 3: Aggiungere le informazioni porta in file di esempio e salvarlo come nome diverso per gestire le versioni dei file.</string>
+    <string name="steps2guidelines">Passo 2: Dalla cartella Enterprise MLeads, selezionare il file "ImportLead_sample.csv".</string>
+    <string name="steps1guidelines">Fase 1: Nella scheda SD, goto sdcard -> cartella Enterprise MLeads.</string>
+    <string name="guidelinessteps2">Procedura per salvare il file .CSV con il formato campione.:</string>
+    <string name="guidelinesteps">Nota: File .CSV verrà importato con il formato predefinito di esempio solo.</string>
+    <string name="guidelineTitle">Linee guida per l\'importazione conduce da\n File .CSV</string>
+    <string name="INDUSTRY_SELECT">Selezionare il tipo di industria</string>
+    <string name="USER_SELECT">Selezionare Team Member</string>
+    <string name="settingsaddtoteammember">Aggiungi membri al team</string>
+    
+    
+    
+    
+    
+    
+    
+     <string name="ttt">tale utente finale contratto di licenza ("Licenza") è un contratto legale tra l\'utente e cavi mobili, LLC ("ML") per l\'applicazione MLEADS software mobile, che include software per computer e può includere i supporti associati, e "online" o elettronica documentazione ("Applicazione"). installando, scaricando, visualizzando o altrimenti utilizzando l\'applicazione, l\'utente accetta di essere vincolato dai termini della presente Licenza.</string>
+      
+      
+      <string name="t1btn">CONCESSIONE DI LICENZA</string>
+      <string name="t2btn">USO DELLA DOMANDA</string>
+      <string name="t3btn">ACQUISTO DI UNA LICENZA DI UTILIZZO E \n RUN IL RICORSO</string>
+      <string name="t4btn">COPYRIGHT E MARCHI</string>
+      <string name="t5btn">DIRITTI LIMITATI DEL GOVERNO DEGLI STATI UNITI</string>
+      <string name="t6btn">ESPORTAZIONE RESTRIZIONI</string>
+      <string name="t7btn">GARANZIA E</string>
+      <string name="t8btn">LIMITAZIONE DI RESPONSABILITA\'</string>
+      <string name="t9btn">VARIE</string>
+      
+      
+      
+      
+      <string name="t1detail">La presente Licenza concede all\'utente i seguenti diritti che si applicano nel corso di un periodo di prova, nonché l\'intero periodo in cui si è un utente finale sottoscritto: \ n \ n
+          
+           (a) Standard Licenza. È possibile installare e utilizzare l\'applicazione su qualsiasi computer, telefono cellulare, tablet o simile dispositivo elettronico digitale che possedete e il controllo ("DISPOSITIVO (S)"). L\'applicazione consente di accedere ai vostri dati, che possono essere memorizzate da un terzo partner commerciale della ML come indicato al paragrafo 2 (e). Siete anche la licenza per utilizzare siti web ML (inclusi ma non limitati a www.myleadssite. com) di accedere ai vostri dati per tutto il tempo si è un utente finale licenza. \ n \ n
+          
+           (b) Limitazioni. L\'utente riconosce che la portata della licenza grantedis limitata e non possono essere trasferiti. L\'utente accetta che non vuole e non deve permettere a terzi di accedere o utilizzare qualsiasi parte del APPLICATIONexcept cui sia espressamente previsto nel presente accordo. Senza limitare quanto sopra, non si deve: (a) vendere, affittare, noleggiare, prestare, cedere, sublicenziare o altrimenti trasferire tutto o parte della domanda, (b) decompilare, disassemblare, decodificare o tentare in altro modo di scoprire il sottostante segreti commerciali, \ n \ n
+          
+           (c) rimuovere, oscurare o alterare alcun avviso di copyright, ai diritti limitati o altro avviso di diritti di proprietà che compaiono o sono contenute o nella domanda e / o (d) Utilizzare l\'applicazione in violazione delle leggi sul copyright. (c) Programmi speciali ML. In qualità di utente finale sarà anche la licenza per partecipare a programmi ML speciali che possono essere messi a disposizione di volta in volta da ML, come i programmi di riferimento, programmi di affiliazione e programmi di sponsorizzazione di eventi. Le pagine di registrazione per partecipare a questi programmi e le modalità di questi programmi verrà inserito su un sito web ML designato. </string>
+                 
+      <string name="t2detail">(A) Scarica iniziale dell\'applicazione. Quando si scarica l\'applicazione, è necessario fornire i dati degli utenti determinati, inclusi ma non limitati a nome, indirizzo, numero di telefono, e-mail. Sarà necessario creare un ID utente e una password. Sarà necessario inserire l\'ID utente e la password per accedere ai dati ogni volta che si esegue l\'applicazione. Mentre si può eseguire l\'applicazione su più dispositivi, non è consigliabile che si esegue l\'applicazione su più di un dispositivo alla volta con l\'ID utente e la password, in quanto ciò potrebbe danneggiare i dati per i quali ML non sarà responsabile. \ N \ n
+
+(B) l\'utente finale Obblighi password. Sei l\'unico responsabile del mantenimento della riservatezza di qualsiasi User ID / password ricevuta da far funzionare l\'applicazione e / o accedere ai dati raccolti in relazione con l\'applicazione. L\'utente non può divulgare il tuo ID utente e / o password a nessuno, o utilizzare nessun altro \ \'s ID utente / password informazioni. \ N \ n
+
+(C) 30-giorni di prova. Si può avere diritto ad un periodo di 30 giorni di prova di utilizzare l\'applicazione e determinare se vi piace. Quando il periodo di prova, vi sarà richiesto di pagare una tassa di licenza, al fine di continuare a utilizzare l\'applicazione o la possibilità di accedere l\'applicazione verrà terminata. \ N \ n
+
+(D) Servizi di supporto. MLmay fornire servizi di manutenzione e supporto in relazione all\'applicazione ("Servizi di assistenza"). Utilizzo dei Servizi di supporto è disciplinato dalle MLpolicies e programmi descritti nella documentazione "on line" a un sito web ML designato. \ N \ n
+
+(E) Data Storage. Quando si inseriscono le informazioni nella domanda, devono essere conservati su server sicuri gestiti da ML, ma che possono essere gestiti e mantenuti da un host adeguatamente accreditati terza parte ("host"). L\'host non avrà accesso a tutte le informazioni di memorizzare e avere la sicurezza che è in linea con gli standard del settore hosting. ML avrà accesso ai dati si memorizzano e si occuperà in conformità con i termini della sua politica sulla privacy che si possono trovare al seguente sito: http://www.Myleadssite.com/privacypolicy, e che può essere aggiornato e modificato di volta in volta come indicato in detta informativa sulla privacy. \ n \ n
+
+(F) di sicurezza. ML e il suo Host (s) devono mantenere la sicurezza di tutte le apparecchiature utilizzate per consentire l\'applicazione di funzionale correttamente in modo almeno pari a pratiche prudenti nel settore della sicurezza. Finché ML fornisce la sicurezza in conformità con le pratiche del settore prudenti, ML non sarà responsabile per qualsiasi intervallo di sicurezza che possono verificarsi, a meno che tale intervallo hanno portato dal dolo o colpa grave di ML o persone / enti per i quali è legalmente responsible.ML non rappresenta o garantisce che l\'applicazione sarà esente da perdite, la corruzione, l\'attacco, virus, interferenze, attività di hacker, o altre intrusioni di sicurezza, e ML declina ogni responsabilità ad essi relativi. L\'utente è responsabile per il backup del sistema, inclusi i prodotti acquistati da ML che viene memorizzato nel sistema. \ N \ n
+
+(G) le funzionalità dell\'applicazione. L\'applicazione contiene funzioni che interagiscono con altri prodotti software e internet, come, ma non limitato a, Facebook e Twitter. Questi prodotti software e internet sono del tutto fuori dal controllo di ML e di utilizzarle, è probabile che sia necessario registrare separatamente con ogni software di questo tipo e di prodotto provider di internet e accettare la loro rispettiva registrazione e termini di utilizzo. \ N \ n
+
+(H) di terminazione. In linea generale, e fatto salvo ogni altro diritto, MLmay risolvere la presente Licenza in caso di mancato rispetto, con i suoi termini e condizioni. In tal caso, è necessario disinstallare tutte le copie della domanda e tutte le sue parti componenti.
+ </string>
+      
+      
+      
+	<string name="t3detail">Dopo l\'applicazione viene scaricato, è possibile acquistare una licenza per continuare l\'esecuzione dell\'applicazione in qualsiasi momento. Se la licenza non è purchasedby alla fine di ogni periodo di prova applicabile, non sarà più in grado di utilizzare il APPLICATION.Payment per l\'applicazione per l\'esecuzione su un dispositivo Apple come un iPad o iPhone è effettuata attraverso il sito web di Apple appropriato in secondo le modalità previste da Apple. Il pagamento per la domanda di qualsiasi altro dispositivo, in particolare qualsiasi dispositivo Android, è effettuata sul sito web ML designato, attualmente, http://www.MyLeadsSite.com. Le condizioni di acquisto e opzioni di pagamento per gli acquisti effettuati sul sito ML sono esposte al riguardo.</string>
+	
+	<string name="t4detail">utti i titoli ei diritti di proprietà intellettuale e per l\'applicazione (compreso ma non limitato a, ogni immagine, fotografia, animazione, video, audio, musica, testo e "applet" incorporati nel APPLICAZIONE), il materiale stampato accluso e qualsiasi copia della domanda sono di proprietà di MLor suoi fornitori. Tutti i titoli ei diritti di proprietà intellettuale relativi al contenuto e ai marchi di fabbrica e marchi di servizio incorporati essa relativo, eventualmente consultati dall\'utente tramite l\'utilizzo dell\'applicazione sono di proprietà dei rispettivi proprietari e possono essere protetti da copyright, marchi o altri diritti di proprietà intellettuale e trattati. La presente Licenza non concede alcun diritto di utilizzare tali contenuti e marchi di fabbrica. Tutti i diritti non espressamente concessi sono riservati da ML.</string>
+	
+	<string name="t5detail">Se si sta utilizzando l\'applicazione per conto di qualsiasi ufficio o agenzia del governo degli Stati Uniti, allora si accetta la licenza concessa nel presente contratto con i limitati dati di diritti e software limitati diritti di cui tali termini sono definiti nella sezione 27,4 del Federal Acquisition Regulation e le eventuali integratori di agenzie ad esse.</string>
+	
+	<string name="t6detail">L\'utente dichiara che non sottoscrizione del presente Contratto di licenza con MLwill violare le leggi e regolamenti sull\'esportazione, tra cui, ma non limitato ai Export Administration Regulations. Lei inoltre dichiara che non è attualmente interdetto, sospesi o altrimenti vietate o limitate da esportazione, riesportazione, la ricezione, l\'acquisto, l\'elaborazione o in altro modo per ottenere qualsiasi oggetto, prodotto, articolo, merce, software o tecnologia regolata da qualsiasi agenzia del Regno Unito Stati. A meno che non autorizzati da US regolamento o licenza di esportazione, di non esportare o riesportare, direttamente o indirettamente, qualsiasi software o tecnologia ricevuto da ML, o consentire il prodotto diretto ad essere esportati o riesportati, direttamente o indirettamente, a (a) in qualsiasi paese in paese Gruppo e: 2, del Regolamento Export Administration del Dipartimento del Commercio (attualmente la Libia e Cuba o qualsiasi altro paese a sanzioni amministrati da parte dell\'Ufficio di controllo degli Attivi Stranieri (attualmente in Iran, Iraq, Sudan, Siria, e le aree controllate talebani in Afghanistan), o (b) qualsiasi non-civile (cioè militare) utenti finali o per eventuali non-civile utenti finali in ogni paese in paese Gruppo D: 1 dei regolamenti sull\'amministrazione delle esportazioni (attualmente in Albania , Armenia, Azerbaigian, Bielorussia, Bulgaria, Cina (PRC), Cambogia, Estonia, Georgia, Kazakistan, Corea del Nord, Kirghizistan, Laos, Lettonia, Lituania, Macao, Moldavia, Mongolia, Romania, Russia, Tagikistan, Turkmenistan, Ucraina, Uzbekistan e Vietnam). l\'Utente accetta di essere vincolato da tali eventuali modifiche future del precedente elenco delle destinazioni soggette a restrizioni da parte di modifiche ai regolamenti Administration statunitense o altre agenzie governative degli Stati Uniti. l\'utente accetta di manlevare e tenere indenne MLfrom eventuali costi, penali o perdite causati da, o in relazione a, qualsiasi violazione o violazione di tale disposizione.</string>
+	
+	<string name="t7detail">(a) garanzia. ML rappresenta, garantisce e conviene che: (i), per quanto a sua conoscenza, ha i diritti necessari per offrire l\'APPLICAZIONE, e (ii) che il download e l\'uso dell\'applicazione che fornisce il servizio non viola alcuna legge o regolamento o violare i diritti di proprietà di terzi o obblighi contrattuali tra ML e gli eventuali terzi. \ n \ n
+
+(b) Responsabilità. Oltre alla garanzia sopra citato, ML non fornisce alcuna garanzia per quanto riguarda la domanda, né eventuali prodotti accessori o servizi, e declina tutte le dichiarazioni e garanzie di alcun tipo, espressa o implicita, incluse, senza limitazione, qualsiasi garanzia di commerciabilità, idoneità per un scopo particolare, e non violazione.
+</string>
+      
+  <string name="t8detail">(a)	Direct Damages.   ML\’S TOTAL LIABILITY TO YOU FOR ANY AND ALL CLAIMS RELATING TO OR ARISING UNDER THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT ACTUALLY PAID BY YOU FOR THE APPLICATION THAT GAVE RISE TO THE LIABILITY. \n\n
+
+	(b)	Consequential Damages. UNDER NO CIRCUMSTANCES SHALL ML, ITS DIRECTORS, OFFICERS, EMPLOYEES, AFFILIATES, AGENTS, CONTRACTORS, PRINCIPALS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES ARISING IN ANY  WAY OUT OF THIS AGREEMENT OR THE USE OF THE APPLICATION OR DOCUMENTATION, HOWEVER CAUSED AND WHETHER ARISING UNDER A THEORY OF CONTRACT, TORT OR ANY OTHER LEGAL THEORY, EVEN IF MLWAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE DAMAGES EXCLUDED BY THIS SECTION SHALL INCLUDE, WITHOUT LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF DATA, AND COSTS OF PROCUREMENT OF SUBSTITUTE APPLICATION. THE LIMITATIONS ON LIABILITY SET FORTH IN THIS SECTION SHALL APPLY NOTWITHSTANDING ANY HOLDING BY ANY COURT THAT ANY OF THE LIMITED REMEDIES SET FORTH IN THIS AGREEMENT MAY HAVE FAILED THEIR ESSENTIAL PURPOSE. \n\n
+
+	(c)	Third Party Software and Services.	It is expressly understood that ML has no control over and no liability for the actions of third party software and service providers (except the Host, as described above).  Examples of such third party software and service providers include but are not limited to, Facebook, LinkedIn, Twitter and YouTube. \n\n  
+
+(d)	Construction.  MLis willingly licensing its software only in consideration of and in reliance upon the provisions of this Agreement limiting ML\’s exposure to loss or liability.  Such provisions are an essential part of the bargain underlying this Agreement and have been reflected in the license fees and other considerations specified in this Agreement.</string>    
+      
+      
+      <string name="t9detail">This License sets forth the entire agreement, and supersedes any and all prior agreements between the parties regarding the subject matter hereof. No amendment of any provision of this License shall be effective unless set forth in a written instrument signed by the party to be bound thereby.  Nothing contained in any purchase order or other document submitted by you shall in any way modify the terms of this License, unless there is a written agreement between MLand you that specifically designates the scope of any modifications. Your rights hereunder may not be assigned or transferred, nor your obligations delegated, in whole or in part without the prior written consent of ML.  Written consent will not be unreasonably withheld.  Any attempt to so assign, transfer or delegate such rights or obligations shall be voidable at ML\’s option and shall be cause for ML to termination this License.  In the event of any action to enforce this License, for interpretation or construction of this License or on account of any breach of or default under this License, the prevailing party in such action shall be entitled to recover, in addition to all other relief, from the other party all reasonable costs and attorneys\' fees incurred by the prevailing party in connection with such action (including, but not limited to, any appeal thereof).  This License shall be interpreted, construed and enforced in all respects in accordance with the laws of the United States and particularly the Commonwealth of Pennsylvania without reference to its choice of law rules, except to the extent the same are preempted by the laws of the United States. MLshall be deemed to have entered into this License at ML\’s offices in Pennsylvania. Neither party shall commence or prosecute any suit, proceeding or claim to enforce the provisions of this Agreement, to recover damages or other relief for breach or default under this Agreement, or otherwise arising under or by reason of this License other than in the state and federal courts of the Commonwealth of Pennsylvania. Each party irrevocably consents to the jurisdiction of the state and federal courts of the Commonwealth of Pennsylvania. \n\n
+
+Should you have any questions concerning this License, or if you desire to contact MLfor any reason, please contact MLat info@myleadssite.com. </string>
+      
+      
+      
+      
+    
+     <!--  <string name="thankslabelEmail">Thank you. </string>
+      <string name="EmailSalute">Sincerely ,</string>
+      <string name="EmailName">MLeads Support Team</string>
+      <string name="EmailWebsite">https://www.myleadssite.com</string>
+      <string name="EmailEmail">info@myleadssite.com</string> -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="speakleadtitle">Pronunciare nome del Collocamento, telefono #, e-mail</string>
+    <string name="addeventPrivate">privato</string>
+    <string name="addeventPublic">pubblico</string>
+    <string name="addeventEventType">Tipo di evento</string>
+    <string name="tutorial_setting">Vai su Impostazioni</string>
+    
+    
+    <string name="popup_ocr_take">Scatta foto</string>
+    <string name="popup_ocr_select">Seleziona immagine</string>
+    <string name="myqrcode2">Il mio biglietto da visita QRCode</string>
+    <string name="accountpage">Il mio account</string>
+    <string name="viewpagetitleleadsoneclicksearch">One Click di ricerca</string>
+    <string name="viewpagetitleleadaction">Eseguire azioni di piombo</string>
+    <string name="viewleadspagetitle">Visualizza piombo</string>
+    <string name="addleadfirstpagetext">Si prega di selezionare una delle opzioni per creare piombo</string>
+    <string name="addleadfirstpagetitle">Selezionare l\'opzione per aggiungere piombo</string>
+    
+    
+    <string name="feedbacksubtitle">Scrivi il tuo messaggio qui ... </string>
+    <string name="feedbacksend">inviare</string>
+    <string name="feedbacktitle">FeedBack</string>
+    <string name="leadsreports2">Leads percentile negli ultimi 30 giorni</string>
+    <string name="scheduledmeetings">riunione pianificata</string>
+    <string name="schdesuledtask">operazione pianificata</string>
+    <string name="leads2">Leads negli ultimi 30 giorni</string>
+    <string name="leadsreports">Leads% negli ultimi 30 giorni</string>
+    <string name="view">vista</string>
+    <string name="reportstitle">Rapporti</string>
+    <string name="discard">Discrad</string>
+    
+    
+    <!--<string name="oppNextdate">Data Fase successiva (RFP)</string>-->
+    <string name="oppProbalityofclosing">\ Probality% di \ n chiusura</string>
+    <string name="oppTargetClosingdate">Obiettivo Data di chiusura</string>
+    <string name="oppTargetFuture">Obiettivo \ $ Future</string>
+    <string name="oppPeriods">Periodi \ n (Trimestrale / annualmente)</string>
+    <string name="oppTarget">obiettivo $:</string>
+    <string name="addaddress">Indirizzo</string>
+    <string name="addoppotunitybuttontittle">Aggiungi informazioni Opportunità</string>
+    <string name="opportunitytitle">Opportunità Dettagli
+</string>
+    <string name="addleadaddressbuttontitle">Indirizzo</string>
+    <string name="addleadaddresstitle">Indirizzo</string>
+    <string name="newmessagetitle">Aggiungi il tuo messaggio qui ... nuovo</string>
+    <string name="newmessageSubject">soggetto *</string>
+    <string name="newmessagemessage">messaggio *</string>
+    <string name="newmessageMaintitle">Nuovo messaggio</string>
+    <string name="eventswithin">eventi all\'interno</string>
+    <string name="button_yes">sì</string>
+    <string name="button_date">Seleziona Data</string>
+    <string name="settingtitle">Impostazioni</string>
+    <string name="systemoption">Opzioni del sistema</string>
+    <string name="Settingcustomfollowup">Azioni Follow-Up personalizzate</string>
+    <string name="settingsabout">circa</string>
+    <string name="settingsrateapp">Tasso di App</string>
+    <string name="settingshelp">Aiuto</string>
+    <string name="settingstutorial">lezione</string>
+    <string name="settingstermsofuse">Condizioni di Utilizzo</string>
+    <string name="settingprivacypolicy">Informativa sulla privacy</string>
+    <string name="settingsFeedback">Invia un commento</string>
+    
+    
+    
+    
+    
+    <string-array name="eventsWithinValue">
+        <item>1 settimana</item>
+        <item>1 mese</item>
+        <item>3 mese</item>
+        <item>6 mese</item>
+        <item>9 mese</item>
+        <item>1 anno</item>
+        <item>Più vecchi di 1 anno</item>
+    </string-array>
+     <string name="retype_emailid">e-mail * Ripeti</string>
+<string name="RetypeEmailHint">Inserisci e-mail non corrisponde.</string>
+<string name="MySearchLeadsLabel">la mia ricerca porta</string>
+<string name="NoEventDateFound">nessun dettaglio evento trovato</string>
+<string name="VideoName">nome video</string>
+	<string name="eventlabel">evento</string>
+	<string name="hello_email">ciao</string>
+	<string name="in"> in </string>
+	<string name="eventon"> evento </string>
+	<string name="msg_email">è stato bello con te</string>
+	<string name="next">indietro</string>
+	<string name="importedFail">Spiacenti, l\'importazione dei dati dalla rubrica è fallito</string>
+	    <string name="upgradationDone">si con successo l\'aggiornamento da MLeads Lite MLeads Enterprise, la ringrazio per l\'utilizzo di MLeads Lite, fare riferimento MLeads ai tuoi amici	    </string>
+	    <string name="sorryUpgrade">mi dispiace, non è possibile eseguire l\'aggiornamento a MLeads Lite MLeads Enterprise</string>
+	    <string name="thanksLabel">conferma</string>
+	    <string name="confirmation_upgrade_title">conferma</string>
+	    <string name="confirmation_title">sei sicuro! che si desidera eseguire l\'aggiornamento da MLeads Lite MLeads Enterprise</string>
+	    <string name="importedSuccess">dei dati è stata Importato dalla rubrica, fare clic sul pulsante OK per ricaricare queste attività</string>
+	    <string name="defaultActionCompletedPhone">numero di telefono</string>
+	    <string name="defaultActionCompletedCallDate">chiamare data</string>
+	    <string name="getstarted"> iniziare</string>
+	    <string name="videoDescription">descrizione del video</string>
+    <string name="AddLeadJobTitleLable">titolo lavorativo</string>
+    <string name="app_name_manifest">MLeads</string>
+    
+    
+    
+    
+	<string-array name="SecurityQuestion">
+		<item>Qual è il nome della strada in cui sei cresciuto u?</item>
+		<item>Qual è il vostro numero principale frequent flyer?</item>
+		<item>Qual era il tuo cibo preferito da bambino?</item>
+		<item>Qual era il cognome del vostro insegnante preferito?</item>
+		<item>Dove hai trascorso il tuo estati d\'infanzia?</item>
+		<item>Come si chiamava il tuo primo animale domestico \'s?</item>
+		<item>Qual è stata la marca della tua prima moto?</item>
+		<item>Qual è il cognome del musicista preferito?</item>
+		<item>Qual è il nome del tuo libro preferito?</item>
+		<item>Chi è il tuo autore preferito?</item>
+		<item>Qual è il suo figlio maggiore soprannome \'s?</item>
+		<item>Che città è stato tuo padre nato a?</item>
+		<item>Che città è stata tua madre nato a?</item>
+	</string-array>
+	
+	<string name="MANAGE_LEADS_ERROR">Errore durante la Gestione Leads On Web. crittografia non riuscita</string>
+	<string name="DATE_MANDOTARY">Data di inizio e di fine non deve oscurare</string>
+	<string name="InternetError">Internet non è al momento disponibile sul dispositivo</string>
+	<string name="industrytype">Settore *</string>
+	<string-array name="Industry">
+		<item>selezionare</item>
+		<item>contabilità</item>
+     	<item> trasporto aereo </item>
+		<item>architetto</item>
+		<item>bancario</item>
+		<item>servizi di business</item>
+		<item>costruzione</item>
+		<item>consulenza</item>
+		<item>Cooperative di credito</item>
+		<item>ripianamento dei debiti / loan modification</item>
+		<item>educazione</item>
+		<item>leasing di attrezzature</item>
+		<item>servizi finanziari</item>
+		<item>governo</item>
+		<item>Sanità / Medicina</item>
+		<item>hr personale</item>
+		<item>individuale</item>
+		<item>assicurazione</item>
+		<item>legale</item>
+		<item>produzione</item>
+		<item>non a scopo di lucro</item>
+		<item>immobiliare-agent</item>
+		<item>estate-broker/own reale</item>
+		<item>immobiliare-commerciale</item>
+		<item>immobiliare ipotecario</item>
+		<item>immobiliare-gestione della proprietà</item>
+        <item>Scienza / Biologia</item>
+		<item>al dettaglio</item>
+		<item>tecnologia</item>
+		<item>telecomunicazione</item>
+		<item>viaggi e ricreativo</item>
+		<item>programmi di utilità</item>
+		
+		<item>altro</item>
+	</string-array>
+	<string-array name="Follow_Ups">
+		<item>e-mail</item>
+		<item>telefonate</item>
+		</string-array>
+	
+	<string name="NoLinkFoundLabel">nessun collegamento trovato</string>
+	<string name="step4"><b>STEP 4</b> Follow-up con i cavi - inviare e-mail utilizzando pre-configurato follow-up messaggi o effettuare una chiamata o inviare un messaggio Messaging a un vantaggio immediatamente dal tuo dispositivo mobile (iPhone o dispositivi iPad o Android). Eseguire con un solo clic azioni di ricerca sulle informazioni di piombo</string>
+	    <string name="step3"><b>STEP 3</b> Cattura porta sui dispositivi mobili durante / dopo la sessione di evento o una conferenza che si sta frequentando (Scatta foto del biglietto da visita o Biglietto da visita di scansione con QRCode / OCR o inserire manualmente le informazioni di piombo). Esprimete i dettagli record importanti sulla tua conversazione con il vostro esempio.</string>
+	    <string name="step2"><b>STEP 2</b> Prepara il tuo pre-configurato seguire modelli di messaggi di posta elettronica contenenti testo del messaggio su di te o la tua struttura attraverso il nostro sito myleadssite.com o utilizzando il vostro iPhone / iPad o dispositivo Android. È possibile creare modelli di tanti come richiesto che misura il vostro business.</string>
+	    <string name="step1"><b>STEP 1</b> Immettere le informazioni per identificare l\'evento si sta frequentando.</string>
+	    <string name="steps_follow">Segui questi semplici passaggi per 5 Processo di iniziare a utilizzare MLeads:</string>
+	<string name="mleadstutorial">MLeads Quick Tutorial</string>    
+	<string name="MyVideoProfile">Il mio video profilo</string>
+	
+	 <string name="step5"><b>STEP 5</b> esportare i dati in formato excel cavi per importare nei sistemi CRM esistenti!</string>
+	<string name="thankulabel">vi ringrazio per l\'utilizzo delle MLeads e consultare lead ai tuoi amici.</string>
+	<string name="review">si prega di consultare ulteriori informazioni su MLeads di collegamenti a risorse i seguenti. \ n http://www.youtube.com/watch?v=sR4T02UIdFY</string>
+	 <string name="tutorialLink">MLeads video link</string>
+	<string name="MoreInfo">come funziona?</string>
+	<string name="add_link_failure">Video Link %1$s non può essere aggiunto con successo.</string>
+	 <string name="nullError">descrizione o il collegamento non può essere oscurato.</string>
+	<string name="linkError">link non valido.</string>
+	<string name="Button_Rate_it">tasso di app</string>
+	<string name="hi">ciao,</string>
+	<string name="mobilePlatform">piattaforma mobile</string>
+	<string name="country">paese</string>
+	<string name="mpIOS">ios</string>
+	<string name="mpAndroid">androide</string>
+	<string name="myqrcode">il mio QRCode scheda</string>
+	<string name="myvideoprofile">il mio video profilo</string>
+	<string name="industrytype2">industria *</string>
+	<string name="industry">industria *</string>
+	<string name="LooseData">Eliminazione evento rimuovere cavi e registra il messaggio Follow-Up rispetto a questo evento</string>
+	<string name="installed">Hai MLeads Lite installato. È necessario rimuovere MLeads Lite prima di utilizzare MLeads</string>
+	<string name="QRNoData">Non vi sono dati necessari in QR Code</string>
+	<string name="AnswerHint">Si prega Inserisci Risposta sicurezza qui.</string>
+	<string name="bookmark_picker_name">Preferiti</string>
+	<string name="button_add_calendar">Aggiungi al calendario</string>
+	<string name="button_add_contact">Aggiungi contatto</string>
+	<string name="button_back">indietro</string>
+	<string name="button_book_search">Ricerca Libri</string>
+	<string name="button_cancel">annullare</string>
+	<string name="button_clipboard_empty">Appunti vuoto</string>
+	<string name="button_custom_product_search">di ricerca personalizzato</string>
+	<string name="button_dial">comporre il numero</string>
+	<string name="button_done">fatto</string>
+	<string name="button_email">inviare e-mail</string>
+	<string name="button_get_directions">Ottieni indicazioni stradali</string>
+	<string name="button_google_shopper">Google Shopper</string>
+	<string name="button_mms">Invia MMS</string>
+	<string name="button_ok">OK</string>
+	<string name="button_open_browser">del browser aperte</string>
+	<string name="button_product_search">Product Search</string>
+	<string name="button_read_book">Sfoglia libro</string>
+	<string name="button_search_book_contents">Cerca contenuti</string>
+	<string name="button_share_app">applicazione</string>
+	<string name="button_share_bookmark">segnalibro</string>
+	<string name="button_share_by_email">Condividi via e-mail</string>
+	<string name="button_share_by_sms">Condividi via Messaging</string>
+	<string name="button_share_clipboard">Appunti</string>
+	<string name="button_share_contact">contatto</string>
+	<string name="button_show_map">Visualizza mappa</string>
+	<string name="button_sms">Invia Messaging</string>
+	<string name="button_web_search">ricerca sul web</string>
+	<string name="button_wifi">Collegarsi alla rete</string>
+	<string name="contents_contact">informazioni di contatto</string>
+	<string name="contents_email">indirizzo e-mail</string>
+	<string name="contents_location">coordinate geografiche</string>
+	<string name="contents_phone">numero di telefono</string>
+	<string name="contents_sms">Messaging indirizzo</string>
+	<string name="contents_text">solo testo</string>
+	<string name="history_clear_text">Cancella cronologia</string>
+	<string name="history_email_title">Barcode Scanner storia</string>
+	<string name="history_send">Invia storia</string>
+	<string name="history_title">storia</string>
+	<string name="menu_about">circa</string>
+	<string name="menu_help">Aiuto</string>
+	<string name="menu_history">storia</string>
+	<string name="menu_settings">impostazioni</string>
+	<string name="menu_share">parte</string>
+	<string name="msg_about">L\'applicazione Android ufficiale del progetto open source ZXing codice a barre.</string>
+	<string name="msg_buggy">Questo dispositivo è noto bug che causano problemi di scansione di codici a barre. Per ulteriori informazioni, visitare http://code.google.com/p/zxing/wiki/FrequentlyAskedQuestions</string>
+	<string name="msg_bulk_mode_scanned">Grosso modo: codice a barre scansionati e salvati</string>
+	<string name="msg_camera_framework_bug">Spiacente, la fotocamera Android riscontrato un problema. Potrebbe essere necessario riavviare il dispositivo.</string>
+	<string name="msg_default_contents">contenuto</string>
+	<string name="msg_default_format">formato</string>
+	<string name="msg_default_meta">metadati</string>
+	<string name="msg_default_mms_subject">Ciao</string>
+	<string name="msg_default_status">Mettere un codice a barre all\'interno del rettangolo mirino per eseguirne la scansione.</string>
+	<string name="msg_default_time">tempo</string>
+	<string name="msg_default_type">tipo</string>
+	<string name="msg_encode_barcode_failed">Impossibile generare il codice a barre richiesto.</string>
+	<string name="msg_encode_contents_failed">Impossibile codificare un codice a barre dai dati forniti.</string>
+	<string name="msg_google_shopper_missing">Shopper di Google non è installato</string>
+	<string name="msg_install_google_shopper">Shopper Google combina la scansione di codici a barre con i prezzi online e locali, recensioni e molto altro ancora senza aprire il browser. Volete provare?</string>
+	<string name="msg_intent_failed">Spiacenti, l\'applicazione richiesta non potrebbe essere lanciato. Il contenuto del codice a barre può essere valido.</string>
+	<string name="msg_loading_apps">Distinta di carico delle applicazioni \ u2026</string>
+	<string name="msg_not_our_results">Si sta lasciando questa applicazione. I risultati della ricerca vedrete non sono legati a questa applicazione.</string>
+	<string name="msg_redirect">redirect</string>
+	<string name="msg_sbc_book_not_searchable">Ci dispiace, questo libro non è ricercabile.</string>
+	<string name="msg_sbc_failed">Siamo spiacenti, la ricerca ha rilevato un problema.</string>
+	<string name="msg_sbc_no_page_returned">Nessuna pagina restituita</string>
+	<string name="msg_sbc_page">pagina</string>
+	<string name="msg_sbc_searching_book">Ricerca libro \ u2026</string>
+	<string name="msg_sbc_snippet_unavailable">Frammento non disponibile</string>
+	<string name="msg_sbc_unknown_page">pagina sconosciuta</string>
+	<string name="msg_share_explanation">È possibile condividere i dati, mostrando un codice a barre sullo schermo e la scansione con un altro telefono.</string>
+	<string name="msg_share_subject_line">Ecco il contenuto di un codice a barre ho scannerizzato</string>
+	<string name="msg_share_text">O digitare un testo e premere Invio</string>
+	<string name="msg_unmount_usb">Spiacente, la scheda SD non è accessibile.</string>
+	<string name="preferences_actions_title">Quando un codice a barre è trovata \ u2026</string>
+	<string name="preferences_bulk_mode_summary">Scansione di codici a barre e salvare molte continuamente</string>
+	<string name="preferences_bulk_mode_title">Bulk modalità di scansione</string>
+	<string name="preferences_copy_to_clipboard_title">Copia negli appunti</string>
+	<string name="preferences_custom_product_search_summary" formatted="false">Utilizzare%s come segnaposto per l\'ID del prodotto, e%f per il formato</string>
+	<string name="preferences_custom_product_search_title">Ricerca URL personalizzato</string>
+	<string name="preferences_decode_1D_title">codici a barre 1D</string>
+	<string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+	<string name="preferences_decode_QR_title">I codici QR</string>
+	<string name="preferences_front_light_summary">Migliora la scansione con poca luce su alcuni telefoni, ma può causare abbagliamento. Non funziona su tutti i telefoni.</string>
+	<string name="preferences_front_light_title">Usare la luce frontale</string>
+	<string name="preferences_general_title">impostazioni generali</string>
+	<string name="preferences_name">impostazioni</string>
+	<string name="preferences_play_beep_title">bip</string>
+	<string name="preferences_remember_duplicates_summary">Scansioni multiple di memorizzare il codice a barre stesso in Storia</string>
+	<string name="preferences_remember_duplicates_title">Ricordate i duplicati</string>
+	<string name="preferences_reverse_image_summary">Attiva dispositivi con una fotocamera frontale solo</string>
+	<string name="preferences_reverse_image_title">Fotocamera immagine invertita</string>
+	<string name="preferences_result_title">risultato impostazioni</string>
+	<string name="preferences_scanning_title">Durante la scansione di codici a barre, decodificare \ u2026</string>
+	<string name="preferences_supplemental_summary">Cercate di recuperare maggiori informazioni sul contenuto del codice a barre</string>
+	<string name="preferences_supplemental_title">Recuperare più informazioni</string>
+	<string name="preferences_vibrate_title">vibrare</string>
+	<string name="result_address_book">Informazioni di contatto trovati</string>
+	<string name="result_calendar">Calendario eventi trovati</string>
+	<string name="result_email_address">Indirizzo e-mail trovati</string>
+	<string name="result_geo">Trovate le coordinate geografiche</string>
+	<string name="result_isbn">libro trovato</string>
+	<string name="result_product">prodotto trovato</string>
+	<string name="result_sms">Trovato Messaging indirizzo</string>
+	<string name="result_tel">Numero di telefono trovato</string>
+	<string name="result_text">Trovato testo</string>
+	<string name="result_uri">URL trovati</string>
+	<string name="result_wifi">Trovato Configurazione WLAN</string>
+	<string name="sbc_name">Google Ricerca Libri</string>
+	<string name="share_name">Condividere tramite codice a barre</string>
+	<string name="title_about">Barcode Scanner v</string>
+	<string name="wa_name">connessione WLAN</string>
+	<string name="wifi_changing_network">Modifica di rete</string>
+	<string name="wifi_connected">collegato</string>
+	<string name="wifi_creating_network">Creazione di rete</string>
+	<string name="wifi_modifying_network">Modifica di rete</string>
+	<string name="wifi_ssid_missing">Nome di rete mancante</string>
+	<string name="wifi_type_incorrect">Rete di tipo non</string>
+	<string name="wifi_connect_failed">Connessione di rete fallito</string>
+	<string name="wifi_ssid_label">Nome di rete</string>
+	<string name="wifi_type_label">tipo</string>
+	<string name="zxing_url">http://code.google.com/p/zxing</string>
+	<string name="RegistrationTitle">Benvenuti MLeads</string>
+	<string name="RegistrationMessage">Sei un utente registrato?</string>
+	<string name="ManageLeadsOnWeb">Oltre a gestire i tuoi contatti sui dispositivi mobili, offriamo anche la possibilità di gestire i lead usando la nostra piattaforma di cloud computing. Si prega di visitare il sito https://www.myleadssite.com sul browser internet oppure cliccare sul bottone qui sotto per gestire i lead sul web. \n \n \t È possibile eseguire tutte le funzionalità principali di seguito indicate sul web utilizzando la nostra piattaforma di cloud computing.
+		\n\n\t1. gestire gli eventi
+		\n\n\t2. gestire i lead
+		\n\n\t3. Preconfigurare seguire modelli di messaggi di posta elettronica che si usa per inviare e-mail al sito web o utilizzando il dispositivo.
+		\n\n\t4. Preconfigurare seguito le azioni da eseguire sul vostro porta specifici per il settore o attività
+		\n\n\t5. Esportare i dati conduce in formato excel da importare poi nel proprio sistema CRM esistente.
+		\n\n\t6. Mantenere il proprio profilo utente, ecc informazione</string>
+	<string name="hello">Ciao a tutti, SplashActivity!</string>
+	<string name="app_name">MLeads</string>
+	<string name="app_loading">Attendere ...!</string>
+	<string name="app_submit_success">I dati presentati con successo!</string>
+	<string name="first_time_online_authenticaton_info">Autenticazione non riuscita - Si sta utilizzando il tempo di prima applicazione devi effettuare il login o registrati in linea</string>
+	<string name="jpeg_compression_ratio">70</string>
+	<string name="offline_mode_label">modalità offline</string>
+	<string name="offline_mode_on_label">su</string>
+	<string name="offline_mode_off_label">via</string>
+	<string name="offline_mode_on">Modalità offline è attiva.</string>
+	<string name="offline_mode_off">Modalità offline è spento.</string>
+	<string name="wait_while_save_message">Attendere prego, risparmiando.</string>
+	<string name="no_special_char">Si prega di don \'t inserire caratteri speciali qui.</string>
+	<string name="alphabets_and_number_only">Si prega di inserire alfabeto e numeri.</string>
+	<string name="sync_started">Sync ha iniziato</string>
+	<string name="sync_finished">Sync finito</string>
+	<string name="all_label">tutti</string>
+	<string name="spinner_event_label">scegliere Evento</string>
+	<string name="login_failure">Autenticazione non riuscita - username o la password errata.</string>
+	<string name="app_submit_ok">Ok</string>
+	<string name="RegisterEmailLabel">E-mail *</string>
+	<string name="UsernameLabel">Nome Utente *</string>
+	<string name="PasswordLabel">Password *</string>
+	<string name="RegistrationLabel">registro</string>
+	<string name="LoginValidUsernameHint">Nome utente deve contenere alfabeti, solo numeri o può essere id-mail.</string>
+	<string name="LoginUsernameHint">Inserisci il tuo nome utente qui.</string>
+	<string name="LoginPasswordHint">Si prega di inserire la password.</string>
+	<string name="ValidUsernameHint">Nome utente deve contenere at least 6 caratteri.</string>
+	<string name="ValidPasswordHint">La password deve contenere at least 6 caratteri.</string>
+	<string name="LoginLabel">Accedi per MLeads</string>
+	<string name="LoginButtonLabel">accesso</string>
+	<string name="ForgotPasswordLabel">Non riesco ad accedere al mio account</string>
+	<string name="ResetButtonLabel">reset</string>
+	<string name="FirstNameLabel">Nome *</string>
+	<string name="LastNameLabel">cognome</string>
+	<string name="ConfirmPasswordLabel">Riscrivi la password *</string>
+	<string name="EmailLabel">E-mail *</string>
+	<string name="RegistrationButtonLabel">registro</string>
+	<string name="FirstNameHint">Inserisci il tuo nome qui.</string>
+	<string name="LastNameHint">Inserisci il tuo cognome qui.</string>
+	<string name="ConfirmPasswordHint">Si prega di inserire la password digitare di nuovo qui.</string>
+	<string name="BothPasswordNotMatchHint">Entrambe le password non coincidono.</string>
+	<string name="EmailHint">Inserisci e-mail qui.</string>
+	<string name="registration_failure">Impossibile registrare il %1$s.</string>
+	<string name="registration_success">Registrazione completata correttamente. Nel frattempo, è possibile iniziare a utilizzare il tuo account accedendo.</string>
+	<string name="EventsLabel">eventi</string>
+	<string name="ReferFriendWould">Ti piacerebbe vedere un amico?</string>
+	<string name="ReferMandatory">(*) Si tratta di campi obbligatori.</string>
+	<string name="ReferTitle">"Hai degli amici e colleghi che volessero utilizzare questa applicazione e di ottenere il beneficio di connettersi e catturare la loro porta in maniera più veloce e meglio?"</string>
+	<string name="Refer_Own">Non si può consultare il proprio mail-id</string>
+	<string name="CancelButtonLabel">annullare</string>
+	<string name="NoEventsFoundLabel">Nessun evento trovato.</string>
+	<string name="MyLeadsLabel">Il mio Leads</string>
+	<string name="ReferFriendLabel">Consultare amico</string>
+	<string name="FriendNameLabel">nome</string>
+	<string name="FriendEmailLabel">e-mail</string>
+	<string name="YourNameLabel">Il tuo nome *</string>
+	<string name="YourEmailLabel">La tua email *</string>
+	<string name="Friend1">Amico 1 *</string>
+	<string name="Friend2">Amico 2</string>
+	<string name="Friend3">Amico 3</string>
+	<string name="Friend4">Amico 4</string>
+	<string name="Friend5">Amico 5</string>
+	<string name="FollowUPActionCompletedTitle">Hai inviare il messaggio e-mail?</string>
+	<string name="FollowUpMessagesLabel">Modelli di Messaggi e-mail</string>
+	<string name="FollowUpActionLabel">Azioni successive</string>
+	<string name="UserFollowUpActionLabel">Definiti dall\'utente Follow Up Azioni</string>
+	<string name="MasterFollowUpActionLabel">Maestro Follow Up Azioni</string>
+	<string name="PasswordResetLabel">password Reset</string>
+	<string name="SynchronizeToServerLabel">Per sincronizzare i server</string>
+	<string name="MyLeadsOnWeb">Gestire Cavi sul Web</string>
+	<string name="ExitLabel">uscita</string>
+	<string name="LogOutLabel">Logout</string>
+	<string name="BackButtonLabel">Indietro</string>
+	<string name="AddSoundDoneButtonLabel">fatto</string>
+	<string name="AddLeadLabel">Aggiungi Piombo</string>
+	<string name="AddLeadButtonLabel"> + </string>
+	<string name="LeadsLabel">porta</string>
+	<string name="NoEventsTitle">Nessun evento.</string>
+	<string name="NoLeadsFoundLabel">Non conduce trovato.</string>
+	<string name="SelectEventLabel">evento</string>
+	<string name="EventNameLabel">Seleziona * Evento</string>
+	<string name="LeadFirstNameLabel">Piombo Nome</string>
+	<string name="CompanyNameLabel">azienda</string>
+	<string name="LeadLastNameLabel">Piombo Cognome</string>
+	<string name="AddLeadCaptureImageLabel">Acquisizione Immagine</string>
+	<string name="AddLeadFollowUpMessageLabel">Azioni successive</string>
+	<string name="AddLeadPhoneLabel">telefono *</string>
+	<string name="AddLeadRecordMemoLabel">Record Memo vocale</string>
+	<string name="EditLeadRecordMemoLabel">Modifica Memo Record</string>
+	<string name="AddLeadNotesLabel">note</string>
+	<string name="No_Action_Completed_Label">Nessuna azione follow-Up Completato</string>
+	<string name="PlayTextViewLabel">giocare</string>
+	<string name="EventNameHint">Inserisci il tuo nome dell\'evento qui.</string>
+	<string name="CompanyNameHint">Inserisci qui il nome dell\'azienda.</string>
+	<string name="PhoneHint">Inserisci telefono qui.</string>
+	<string name="PhoneValidHint">Telefono non deve essere di 15 cifre solo.</string>
+	<string name="FollowupActionsHint">Inserisci modello di messaggi di posta elettronica qui.</string>
+	<string name="NotesHint">Si prega di inserire le note qui.</string>
+	<string name="add_lead_success">Piombo %1$s inserita correttamente.</string>
+	<string name="add_lead_failure">Impossibile aggiungere piombo %1$s.</string>
+	<string name="Action_Completed">Azione follow-Up Completato</string>
+	<string name="edit_lead_success">Piombo %1$s modificato con successo.</string>
+	<string name="edit_lead_failure">Impossibile modificare Lead %1$s.</string>
+	<string name="DeleteLeadTitle">Eliminare Piombo</string>
+	<string name="DeleteLeadMessage">Sei sicuro di voler cancellare?</string>
+	<string name="delete_lead_success">Piombo %1$s eliminato con successo.</string>
+	<string name="delete_lead_failure">Impossibile eliminare piombo %1$s.</string>
+	<string name="SaveButtonLabel">salvare</string>
+	<string name="ReferSubmitButtonLabel">presentare</string>
+	<string name="PhoneLabel">telefono</string>
+	<string name="EditLeadLabel">Modifica di piombo</string>
+	<string name="EditLeadSendMailLabel">Invia messaggi</string>
+	<string name="YesButtonLabel">sì</string>
+	<string name="NoButtonLabel">non</string>
+	<string name="ResetPasswordLabel">password Reset</string>
+	<string name="DeleteFollowupMessageDialogMessage">Sei sicuro di voler cancellare?</string>
+	<string name="ResetPasswordCurrentPasswordLabel">Password * corrente</string>
+	<string name="ResetPasswordNewPasswordLabel">Nuova password *</string>
+	<string name="ResetPasswordReTypePasswordLabel">Re Password *</string>
+	<string name="ResetPasswordCurrentPasswordHint">Si prega di inserire la password corrente qui.</string>
+	<string name="ResetPasswordNewPasswordHint">Si prega di inserire la password di nuovo qui.</string>
+	<string name="ResetPasswordReTypePasswordHint">Inserisci nuovo tipo di password qui.</string>
+	<string name="reset_password_failure">Reimpostazione della password non riuscito.</string>
+	<string name="reset_password_success">La password reset.</string>
+	<string name="ResetPasswordChangePasswordButtonLabel">reset</string>
+	<string name="ResetPasswordResetButtonLabel">reset</string>
+	<string name="EventListLabel">eventi</string>
+	<string name="AddEventLabel">Aggiungi Evento</string>
+	<string name="AddEventLocationLabel">Località *</string>
+	<string name="AddEventCityLabel">città *</string>
+	<string name="AddEventStateLabel">stato</string>
+	<string name="AddEventCountryLabel">paese</string>
+	<string name="AddEventDateLabel">data</string>
+	<string name="AddEventPhoneLabel">telefono</string>
+	<string name="AddEventPurposeLabel">scopo</string>
+	<string name="AddEventContactPersonLabel">Persona di contatto</string>
+	<string name="AddEventEventNameHint">Inserisci il tuo nome dell\'evento qui.</string>
+	<string name="AddEventLocationHint">Inserisci posizione qui.</string>
+	<string name="AddEventCityHint">Inserisci il tuo città qui.</string>
+	<string name="AddEventStateHint">Inserisci stato qui.</string>
+	<string name="AddEventCountryHint">Inserisci paese qui.</string>
+	<string name="AddEventDateHint">Inserisci la data qui.</string>
+	<string name="AddValidEventDateHint">Inserisci oggi \'s o dopo oggi \'s data.</string>
+	<string name="AddEventPurposeHint">Inserisci scopo qui.</string>
+	<string name="AddEventPurposeValidHint">Scopo dovrebbe contenere alfabeti, numeri e trattini solo.</string>
+	<string name="AddEventContactPersonHint">Inserisci persona di contatto qui.</string>
+	<string name="add_event_success">Evento %1$s inserita correttamente.</string>
+	<string name="add_event_failure">Evento %1$s non poteva essere inserita correttamente.</string>
+	<string name="edit_event_success">Evento %1$s modificato con successo.</string>
+	<string name="edit_event_failure">Evento %1$s non poteva essere modificato con successo.</string>
+	<string name="delete_event_success">Evento %1$s cancellato con successo.</string>
+	<string name="delete_event_failure">Impossibile eliminare evento %1$s.</string>
+	<string name="DeleteEventTitle">elimina evento</string>
+	<string name="DeleteEventMessage">Sei sicuro, di voler cancellare?</string>
+	<string name="DeleteEventDialogMessage">Sei sicuro di voler cancellare?</string>
+	<string name="NoFollowupActionFoundLabel">No Follow Up Action trovato.</string>
+	<string name="FollowupActionMasterLabel">Azioni successive</string>
+	<string name="FollowupActionListMasterActionLabel">Maestro Follow Up Action</string>
+	<string name="FollowupActionListUserActionLabel">Definiti dall\'utente Follow Up Action</string>
+	<string name="FollowupActionListActionLabel">Nome azione</string>
+	<string name="AddFollowUpActionTitleLabel">Aggiungi Follow Up Action</string>
+	<string name="AddFollowUpActionLabel">Follow Up * Azione</string>
+	<string name="AddFollowupActionActionHint">Si prega di inserire il nome azione qui.</string>
+	<string name="add_followup_action_success">Follow Up Azione %1$s inserita correttamente.</string>
+	<string name="add_followup_action_failure">Follow Up Azione %1$s non poteva essere inserita correttamente.</string>
+	<string name="edit_followup_action_success">Follow Up Azione %1$s modificato con successo.</string>
+	<string name="edit_followup_action_failure">Follow Up Azione %1$s non poteva essere modificato con successo.</string>
+	<string name="DeleteFollowupActionTitle">Eliminare Follow Up Action</string>
+	<string name="delete_followup_action_success">Follow Up Azione %1$s cancellato con successo.</string>
+	<string name="delete_followup_action_failure">Impossibile eliminare il controllo delle misure %1$s.</string>
+	<string name="DeleteFollowupActionMessage">Sei sicuro di voler cancellare?</string>
+	<string name="ForgotPasswordEmailIDLabel">email ID</string>
+	<string name="ForgotPasswordEmailIDHint">Inserisci e-mail-Id qui</string>
+	<string name="forgot_password_failure">Richiesta di password non è stato inviato a %1$s con successo.</string>
+	<string name="forgot_password_success">Richiesta la password inviata con successo.</string>
+	<string name="ForgotPasswordRequestPasswordButtonLabel">richiesta password</string>
+	<string name="FollowupMessageLabel">messaggio *</string>
+	<string name="NoFollowupMessageFoundLabel">Nessun modello Messaggio email trovati.</string>
+	<string name="AddFollowupMessageActiveLabel">attivo</string>
+	<string name="AddFollowupMessageInActiveLabel">inattiva</string>
+	<string name="EditFollowupMessageLabel">Modifica messaggio Modello Email</string>
+	<string name="AddFollowupMessageLabel">Aggiungi Modello Email Messaggio</string>
+	<string name="FollowupMessageSubjectLabel">Oggetto *</string>
+	<string name="AddFollowupMessageMessageLabel">messaggio</string>
+	<string name="AddFollowupMessageActiveStatusLabel">stato</string>
+	<string name="add_followup_message_success">Modelli di Messaggi e-mail %1$s inserita correttamente.</string>
+	<string name="add_followup_message_failure">Impossibile aggiungere Email Modello Messaggio %1$s.</string>
+	<string name="edit_followup_message_success">Messaggio Email Modello %1$s modificato con successo.</string>
+	<string name="edit_followup_message_failure">Impossibile modificare i template e-mail Messaggio %1$s.</string>
+	<string name="DeleteFollowupMessageTitle">Elimina modello Email Messaggio</string>
+	<string name="delete_followup_message_success">Messaggio E-mail modello %1$s eliminato con successo.</string>
+	<string name="delete_followup_message_failure">Impossibile eliminare Modello Email Messaggio %1$s.</string>
+	<string name="EditEventLabel">Modifica evento</string>
+	<string name="AddFollowupActionTitleLabel">Aggiungi Follow Up Action</string>
+	<string name="EditFollowupActionTitleLabel">Modifica Follow Up Action</string>
+	<string name="RequestPasswordButtonLabel">richiesta password</string>
+	<string name="AddFollowupMessageSubjectHint">Inserisci e-mail soggetti modello di messaggio qui.</string>
+	<string name="AddFollowupMessageMessageHint">Inserisci e-mail Messaggio modello di messaggio qui.</string>
+	<string name="cache_dir">.mLeads/temp</string>
+	<string name="EmailInvalidHint">Inserisci e-mail valido-Id qui</string>
+	<string name="NameInvalidHint">Inserisci il tuo nome valido qui</string>
+	<string name="NameFieldHint">Inserisci il tuo nome qui</string>
+	<string name="EmailFieldHint">Inserisci e-mail-Id qui</string>
+	<string name="ReferSuccessfully">Sei riuscito a vedere i tuoi amici</string>
+	<string name="ReferError">Errore nel amici si riferiscono</string>
+	<string name="ScanQRCodecard">QR Code</string>
+	<string name="eventCityField">città</string>
+	<string name="eventLocationField">posizione</string>
+	<string name="securityQuesField">Domanda di sicurezza *</string>
+	<string name="securityAnswerField">risposta *</string>
+	<string name="myProfileTitle">Il mio profilo</string>
+	<string name="myProfileFName">Nome *</string>
+	<string name="myProfileLName">Nome * Ultimo</string>
+	<string name="myProfileUType">Tipo di utente</string>
+	<string name="myProfilePersonal">personale</string>
+	<string name="myProfileBusiness">affari</string>
+	<string name="myProfileCName">Nome Azienda</string>
+	<string name="myProfileAddress">indirizzo</string>
+	<string name="myProfileCity">città</string>
+	<string name="myProfileZipCode">codice di avviamento postale</string>
+	<string name="myProfileState">stato</string>
+	<string name="myProfileCountry">paese</string>
+	<string name="myProfileCWebsite">Sito Web aziendale</string>
+	<string name="myProfilePhone">telefono</string>
+	<string name="myProfileMobile">mobile</string>
+	<string name="myProfileHow">Come hai saputo di noi?</string>
+	<string name="registerAgreeTerms">Accetto i termini e le condizioni</string>
+	<string name="Acceptterms">È necessario accettare i termini e le condizioni al fine di registro</string>
+	<string name="FirstNameAlphabetHint">Nome primo dovrebbe essere in alfabeti solo.</string>
+	<string name="LastNameAlphabetHint">Cognome deve essere in Alfabeti solo.</string>
+	<string name="CompanyNameValidHint">Nome azienda dovrebbe essere in alfabeti e numeri.</string>
+	<string name="AddFollowupActionValidHint">Follow Up azione dovrebbe essere in alfabeti e numbersonly.</string>
+	<string name="app_menu_info_label">Info</string>
+	<string name="app_menu_help_label">Aiuto</string>
+	<string name="addNoteLabel">Aggiungi nota qui</string>
+	<string name="editNoteLabel">Modifica nota qui</string>
+	<string name="addNoteTitle">Aggiungi nota</string>
+	<string name="editNoteTitle">Modifica nota</string>
+	<string name="EventTitleLabel">evento</string>
+	<string name="EditLeadReCaptureImage">Ri-acquisizione di immagini</string>
+	<string name="PauseLabel">pausa</string>
+	<string name="PlayLabel">giocare</string>
+	<string name="LastNameCompulsoryLabel">Nome * Ultimo</string>
+	<string name="defaultMessage">messaggio</string>
+	<string name="defaultSubject">soggetto</string>
+	<string name="defaultName"><u>nome</u></string>
+	<string name="defaultImage">immagine</string>
+	<string name="defaultCName"><u>Nome Azienda</u></string>
+	<string name="linkedin_message">Invitato con successo tramite LinkedIn</string>
+	<string name="linkedin_error">LinkedIn comunicazione non riuscita</string>
+	<string name="defaultActionCompletedLeadName">Nome Piombo</string>
+	<string name="defaultActionCompletedSendDate">Data di invio</string>
+	<string name="defaultActionCompletedEmail">e-mail</string>
+	<string name="AddLeadReCaptureImage">acquisizione delle immagini</string>
+	<string name="Action_Completed1">follow-up</string>
+	<string name="Web_Title">Cognome non inseriti. Si prega di immettere il cognome</string>
+	<string name="Web_LastName">cognome</string>
+	<string name="Web_OKButton">OK</string>
+	<string name="Web_CancelButton">annullare</string>
+	<string name="Address_Book">Condurre con successo aggiunto ai contatti</string>
+	<string name="Address_Book_Error">Errore in aggiunta portare a contatti</string>
+	<string name="TWODBAR_CODE">Scansione di codici a barre 2D</string>
+	
+	<string name="USER_MANUAL_LOGIN">accesso</string>
+	<string name="USER_MANUAL_REGISTER">registro</string>
+	<string name="USER_MANUAL_HOME">casa</string>
+	<string name="USER_MANUAL_EVENTS">eventi</string>
+	<string name="USER_MANUAL_ADDEVENT">Aggiungi Evento</string>
+	<string name="USER_MANUAL_EDITEVENT">Modifica evento</string>
+	<string name="USER_MANUAL_LEADS">Il mio Leads</string>
+	<string name="USER_MANUAL_ADDLEAD">Aggiungi Piombo</string>
+	<string name="USER_MANUAL_EDITLEAD">Modifica di piombo</string>
+	<string name="USER_MANUAL_EMAILMESSAGE">Modelli di Messaggi e-mail</string>
+	<string name="USER_MANUAL_ADDEMAILMESSAGE">Aggiungi Modello Email Messaggio</string>
+	<string name="USER_MANUAL_EDITEMAILMESSAGE">Modifica messaggio Modello Email</string>
+	<string name="USER_MANUAL_FOLLOWUP">Follow-up</string>
+	<string name="USER_MANUAL_ADDFOLLOWUP">Aggiungi Follow-up azione</string>
+	<string name="USER_MANUAL_EDITFOLLOWUP">Modifica di follow-up azione</string>
+	<string name="USER_MANUAL_RESETPASSWORD">password Reset</string>
+	<string name="USER_MANUAL_SYNCTOSERVER">Sincronizzazione al server</string>
+	<string name="USER_MANUAL_MANAGELEADS">Cavi gestire sul web</string>
+	<string name="USER_MANUAL_GOOGLESEARCH">Cerca con Google</string>
+	<string name="USER_MANUAL_LINKEDINSEARCH">LinkedIn Ricerca</string>
+	<string name="USER_MANUAL_COMPANYPROFILE">profilo aziendale</string>
+	<string name="USER_MANUAL_ADDTOCONTACT">Aggiungi alla rubrica</string>
+	<string name="USER_MANUAL_REFERFRIEND">Consultare amico</string>
+	<string name="USER_MANUAL_ACTIONSCOMPLETED">Le email inviate</string>
+	<string name="USER_MANUAL_LINKEDININVITATION">LinkedIn Invito</string>
+	<string name="USER_MANUAL_SORTINGLEADS">Ordinamento Cavi Lista</string>
+	
+	<string name="HELP_ADDFOLLOW">In questa schermata, un solo nome dell\'azione campo è obbligatorio aggiungere follow-up. L\'utente deve toccare il tasto "Salva" in alto a destra dello schermo per presentare tutti i dettagli.
+	\n\nSe il follow-up inserita correttamente allora utente sarà informato dal messaggio. Dopo l\'aggiunta di follow-up azione da parte dell\'utente verrà reindirizzato al follow-up elencare le azioni sullo schermo.
+	</string>
+	<string name="HELP_ADDEVENT">In questa schermata dopo aver fornito il nome dell\'evento, nome della località, nome della città, la data e l\'utente del telefono può aggiungere un evento. Opzionalmente l\'utente può anche fornire Stato, Nazione, lo scopo, note per tale evento. L\'utente deve toccare il tasto "Salva" in alto a destra dello schermo per presentare i dettagli dell\'evento.
+	\n\nSe l\'evento ha aggiunto con successo allora utente sarà informato con un messaggio. Dopo l\'aggiunta di utenti evento verrà reindirizzato alla lista eventi schermo.
+	</string>
+	<string name="HELP_EDITFOLLOW">In questa schermata, tutti i dettagli di particolari azioni di follow-up vengono mostrati all\'utente, che può essere modificato dall\'utente.
+	\n\nDopo la modifica, l\'utente può salvare toccare il pulsante in alto a destra dello schermo per presentare i dettagli aggiornati. Se Follow-up d\'azione aggiornato con successo allora utente sarà informato tramite messaggio.
+	\n\nDopo la modifica di follow-up azione da parte dell\'utente verrà reindirizzato al follow-up elencare le azioni sullo schermo.
+	</string>
+	<string name="HELP_ADDLEAD">In questa schermata dopo aver selezionato il nome dell\'evento, nome, cognome, nome dell\'azienda, e-mail e telefono utente può aggiungere un piombo.
+	\n\nOpzionalmente l\'utente può anche fornire il cognome, l\'immagine relativo al piombo, memo vocale relativo al piombo, note per che portano.
+	\n\nPer catturare l\'immagine utente può toccare il tasto accanto a catturare l\'immagine dell\'etichetta. Questo apre la fotocamera per catturare immagini. Dopo l\'acquisizione dell\'immagine, verrà visualizzata come miniatura sostituendo cattura-immagine dell\'icona.
+	\n\nL\'utente può registrare memo vocale premendo il pulsante accanto alla registrazione memo. Dopo aver toccato il record pulsante sullo schermo apparirà memo vocali. In cui l\'utente può registrare la voce toccando al microfono come icona, per fermare lo stesso tasto di registrazione. Utente suono da riprodurre registrati possono toccare il tasto di sotto di tale icona microfono.
+	\n\nL\'utente deve toccare il tasto "Salva" in alto a destra dello schermo per inserire i nominativi di piombo. Se portano aggiunto con successo allora utente sarà informato con un messaggio. Dopo l\'aggiunta degli utenti portano verrà reindirizzato alla porta sullo schermo quotazione.
+	</string>
+	<string name="HELP_EDITEVENT">In questa schermata, tutti i dettagli del caso particolare vengono mostrati all\'utente, che può essere modificato dall\'utente.
+	\n\nDopo la modifica, l\'utente può salvare toccare il pulsante in alto a destra dello schermo per presentare i dettagli dell\'evento aggiornati. Se l\'evento aggiornato con successo allora utente sarà informato con un messaggio. Dopo la modifica dell\'utente evento verrà reindirizzato alla lista eventi schermo.
+	</string>
+	<string name="HELP_EDITLEAD">In questa schermata, tutti i dettagli di piombo particolare vengono mostrati all\'utente, che può essere modificato dall\'utente.
+	\n\nDopo la modifica, l\'utente può salvare toccare il pulsante in alto a destra dello schermo per presentare i dettagli aggiornati piombo. Se portano aggiornato con successo allora utente sarà informato con un messaggio. Dopo la modifica degli utenti di piombo verrà reindirizzato alla porta sullo schermo quotazione.
+	</string>
+	<string name="HELP_EDITEMAILMESSAGE">In questa schermata, tutti i dettagli del modello specifico messaggio di posta elettronica vengono mostrati all\'utente, che può essere modificato dall\'utente.
+	\n\nDopo la modifica, l\'utente può salvare toccare il pulsante in alto a destra dello schermo per presentare i dettagli aggiornati. Se il messaggio di posta elettronica modello aggiornato con successo allora utente sarà informato con un messaggio.
+	\n\nDopo aver modificato il messaggio di posta elettronica dell\'utente modello verrà reindirizzato alla schermata di lista messaggio di posta elettronica.
+	</string>
+	<string name="HELP_ADDEMAILMESSAGE">In questa schermata dopo aver selezionato il nome dell\'evento, fornendo oggetto e il messaggio utente può aggiungere un modello di messaggi di posta elettronica.
+	\n\nOpzionalmente l\'utente può anche fornire Stato (vivi o morti) per quel modello di messaggio di posta elettronica. L\'utente deve toccare il tasto "Salva" in alto a destra dello schermo per presentare tutti i dettagli.
+	\n\nSe il modello di messaggio di posta elettronica inserita correttamente allora utente sarà informato con un messaggio. Dopo aver aggiunto email dell\'utente modello di messaggio verrà reindirizzato alla schermata di lista e-mail messaggio.
+	</string>
+	<string name="HELP_EVENTS">In questa schermata utente può vedere l\'elenco degli eventi in ordine decrescente della loro data. Ogni riga di record verrà visualizzato il nome dell\'evento, luogo, città e data dell\'evento. Dopo aver toccato particolare record della manifestazione, striscia azione sarà visualizzata nella parte inferiore dello schermo.
+	\n\nQuesto conterrà icona eliminare e modificare a cancellare e aggiornare il record rispettivamente. Toccando l\'icona + in alto a destra dello schermo di utente può aggiungere un evento.
+	\n\nCome utente tocca cancellare l\'icona, di dialogo sembrano confermare che l\'utente è sicuro di eliminare il record oppure no.
+	</string>
+	<string name="HELP_FOLLOWUPACTION">In questa schermata utente può vedere l\'elenco delle azioni di follow-up, che sono in realtà modo preferibile di comunicazione per l\'evento.
+	\n\nDopo aver toccato record particolare di azioni di seguito, striscia azione sarà visualizzata nella parte inferiore dello schermo. Questo conterrà icona eliminare e modificare a cancellare e aggiornare il record rispettivamente.
+	\n\nToccando l\'icona + in alto a destra dello schermo di utente può aggiungere una nuova azione di follow-up.
+	\n\nCome utente tocca cancellare l\'icona, di dialogo sembrano confermare che l\'utente è sicuro di eliminare il record oppure no.
+	</string>
+	<string name="HELP_HOME">Qui, in casa degli utenti schermo può Logout toccando Logout pulsante in alto a sinistra dello schermo.
+	\n\nL\'utente può ottenere aiuto toccando icona della Guida "?" In alto a destra o possano ottenere informazioni toccando l\'icona Info "I" accanto ad aiutare icona.
+	\n\nQui di seguito sono 6 pulsanti a disposizione dell\'utente
+	\n\neventi:
+	\n\nToccando questo utente pulsante dell\'evento possono visualizzare l\'elenco degli eventi.
+	\n\nIl mio Leads:
+	\n\nPremendo questo pulsante My Lead utenti possono visualizzare l\'elenco di contatti.
+	\n\nE-mail Messaggio modelli:
+	\n\nToccando questo tasto Email Messaggio modelli utente possono visualizzare l\'elenco dei modelli di messaggi di posta elettronica, che può essere utilizzato per l\'auto - piena messaggio di posta predefinito per inviare facilmente con un minor numero di personalizzazioni come i nomi che fornisce ecc ..
+	\n\nAzioni di seguito:
+	\n\nToccando di follow-up pulsante azioni dell\'utente possono visualizzare l\'elenco delle azioni di seguito, che si informa solo su via di comunicazione preferibilmente con particolare persona.
+	\n\nReset Password:
+	\n\nToccando il tasto Reset password utente può reimpostare la password dopo aver fornito le informazioni richieste.
+	\n\nLa sincronizzazione al server:
+	\n\nToccando "Sincronizza al server" utente pulsante è possibile sincronizzare i propri dati connesso al server online, in modo utente può utilizzare dal sito anche.
+	</string>
+	<string name="HELP_LEAD">In questa schermata utente può vedere l\'elenco di contatti in base agli eventi, l\'utente può filtrare porta selezionando nome dell\'evento toccando controllo accanto a "selezionare evento".
+	\n\nOgni riga di record verrà visualizzato il nome piombo, il nome dell\'azienda e il nome dell\'evento per quel piombo.
+	\n\nCome utente tocca fila condurre, in particolare, striscia azione in fondo apparirà. Che contiene chiamate, Messaging e e-mail, eliminare e modificare le icone per chiamare, inviare SMS, inviare e-mail, cancellare e modificare piombo piombo rispettivamente.
+	\n\nCome utente tocca cancellare l\'icona, di dialogo sembrano confermare che l\'utente è sicuro di eliminare il record oppure no. Se tocca utente poi icona di modifica utente verrà reindirizzato alla schermata di modifica piombo.
+	\n\nL\'utente può aggiungere nuovi contatti toccando l\'icona "+" in alto a destra della lista schermo cavi. 
+	</string>
+	<string name="HELP_LOGIN">Come MLeads apre spruzzi appare quindi pagina di login viene.
+	\n\nNella pagina di accesso utente può cliccare su registrati se l\'utente non è registrato e se l\'utente già registrati possono inserire username e password e l\'utente può procedere premendo il tasto "login".
+	\n\nSe l\'utente dimenticato la password allora l\'utente può toccare password dimenticata? pulsante in fondo alla schermata di login, reindirizza Quale utente a schermo dimenticato la password.
+	\n\nL\'utente può toccare l\'icona Info in alto a sinistra della schermata di accesso per ottenere informazioni su MLeads app.
+	\n\nSupponiamo utente è registrato e tocca registrare pulsante quindi registrare schermo sarà aperto.
+	\n\nSe utente registrato poi in modalità offline pulsante apparirà a lavorare offline se desideri degli utenti. In seguito al successivo accesso al server online, la sincronizzazione sarà fatto.
+	</string>
+	<string name="HELP_MANAGELEADSONWEB">In questa schermata utente può visualizzare le caratteristiche possono essere raggiunti tramite MLeads web. C\'è un pulsante che dice "gestire i lead on Web". Si aprirà una WebView e reindirizzare a "https://www.myleadssite.com".
+	</string>
+	<string name="HELP_REGISTER">Nella schermata di registrazione, l\'utente può iscriversi fornendo nome, cognome, username, password, password digitare di nuovo ed e-mail.
+	\n\nCome utente si registra con successo, l\'utente reindirizza alla schermata di accesso di login con nome utente fornito nella schermata di registrazione.
+	\n\nQui in schermata di login, se l\'utente in precedenza login con successo allora quelle credenziali (nome utente, password) sono memorizzati e auto-pieno in tempo prossimo login.
+	</string>
+	<string name="HELP_RESET">Per ripristinare la password in questa schermata, l\'utente deve fornire la password corrente, la nuova password e confermare la nuova password.
+	\n\nDopo aver compilato questi dettagli user dovrebbe toccare il tasto "Salva" in alto a destra dello schermo. Se la reimpostazione della password fatto, allora utente sarà informare con un messaggio e reindirizzato alla schermata di login.
+	</string>
+	<string name="HELP_EMAILMESSAGE">In questa schermata utente può vedere l\'elenco dei modelli di posta elettronica evento-saggio messaggio, in cui ciascun record mostrerà oggetto e il messaggio.
+	\n\nL\'utente può filtrare modelli di messaggi e-mail selezionando evento dal controllo accanto a "Select evento" etichetta.
+	\n\nDopo aver toccato record particolare di modelli di messaggi e-mail, striscia azione sarà visualizzata nella parte inferiore dello schermo. Questo conterrà icona eliminare e modificare a cancellare e aggiornare il record rispettivamente.
+	\n\nToccando l\'icona + in alto a destra dello schermo di utente può aggiungere un nuovo modello di messaggio di posta elettronica.
+	\n\nCome utente tocca cancellare l\'icona, di dialogo sembrano confermare che l\'utente è sicuro di eliminare il record oppure no.
+	</string>
+	<string name="HELP_SYNCTOSERVER">Come utente tocca il pulsante record in linea verranno sincronizzati al server in background. Stesso processo si avvia anche in background come login utente e la schermata iniziale appare all\'utente.
+	</string>
+	<string name="HELP_GOOGLESEARCH">Quando l\'utente fa clic sul pulsante di Google, allora cercherà, secondo la sua / il suo nome, il cognome e nome della società in google.it chiederà all\'utente il cognome, se l\'ultimo nome utente non è disponibile.
+	</string>
+	<string name="HELP_LINKEDINSEARCH">Quando l\'utente fa clic sul pulsante collegati in poi cercherà nome utente in base, il cognome in Linkedin facilmente. chiederà all\'utente il cognome, se l\'ultimo nome utente non è disponibile.
+	</string>
+	<string name="HELP_COMPANYPROFILE">Quando l\'utente fa clic sul pulsante profilo aziendale, allora si aprirà sito web della società nel browser.</string>
+	<string name="HELP_ADDTOCONTACT">Quando l\'utente fa clic sul pulsante addtocontact allora verrà visualizzato nome dell\'utente, cognome, email e foto del profilo, se un\'immagine exists.user profilo può modificare il suo / la sua info.
+	</string>
+	<string name="HELP_REFERFRIEND">Quando l\'utente fa clic sul pulsante referfriend allora l\'utente può aggiungere cinque amici a MLeads.
+	</string>
+	<string name="HELP_ACTIONSCOMPLETED">Quando l\'utente seleziona porta e fa clic sul pulsante di posta elettronica inviare poi si aggiunge in email inviate.
+	</string>
+	<string name="HELP_LINKEDININVITATION">Come utente tocca questo tasto se l\'applicazione LinkedIn è installato nel dispositivo dell\'utente \'s di applicazione si aprirà il resto LinkedIn WebView si apre e l\'utente può in grado di invitare selezionati per portare la sua / il suo profilo LinkedIn.
+	</string>
+	<string name="HELP_SORTLEADS">Quando l\'utente fa clic sulla colonna del Nome o sito internet della Società di schermata con l\'elenco di piombo poi l\'utente può in grado di ordinare conduce da colonna.
+	</string>
+	
+	<string name="TERMSANDCONDITION_PARTIES">PARTI</string>
+	<string name="TERMSANDCONDITION_MLEADSSERVICE">MOBILELEADS SERVIZIO</string>
+	<string name="TERMSANDCONDITION_USEOFMLEADS">UTILIZZO DI MOBILELEADS</string>
+	<string name="TERMSANDCONDITION_IPROPERTY">PROPRIETA \'INTELLETTUALE</string>
+	<string name="TERMSANDCONDITION_LICENSED">DOMANDA DI LICENZA</string>
+	<string name="TERMSANDCONDITION_USERACCOUNT">ACCOUNT UTENTE E SICUREZZA</string>
+	<string name="TERMSANDCONDITION_CONFIDENTIALITY">RISERVATEZZA</string>
+	<string name="TERMSANDCONDITION_IPROPERTYRIGHTS">DIRITTI DI PROPRIETA \'INTELLETTUALE</string>
+	<string name="TERMSANDCONDITION_PRODUCTCLAIMS">PRODOTTO RECLAMI</string>
+	<string name="TERMSANDCONDITION_ACKNOW">RICONOSCIMENTO</string>
+	<string name="TERMSANDCONDITION_WAIVER">RINUNCIA E INDENNITÀ</string>
+	<string name="TERMSANDCONDITION_CHANGES">CAMBIAMENTI</string>
+	<string name="TERMSANDCONDITION_LEGALCOMPLIANCE">COMPLIANCE LEGALE</string>
+	<string name="TERMSANDCONDITION_DEVELOPER">SVILUPPATORE NOME ED INDIRIZZO</string>
+	<string name="TERMSANDCONDITION_THIRDPARTYTERMS">TERMINI DI TERZI DI ACCORDO</string>
+	<string name="TERMSANDCONDITION_THIRDPARTYBENEFICIARY">PARTY terzi beneficiari</string>
+	<string name="TERMSANDCONDITION_PAYMENT">PAGAMENTO</string>
+	<string name="TERMSANDCONDITION_SALES">VENDITE FISCALE</string>
+	<string name="TERMSANDCONDITION_OTHERTERMS">ALTRI TERMINI E CONDIZIONI</string>
+	<string name="TERMSANDCONDITION_GOVERNING">LEGGE</string>
+	<string name="TERMSANDCONDITION_MISS">VARIE</string>
+	
+	<string name="TERMSANDCONDITION_PARTIES_DETAIL">TRI-FORCE SERVIZI DI CONSULENZA, Inc. ("MLeads LLC") è il proprietario dell\'applicazione MLeads ("MLeads"). L\'uso di MLeads è soggetta a l\'utente finale contratto di licenza ("Contratto") tra il MLeads LLC e voi.
+	</string>
+	<string name="TERMSANDCONDITION_MLEADSSERVICE_DETAIL">MLeads LLC è il creatore e fornitore di un servizio che consente agli utenti di selezionare i dati proprietarie attraverso il mezzo, incluso ma non limitato a:
+	\n\n(i) sito di MLeads LLC, Myleadssite.com ("MyLeads"), e ad altri nomi di dominio o successore come possono essere azionati, acquisizione o l\'utilizzo di volta in volta da MLeads LLC (collettivamente, "MyLeadsSite");
+	\n\n(ii) connessioni via cavo e wireless, e
+	\n\n(iii) telefonia reti basate, e di rivedere tali contenuti o dati su un dispositivo approvato ("Dispositivo") con MLeads LLC di software proprietario MLeads applicazione (o altre terze applicazioni software di terze parti specificamente approvate dal MLeads LLC che soddisfa l\'allora corrente MLeads LLC-ready specifiche ) e / o altri software approvato gli accessi utente, download, o comunque riceve da utilizzare in relazione con il servizio MLeads.
+	\n\nPer poter utilizzare MLeads di accedere o utilizzare i dati su Myleadssite o su un sito terzo, all\'utente verrà richiesto di inserire i codici di accesso per i quali una tassa può essere riscossa dagli MLeads LLC o di terzi.
+	</string>
+	<string name="TERMSANDCONDITION_USEOFMLEADS_DETAIL">Questa applicazione è disponibile ad un unico ente o gli individui dai 13 anni o più.
+	\n\nSe hai 13 anni o più, ma sotto l\'età di 18 anni, è necessario rivedere i termini e le condizioni con un genitore o un tutore per essere sicuri che tu e il tuo genitore o tutore capire questi termini e condizioni.
+	\n\nQuesta applicazione è per l\'utilizzo come un singolo utente e non per più utenti. MLeads non funziona con Myleadssite senza credenziali utente corretto, per i quali una tassa può essere riscossa dagli MLeads LLC.
+	</string>
+	<string name="TERMSANDCONDITION_IPROPERTY_DETAIL">RICONOSCIMENTO DI PROPRIETA \'
+	\n\n\nL\'utente accetta che MLeads, compresa la sua grafica, interfaccia utente, i contenuti e gli script e software utilizzati per la sua attuazione, contiene informazioni proprietarie e materiale che è di proprietà di MLeads LLC e / oi suoi principi ed è protetto dalla legge sulla proprietà intellettuale e altre leggi, tra cui ma non limitato al diritto d\'autore, e che non utilizzerà tali informazioni proprietarie o materiali in qualunque modo, tranne per l\'uso in conformità con i termini di questo accordo.
+	\n\nNessuna parte di MLeads può essere riprodotta in qualsiasi forma o con qualsiasi mezzo, ad eccezione di quanto espressamente concesso nel presente.
+	\n\nL\'utente accetta di non modificare, affittare, noleggiare, prestare, vendere, distribuire o creare lavori derivati ​​in qualsiasi modo, e non potrà sfruttare MLeads in alcun modo non autorizzato, compreso ma non limitato a, casi di violazione o sovraccarico della capacità di rete.
+	\n\nL\'uso del / software o MLeads, tranne che per uso consentito in questi termini e condizioni è strettamente proibito e viola i diritti di proprietà intellettuale di altri e può essere soggetta a sanzioni civili e penali, ivi comprese eventuali danni monetari per violazione del copyright.
+	</string>
+	<string name="TERMSANDCONDITION_LICENSED_DETAIL">L\'applicazione messa a disposizione è concesso in licenza, non venduto, a voi.
+	\n\nLa licenza per ogni applicazione che si ottiene è soggetto all\'accettazione preventiva del presente Contratto e si accetta che i termini del presente Contratto si applicano a ciascuna applicazione che si licenza, a meno che l\'applicazione è coperto da un Contratto separato valido stipulato tra voi e il Licenziante dell\'applicazione, nel qual caso i termini di tale accordo separato di licenza utente finale governare, soggetto all\'accettazione preventiva che separano contratto di licenza utente finale.
+	\n\nLa licenza per l\'applicazione ai sensi del presente Contratto è garantita da MLeads LLC.
+	\n\nQualsiasi licenza che è soggetta alla licenza concessa ai sensi del presente Contratto è qui denominati "Applicazione licenza".
+	\n\nLicenziante si riserva tutti i diritti e per l\'Applicazione licenza non espressamente concessi ai sensi del presente Contratto di applicazione licenza.
+	\n\na. Scopo della licenza
+	\n\nQuesta licenza concessa a voi per l\'Applicazione licenza dal Licenziante si limita ad un non-trasferibile per utilizzare l\'Applicazione concesso in licenza su qualsiasi iPhone, iPod touch, iPad o altri prodotti del caso che si può possedere o controllare e come consentito dai termini App Store e condizioni (le "Regole d\'Uso").
+	\n\nQuesta licenza non consente di utilizzare l\'applicazione concesso in licenza su qualsiasi iPod touch o iPhone o altri prodotti del caso che non si possiedono o controllano, e non si può distribuire o rendere l\'Applicazione licenza disponibile su una rete dove potrebbe essere utilizzato da più dispositivi allo stesso tempo.
+	\n\nL\'utente non può affittare, noleggiare, prestare, vendere, distribuire o concedere in licenza l\'applicazione licenza.
+	\n\nL\'utente non può copiare (salvo quanto espressamente consentito da questa licenza e le regole di utilizzo), decompilare, decodificare, disassemblare, tentare di estrarre il codice sorgente, modificare o creare opere derivate dell\'Applicazione licenza, eventuali aggiornamenti, o parte dello stesso (ad eccezione di quanto e solo nella misura in ogni restrizione precede è vietato dalla legge applicabile o la misura può essere consentito dai termini di licenza che regolano l\'uso di componenti open source inclusi con l\'applicazione di licenza).
+	\n\nOgni tentativo di farlo è una violazione dei diritti del Licenziante e dei suoi licenziatari.
+	\n\nSe si viola questa restrizione, si può essere oggetto di procedimento penale e danni. I termini della licenza includono qualsiasi aggiornamento fornito dal Licenziante che sostituisca e / o MLeads integratore, a meno che tale aggiornamento non è accompagnato da una licenza separata, nel qual caso i termini di quella licenza.
+	\n\nb. Consenso all\'utilizzo dei dati
+	\n\nL\'utente accetta che il Licenziante può raccogliere ed utilizzare dati tecnici e le relative informazioni, compresi ma non limitati alle informazioni tecniche sul dispositivo, sistema e software applicativo e periferiche, che vengono raccolti periodicamente per consentire la fornitura di aggiornamenti software, supporto tecnico e altri servizi a voi (se presenti) relativi alla applicazione licenza.
+	\n\nLicenziante può utilizzare queste informazioni, fintanto che è in una forma che non vi identificano personalmente, per migliorare i propri prodotti o per fornire servizi o tecnologie o informazioni a voi e altri utenti finali.
+	\n\nLicenziante non rivendere i dati raccolti da esso e, ad eccezione di quanto sopra esposto, non deve ri-distribuire tali dati.
+	\n\nc. Fine
+	\n\nLa licenza è valido fino alla risoluzione da voi o Licenziante.
+	\n\nI diritti previsti dal presente licenza terminerà automaticamente senza alcun preavviso dal Licenziante se non si riesce a rispettare qualsiasi termine (s) della presente licenza.
+	\n\nAlla cessazione della licenza, l\'utente dovrà cessare ogni utilizzo dell\'applicazione licenza, e distruggere tutte le copie, totali o parziali, delle applicazioni licenza.
+	\n\nd. Servizi; materiali di terze parti
+	\n\nL\'applicazione concesso in licenza può consentire l\'accesso ai Licenziante e servizi di terze parti e siti web (collettivamente ed individualmente "Servizi").
+	\n\nL\'uso dei Servizi possono richiedere l\'accesso a Internet e di accettare ulteriori termini di servizio.
+	\n\nLei è consapevole che, utilizzando uno qualsiasi dei Servizi, si potrà trovare materiale che può essere considerato offensivo, indecente, o sgradevole, il cui contenuto può o non può essere identificato come un linguaggio esplicito, e che i risultati di qualsiasi ricerca o entrare in un particolare URL potrebbe automaticamente ed involontariamente generare link o riferimenti a materiale discutibile.
+	\n\nTuttavia, l\'utente accetta di usare i Servizi a vostro esclusivo rischio e che il Licenziante non avrà alcuna responsabilità per il materiale che si può trovare ad essere offensivi, indecenti o discutibili.
+	\n\ne. Esclusione di garanzie: limitazione della responsabilità
+	\n\nTu espressamente riconosce e accetta che utilizzo dell\'applicazione concesso in licenza è a vostro esclusivo rischio e che l\'intero rischio relativo alla qualità soddisfacente, prestazioni, accuratezza e lo sforzo è con voi.
+	\n\nNella misura massima consentita dalla legge applicabile, l\'applicazione in licenza e tutte le prestazioni eseguite o fornite dal Application licenza ("Servizi") sono forniti "come sono" e "come disponibili", con tutti i difetti e senza garanzie di alcun tipo, e Licenziante declina tutte le garanzie e le condizioni relative alle applicazioni in licenza e Servizi, sia espressa, implicita o di legge, comprese, ma non solo, le garanzie implicite e / o condizioni di commerciabilità, di qualità soddisfacente, di idoneità per un particolare scopo, di precisione, di quieto godimento, e non violazione di diritti di terzi.
+	\n\nLicenziante non garantisce contro le interferenze con il vostro godimento della Domanda di licenza, che le funzioni contenute in, o di servizi prestati o da esso fornite le applicazioni con licenza soddisfino i requisiti, che il funzionamento delle applicazioni licenza o servizi saranno ininterrottamente e senza errori libero, o che i difetti nelle applicazioni licenza o dei Servizi saranno corretti.
+	\n\nNessuna informazione orale o scritta ed i suggerimenti forniti dal Licenziante o il suo mandatario deve creare una garanzia. In caso di applicazione licenza o Servizi rivelarsi insufficiente, si assume l\'intero costo di tutte le necessità di manutenzione, riparazione o correzione.
+	\n\nAlcune giurisdizioni non ammettono l\'esclusione delle garanzie implicite o limitazioni applicabili i diritti legali dei consumatori, per cui l\'esclusione e le limitazioni sopra potrebbero non essere applicabili a voi.
+	\n\nIn caso di fallimento della domanda licenza di conformarsi a qualsiasi garanzia, l\'utente finale può notificare Apple e Apple può rimborsare il prezzo di acquisto, se del caso, per l\'applicazione licenza per l\'utente finale e che, nella misura massima consentita dalla legge applicabile, Apple non avrà alcun altro obbligo di garanzia, nei confronti l\'applicazione licenza, e qualsiasi altro reclamo, perdita, responsabilità, danni, costi o spese attribuibili a mancata conformità a qualsiasi garanzia sarà responsabilità del MLeads LLC.
+	\n\nf. Limitazione di responsabilità
+	\n\nnella misura non vietati dalla legge, in nessun caso il Licenziante o qualsiasi rivenditore di terze parti saranno responsabili per lesioni personali, o qualsiasi incidentali, speciali, indiretti o consequenziali, inclusi, senza limitazioni, danni per perdita di profitti, perdita di dati, interruzione di attività commerciale o altri danni o perdite, derivanti da o correlate all\'uso o dall\'impossibilità di utilizzare l\'applicazione di licenza, comunque causati, a prescindere dalla teoria di responsabilità (contratto, atto illecito o altro) e anche se Licenziante è stata informata della la possibilità di tali danni, alcune giurisdizioni non consentono la limitazione di responsabilità per lesioni personali o di danni incidentali o consequenziali, quindi questa limitazione potrebbe non essere applicabile.
+	\n\nIn nessun caso la responsabilità del Licenziante o totale qualsiasi rivenditore di terze parti a voi per tutti i danni (escluso quanto eventualmente previsto dalla legge applicabile in materia di lesioni personali), potrà superare il minore tra:
+	\n\n(I) 1-100 ($ 100.00) di dollari, o
+	\n\n(Ii) l\'importo della tassa pagata dall\'utente e ricevute da MLeads LLC in connessione con l\'applicazione licenza.
+	\n\nLe precedenti limitazioni si applicheranno anche se il rimedio citato non raggiunga il suo scopo essenziale.
+	\n\ng. L\'utente non può utilizzare, esportare o riesportare i Application licenza ad eccezione di quanto autorizzato dalla legge degli Stati Uniti e le leggi della giurisdizione in cui è stata rilasciata la licenza dell\'applicazione.
+	\n\nIn particolare, ma senza limitazione, l\'Applicazione concesso in licenza non può essere esportato o ri-esportato: (a) in nessun embargo statunitense paesi, o, (b) a chiunque figuri nell\'elenco del Dipartimento del Tesoro statunitense di Specially Designated Nationals o il Dipartimento di Commercio Denied Person List o Entity List. Utilizzando l\'applicazione licenza, l\'utente dichiara e garantisce di non trovarsi in tale paese o tale elenco.
+	\n\nL\'utente accetta inoltre di non utilizzare questi prodotti per scopi vietati dalla legge degli Stati Uniti, incluso, senza limitazioni, lo sviluppo, la progettazione, la fabbricazione o produzione di armi nucleari, missili o armi chimiche o biologiche.
+	\n\nh. L\'applicazione licenza e la relativa documentazione sono "Prodotti Commerciali", come questo termine è definito in 48 CFR ÃŸ2.101, costituiti da "Commercial Computer Software" e "Commercial Computer Software Documentation", come tali termini sono usati in 48 CFR ÃŸ12.212 o 48 C.F.R. ÃŸ227.7202, in quanto applicabili. In conformità con 48 C.F.R. ÃŸ12.212 o 48 C.F.R. ÃŸ227.7202-1 fino a 227.7202-4, in quanto applicabili, il Software Computer Commercial Computer Software sono concessi in licenza agli utenti appartenenti al Governo degli Stati Uniti:
+	\n\n(A) unicamente come Prodotti Commerciali e,
+	\n\n(B) con i soli diritti concessi a tutti gli altri utenti finali in conformità ai termini e condizioni.
+	\n\nDiritti non pubblicati riservati in conformità alle leggi sul copyright degli Stati Uniti.
+	\n\ni. Corretto inserimento dei dati è di esclusiva responsabilità dell\'utente.
+	\n\nMLeads LLC non garantisce che i cavi raccolti saranno disponibili in "tempo reale" su Myleadssite (sito web MLeads LLC, che si interfaccia con MLeads consentendo all\'utente di accedere a dati raccolti). Myleadssite servizio può essere interrotto in qualsiasi momento.
+	\n\nj. MLeads LLC non garantisce, rappresenta o garantisce che l\'utilizzo del MLeads sarà ininterrotto o esente da errori, e si accetta che di tanto in tanto MLeads LLC potrà cancellare MLeads per periodi di tempo indefinito, o cancellare MLeads in qualsiasi momento, senza preavviso .
+	\n\nk. In nessun caso MLeads LLC, i suoi direttori, funzionari, dipendenti, affiliati, agenti, fornitori, committenti, o licenziatari saranno responsabili per danni diretti, indiretti, incidentali, punitivi, speciali o consequenziali derivanti dall\'uso di qualsiasi MLeads o per ogni altra pretesa in ogni modo connesso all\'utilizzo di MLeads, incluso ma non limitato a, eventuali errori od omissioni nei contenuti, o qualsiasi perdita o danni di qualsiasi natura derivanti dell\'uso di qualsiasi contenuto (o MLeads) inviati, trasmessi o altrimenti rese disponibili tramite MLeads, anche se avvisati della loro possibilità.
+	\n\nPoiché alcuni stati o giurisdizioni non consentono l\'esclusione o la limitazione di responsabilità per danni diretti o indiretti, in tali stati o giurisdizioni, la responsabilità di MLeads LLC sarà limitata nella misura consentita dalla legge.
+	\n\nl. MLeads LLC è ragionevole sforzo per proteggere le informazioni da Lei in relazione MLeads, ma si riconosce e accetta che l\'invio di tali informazioni è a vostro esclusivo rischio, e MLeads LLC declina ogni e qualsiasi responsabilità per eventuali perdite o responsabilità relativa a tali informazioni in alcun modo.
+	\n\nm. MLeads LLC non rappresentare o garantire che MLeads sarà esente da perdite, corruzioni, attacchi, virus, interferenze, hacking, intrusione o di sicurezza, e MLeads LLC declina ogni responsabilità ad essi relativa. L\'utente è responsabile per il backup del sistema, inclusi i prodotti acquistati da MLeads che viene memorizzato nel sistema.
+	\n\nn. MLeads LLC e Apple non è il solo responsabile per l\'applicazione licenza e il suo contenuto.
+	</string>
+	<string name="TERMSANDCONDITION_USERACCOUNT_DETAIL">a. Vous êtes seul responsable du maintien de la confidentialité de N\'importe Quel utilisateur / mot de passe par vous reçu versare acceder aux données collectées dans le cadre de MLeads.
+	\n\nVous ne pouvez pas les divulguer codici d\'accès à quelqu\'un d\'autre ou utiliser ceux d\'autres utilisateurs / mot de passe de l\'informazione (s).
+	\n\nVous êtes entièrement responsabile de toutes les activités qui se produisent sur ou à travers de votre utilizzo MLeads ou Myleadssite et de nous vous acceptez informatore immédiatement de toute l\'utilizzo non autorisée ou MLeads Myleadssite ou de toute Brèche de sécurité.
+	\n\nAcceptez vous que nous ne serons pas des Responsabili Pertes encourues en rapporto avec toute l\'utilizzo abusivo de Références de l\'utilisateur et que vous acceptez en outre que nous avons aucune responsabilité quant à votre incapacité à sé conformero au présent paragraphe.
+	\n\nVotre violazione du présent paragraphe peut entrainer la rescissione immediata de votre licenza MLeads et peut vous espositore également à une responsabilité pénale ou civile.
+	\n\nb. Vous ne devez violer ou pas violer tenter de la sécurité du MLeads servizio. En conséquence, vous ne devez pas: vous ne doit pas violer ou violer tenter de la sécurité du MLeads servizio. En conseguenza, vous ne devez pas:
+	\n\n(I) l\'accès aux données ou du matériel n\'est pas versare vous;
+	\n\n(Ii) à vous connettore ONU dans lequel serveur vous n\'êtes pas à autorisé acceder ou
+	\n\n(Iii) tenter de Sonder, scanner ou tester la vulnérabilité d\'un système réseau ou ou d\'enfreindre les mesures de sécurité d\'ou sans autenticazione autorizzazione di appropriée.
+	\n\nLes violazioni de sécurité du système ou réseau peuvent trascinatore civile ou une responsabilité pénale. Nous nous réservons le droit d\'enquêter sur des événements qui peuvent impliquer de Telles violazioni et peut impliquer coopérer et avec les autorités policières versare poursuivre utilisateurs qui les ont à Participe de violazioni Telles. Convenez vous qu\'il est de votre responsabilité d\'installazione des logiciels anti-virus et les protezioni liées virus aux chevaux de Troie, vers, Bombes à retardement autres ou de routine di programmazione informatique ou les moteurs qui sont à destina endommager, de détruire , de perturbatore d\'ou les altérer fonctionnalités d\'un ordinateur ou de l\'sfruttamento qui peut être votre ordinateur cessionario una via MLeads. 
+	</string>
+	<string name="TERMSANDCONDITION_CONFIDENTIALITY_DETAIL">Ogni parte si impegna a non divulgare a terzi le informazioni riguardanti i clienti, segreti commerciali, metodi, processi o procedure o altre informazioni riservate, finanziaria o commerciale della controparte che si impara durante il corso della sua prestazione di questo Contratto, senza il preventivo consenso scritto di tale parte.
+	\n\nMLeads LLC non può rivendere i dati raccolti da esso a terzi per uso commerciale da loro. Tale obbligo deve sopravvivere l\'annullamento o cessazione del presente Contratto.
+	\n\nIl software contiene segreti commerciali e altri know-how che appartengono al MLeads LLC e viene messo a vostra disposizione la massima riservatezza.
+	\n\nOgni altro uso o divulgazione altri software o dei suoi algoritmi, protocolli o interfacce, diversi da quelli in stretto accordo con il presente Contratto, è perseguibile come una violazione dei diritti del MLeads LLC segreto.
+	</string>
+	<string name="TERMSANDCONDITION_IPROPERTYRIGHTS_DETAIL">Utente MLeads LLC e alla fine riconoscere che, in caso di qualsiasi pretesa di terzi che l\'Applicazione licenza o il possesso dell\'utente finale e l\'uso della Application licenza violi i diritti di proprietà intellettuale di terzi MLeads LLC sarà il solo responsabile per le indagini, della difesa, di liquidazione e scarico di qualsiasi reclamo violazione della proprietà intellettuale.
+	</string>
+	<string name="TERMSANDCONDITION_PRODUCTCLAIMS_DETAIL">MLeads LLC e l\'utente finale non riconoscere che MLeads LLC, Apple o qualsiasi altra persona o entità di altro tipo in applicazione licenza, è responsabile per risolvere eventuali reclami del cliente finale o di terzi relativo all\'applicazione licenza compreso, ma non limitato a:
+	\n\n(i) responsabilità di prodotto sinistri;
+	\n\n(ii) qualsiasi affermazione che l\'applicazione di licenza non è conforme a qualsiasi requisito di legge o regolamentari e,
+	\n\n(iii) i crediti derivanti tutela dei consumatori o di una legislazione simile.
+	</string>
+	<string name="TERMSANDCONDITION_ACKNOW_DETAIL">Il presente Contratto è tra MLeads LLC e l\'utente finale e non solo con Apple e MLeads LLC è il solo responsabile per l\'applicazione in licenza e il contenuto della stessa.
+	</string>
+	<string name="TERMSANDCONDITION_WAIVER_DETAIL">Usando MLeads, l\'utente accetta di manlevare e tenere MLeads LLC, i suoi direttori, funzionari, dipendenti, affiliati, agenti, fornitori, committenti e licenziatari rispetto a qualsiasi rivendicazione derivante da violazione di questo accordo, l\'uso di MLeads, o qualsiasi azione intrapresa da MLeads LLC come parte della sua indagine di una sospetta violazione di questo accordo o come risultato della sua ricerca o di una decisione che una violazione di questo accordo si è verificato.
+	\n\nUsando MLeads, l\'utente accetta di manlevare e tenere MLeads LLC, i suoi direttori, funzionari, dipendenti, affiliati, agenti, fornitori, committenti, e licenziatari rispetto a qualsiasi rivendicazione derivante da violazione di questo accordo, l\'uso di MLeads, o qualsiasi azione intrapresa da MLeads LLC come parte della sua indagine di una sospetta violazione di questo accordo o come risultato della sua ricerca o di una decisione che una violazione di questo accordo si è verificato.
+	\n\nQuesta rinuncia e la fornitura indennità si applica a tutte le violazioni descritte in o previste da questo accordo.
+	</string>
+	<string name="TERMSANDCONDITION_CHANGES_DETAIL">MLeads LLC si riserva il diritto, in qualsiasi momento e di volta in volta, di aggiornare, rivedere, integrare e modo modificare il presente accordo e imporre disposizioni nuove o aggiuntive, politiche, termini o condizioni relative all\'utilizzo di MLeads. Tali aggiornamenti, revisioni, integrazioni, modifiche e le regole, politiche, termini e condizioni (collettivamente di cui al presente accordo, "Condizioni Addizionali") avranno effetto immediato e incorporati nel presente accordo.
+	\n\nL\'uso continuato del MLeads seguente sarà considerato come l\'accettazione di eventuali e tutte queste modalità aggiuntive. Tutte le Condizioni aggiuntive sono inserite in questo accordo con questo riferimento.
+	</string>
+	<string name="TERMSANDCONDITION_LEGALCOMPLIANCE_DETAIL">L\'utente finale rappresenta che:
+	\n\n(i) lui / lei non si trova in un paese che è soggetta ad un embargo del governo degli Stati Uniti, o che è stato designato dal governo americano come un "terrorista di sostegno" paese, e
+	\n\n(ii) lui / lei non è presente in alcun elenco Governo degli Stati Uniti dei partiti vietata o limitata. 
+	</string>
+	<string name="TERMSANDCONDITION_DEVELOPER_DETAIL">L\'indirizzo, telefono ed e-mail di MLeads LLC è il seguente:
+	\n\n650 Nord Cannon Avenue, Lansdale,
+	\nPA 19446 267-263-3178
+	\ninfo@triforce-inc.com
+	\n\nTutte le domande degli utenti finali, denunce o reclami devono essere indirizzate a quanto precede.
+	</string>
+	<string name="TERMSANDCONDITION_THIRDPARTYTERMS_DETAIL">L\'utente finale si impegna a rispettare i termini applicabili terzi di accordo quando si utilizza l\'applicazione MLeads LLC. 
+	</string>
+	<string name="TERMSANDCONDITION_THIRDPARTYBENEFICIARY_DETAIL">Utente finale riconosce e concorda che Apple e le sue controllate sono beneficiari terzi del presente Contratto e, previa accettazione di licenza dell\'utente finale dei termini e delle condizioni del Contratto, Apple avrà il diritto (e sarà considerata accettata destra) far rispettare l\'EULA contro l\'utente finale come terzo beneficiario della stessa. 
+	</string>
+	<string name="TERMSANDCONDITION_PAYMENT_DETAIL">MLeads LLC si accettano carte di credito e ad altre forme di pagamento in quanto, di volta in volta, può approvare. MLeads LLC, in questo momento, non accetta carte di debito e assegni in relazione con MLeads o Myleadssite.
+	</string>
+	<string name="TERMSANDCONDITION_SALES_DETAIL">Lei sarà responsabile per tutte le tasse applicabili o fiscali utilizzare richiesti da qualsiasi autorità federali, statali o locali di governo.
+	</string>
+	<string name="TERMSANDCONDITION_OTHERTERMS_DETAIL">MLeads LLC non è responsabile per errori tipografici. MLeads LLC si riserva il diritto di modificare i termini e le condizioni di vendita in qualsiasi momento.
+	\n\nI clienti sono invitati a leggere le condizioni di vendita su base periodica per le modifiche.
+	\n\nIl rischio di perdita e il titolo per tutte le transazioni elettronicamente si passano all\'acquirente al momento la trasmissione elettronica della stessa.
+	</string>
+	<string name="TERMSANDCONDITION_GOVERNING_DETAIL">Le leggi dello Stato della Pennsylvania, ad esclusione dei conflitti di norme di diritto, governano questo accordo e l\'utilizzo del MLeads o Myleadssite.
+	\n\nL\'utilizzo del MLeads o Myleadssite possono anche essere oggetto di altri locali, statali, nazionali o internazionali. L\'utente accetta espressamente che la giurisdizione esclusiva per qualsiasi reclamo o controversia con MLeads LLC relative in alcun modo l\'uso di MLeads o Myleadssite risiede nel tribunali dello Stato della Pennsylvania.
+	</string>
+	<string name="TERMSANDCONDITION_MISS_DETAIL">Questi termini e condizioni costituiscono l\'intero accordo tra l\'utente e MLeads LLC e regolano l\'uso di MLeads, sostituisce gli accordi precedenti tra l\'utente e MLeads LLC.
+	\n\nInoltre possono essere soggetti a ulteriori termini e condizioni che possono applicarsi quando si utilizzano prodotti di affiliazione, contenuti di terze parti, o software di terze parti.
+	\n\nSe una qualsiasi parte di questi termini e condizioni è ritenuta non valida o non applicabile, che dovrà essere interpretata in modo coerente con la legge applicabile per riflettere, per quanto possibile, le intenzioni originali delle parti, e le parti rimanenti resteranno in vigore a tutti ed effetto.
+	\n\nFallimento MLeads LLC di far rispettare qualsiasi diritto o disposizione in questi termini e condizioni non costituirà una rinuncia a tale disposizione, o di altre disposizioni di questi termini e condizioni.
+	\n\nSe una qualsiasi disposizione del presente accordo è trovato da un tribunale della giurisdizione competente per essere validi, le altre disposizioni rimarranno in vigore a tutti gli effetti.
+	\n\nMLeads LLC non sarà responsabile per l\'inadempimento delle obbligazioni dovuto a cause di forza maggiore.
+	</string>
+	
+	
+	<string name="INFO_TITLE">Contatti:</string>
+	<string name="INFO_PHONE">telefono:</string>
+	<string name="INFO_OTHER">altri:</string>
+	
+	<string name="OCR_ALERT">La tua scheda non è scansionabile</string>
+	
+	<string name="OCR_BUTTON_TITLE">scansione OCR</string>
+	
+		
+	<string name="LEAD_STATUS_0">altro</string>
+	<string name="LEAD_STATUS_1">freddo</string>
+	<string name="LEAD_STATUS_2">contattato</string>
+	<string name="LEAD_STATUS_3">Contatto in futuro</string>
+	<string name="LEAD_STATUS_4">caldo</string>
+	<string name="LEAD_STATUS_5">non contattati</string>
+	<string name="LEAD_STATUS_6">qualificato</string>
+	<string name="LEAD_STATUS_7">caldo</string>
+	<string name="LEAD_STATUS_8">Convertito al cliente</string>
+	<string name="LEAD_STATUS_9">clienti attuali</string>
+	<string name="SELECT_LEAD_STATUS">Selezionare Stato di piombo</string>
+	<string name="NO_LEAD_STATUS_TITLE">Nessun Stato piombo</string>
+	
+	<string name="MEETING_TITLE">Operazioni pianificate</string>
+	<string name="ADD_MEETING_TITLE">Pianificazione di una riunione</string>
+	<string name="EDIT_MEETING_TITLE">Modifica riunione pianificata</string>
+	<string name="MEETING_LOCATION">posizione</string>
+	<string name="MEETING_START_TIME">Inizio * Tempo</string>
+	<string name="MEETING_END_TIME">Ora di fine *</string>
+	<string name="MEETING_DATE">data *</string>
+	<string name="MEETING_NOTE">nota</string>
+	<string name="MEETING_SUBJECT">soggetto</string>
+	<string name="SELECT_LEAD">Seleziona Leads</string>
+	<string name="add_meeting_success">Meeting %1$s inserita correttamente.</string>
+	<string name="add_meeting_failure">Rencontre %1$s ne peut être ajouté avec succès....</string>
+	<string name="edit_meeting_success">Meeting %1$s modificato con successo.</string>
+	<string name="edit_meeting_failure">Meeting %1$s non può essere modificato con successo.</string>
+	<string name="delete_meeting_success">Meeting %1$s deleted successfully.</string>
+	<string name="delete_meeting_failure">Impossibile eliminare Meeting% 1 $ s.</string>	
+	    
+	<string name="START_DATE">* Data di Inizio</string>
+	<string name="END_DATE">Data di fine</string>
+	<string name="STATUS">stato</string>
+	<string name="PRIORITY">priorità</string>
+	
+	<string name="Task_TITLE">Operazioni pianificate</string>
+	<string name="ADD_TASK">Pianificazione di una Task</string>
+	<string name="EDIT_TASK">Modifica operazione pianificata</string>
+	
+	<string name="add_task_success">Task %1$s inserita correttamente.</string>
+	<string name="add_task_failure">Task %1$s non può essere aggiunto con successo.</string>
+	<string name="edit_task_success">Task %1$s modificato con successo.</string>
+	<string name="edit_task_failure">Task %1$s non può essere modificato con successo.</string>
+	<string name="delete_task_success">Task %1$s cancellati con successo.</string>
+	<string name="delete_task_failure">Impossibile eliminare% Task 1 $ s.</string>	
+	
+	<string name="ADDRESS">Indirizzo:</string>
+	<string name="STREET">strada</string>
+	<string name="CITY">città</string>
+	<string name="STATE">stato</string>
+	<string name="COUNTRY">paese</string>
+	<string name="ZIP">Zip</string>
+	<string name="DeleteMeetingTitle">elimina la riunione</string>
+	<string name="DeleteTaskTitle">Elimina attività</string>
+	
+    <string name="ViewProfile">Visualizza il profilo</string>
+	<string name="MAP_VALIDATION">Inserisci città del piombo per visualizzare la mappa</string>
+	
+	<string name="SUBJECT_VALIDATION">Inserisci soggetto qui</string>
+	<string name="DATE_VALIDATION">Inserisci qui Data</string>
+	<string name="TIME_VALIDATION">Inserisci Qui il tempo</string>
+	<string name="LEAD_VALIDATION">Seleziona qui Piombo</string>
+	<string name="NoMeetingFoundLabel">Nessun Incontri trovato</string>
+	<string name="NoTaskFoundLabel">No Task trovato</string>
+	
+	<string name="OCR_SELECT_PICTURE">selezionare Immagine</string>
+	<string name="OCR_TAKE_PICTURE">Scatta foto</string>
+	<string name="RICH_TEXT_FORMAT_ALERT">Si prega di utilizzare il nostro portale web per modificare il follow-up messaggio in formato RTF</string>
+	
+	<string name="Sort_Leads">Ordina Cavi</string>
+	<string-array name="SORT_BY">
+		<item>Per nome Piombo</item>
+		<item>Con CompanyName</item>
+	</string-array>
+	<string name="NO_SORTING">Nessun dato per ordinamento</string>
+	<string name="ALERT_ALARM">allarme Alert</string>
+	<string name="HOUR">ora</string>
+	<string name="MINUTE">minuto</string>
+	<string name="BEFORE">prima</string>
+	
+	<string name="TASK_WAITING">Aspettando</string>
+	<string name="TASK_INPROGRESS">In Progress</string>
+	<string name="TASK_DEFERRED">deffered</string>
+	<string name="TASK_COMPLETED">completato</string>
+	<string name="TASK_LOW">basso</string>
+	<string name="TASK_NORMAL">normale</string>
+	<string name="TASK_HIGH">alto</string>
+	
+	<string name="PASSWORD_MUST_VALIDATION">La password deve contenere un solo numero at least</string>
+	<string name="EVENT_ADD_EDIT">evento *</string>
+	
+	<!--
+		09/08/2012	Jayesh
+	-->
+	<string name="USER_MANUAL_SCHEDULED_MEETINGS">Riunioni pianificate</string>
+	<string name="USER_MANUAL_SCHEDULED_TASKS">Operazioni pianificate</string>
+	<!--
+		Chnages Completed
+	-->
+	
+	<!--
+		09/08/2012	Jayesh
+	-->
+	<string name="HELP_SCHEDULED_MEETINGS">
+	  	L\'utente può visualizzare le riunioni programmate per un cavo selezionando un particolare piombo e quindi facendo clic sull\'icona incontri a schermo MyLeads.
+		L\'utente può anche programmare un nuovo incontro, con nastro adesivo sull\'icona "+" in Meeting schermo. Una nuova riunione prevista anche essere aggiunto al calendario del dispositivo.
+		L\'utente può anche modificare riunione esistente con nastro adesivo sull\'icona di selezione in Incontro schermo.
+		Utente riceverà anche notificato ogni volta che un resto riunione pianificata.
+	</string>
+	<string name="HELP_SCHEDULED_TASKS">
+		L\'utente può visualizzare le attività pianificate per un cavo selezionando un particolare piombo e quindi facendo clic sull\'icona Attività a schermo MyLeads.
+		\n\n
+		L\'utente può anche visualizzare le attività pianificate per un evento selezionando un particolare evento e quindi facendo clic sull\'icona Attività in schermata Eventi.
+		\n\n
+		L\'utente può anche programmare una nuova attività, con nastro adesivo sull\'icona "+" nella schermata Task.
+		\n\n
+		L\'utente può anche modificare un\'attività esistente con nastro adesivo sull\'icona selezionare nella schermata di Task.
+	</string>
+	<!--
+		Chnages Completed
+	-->
+	<string name="Forgotpw_subtitle">What problem are you having with MLeads Account?</string>
+	<string name="Forgotpw_radioPw">I have problem with password</string>
+	<string name="Forgotpw_radioUsername">I forgot MLeads username</string>
+	<string name="Forgotpw_buttonSubmit">Submit</string>
+	
+	<string name="EMAIL_SELECT_ALL">Selezionare tutti i cavi</string>
+	<string name="EMAIL_SELECT_MESSAGE_TEMPLATE">Seleziona modello E-mail Messaggio</string>
+	<string name="NEW_MESSAGE">Nuovo messaggio</string>
+	<string name="EventLimit">ora si raggiunge il limite di accesso. aggiornare a MLeads Enterprise.</string>
+	<string name="LeadLimit">MLeads limitazioni Lite raggiunto. In MLeads Lite è possibile creare solo 20 Leads. Per l\'ulteriore utilizzo è necessario scaricare la versione Enterprise MLeads</string>
+	<string name="MessagetLimit">MLeads limitazioni Lite raggiunto. In MLeads Lite è possibile creare solo 20 messaggi di follow-up. Per l\'ulteriore utilizzo è necessario scaricare la versione Enterprise MLeads</string>
+	<string name="ActionLimit">MLeads limitazioni Lite raggiunto. In MLeads Lite è possibile creare solo 20 azioni follow-up. Per l\'ulteriore utilizzo è necessario scaricare la versione Enterprise MLeads</string>
+	<string name="TaskLimit">MLeads limitazioni Lite raggiunto. In MLeads Lite è possibile creare solo 20 attività. Per l\'ulteriore utilizzo è necessario scaricare la versione Enterprise MLeads</string>
+	<string name="MeetingLimit">MLeads limitazioni Lite raggiunto. In MLeads Lite è possibile creare solo 20 incontri. Per l\'ulteriore utilizzo è necessario scaricare la versione Enterprise MLeads</string>
+	<string name="Button_Rate_mlites">Vota MLeads Lite</string>
+	<string name="Button_Upgrade_Enterprise">Aggiornamento a MLeads Enterprise</string>
+	<string name="Checkbox_Upgrade">Non mostrare più</string>
+	<string name="Upgrade_Title">MLeadsEnterprise Edition</string>
+	<string name="Upgrade_text">Ti piace usare MLeads Lite App? Eseguire l\'aggiornamento a Enterprise MLeads o Vota questa applicazione.</string>
+	<string name="Button_skip">saltare</string>
+	<string name="enterpriseclient">Non è possibile utilizzare le credenziali Enterprise MLeads il login per MLeads Lite Edition dell\'applicazione.</string>
+	
+	
+	
+    
+    <!-- New strings for MLeads version 7.0 -->
+    
+    <string name="FollowUpTemplate_PreviewLabel">Template Preview</string>
+    <string name="ContinueButtonLabel"> continuare  </string>
+    <string name="speakleadtitle_mail_domain">Parla email Domain piombo</string>
+    <string name="EMAIL_SELECT_Domain">Selezionare Email Domain</string>
+    <string name="button_Ok">OK</string>
+    <string name="AddManual_Followup_Action_Completed_Lable">Aggiungi Manuale Follow-Up Action Completato</string>
+    <string name="select_Followup_action_completed_Label">Selezionare Follow-Up Azione *</string>
+    <string name="GroupsLabel">Gruppi di piombo</string>
+    <string name="GroupsWithin_Label">Gruppi all\'interno</string>
+    <string name="AddGroupLabel">Aggiungi Leads Group</string>
+    <string name="GROUP_ADD_EDIT">Gruppo*</string>
+    <string name="GROUP_source_ADD_EDIT">Fonte di piombo</string>
+    <string name="addgroupGroupType">Tipo di gruppo</string>
+    <string name="AddGroupGroupNameHint">Inserisci Group</string>
+    <string name="AddGroupLeadSourceNameHint">Inserisci fonte di piombo</string>
+	<string name="Lead_Source_Label">Fonte di piombo</string>    
+    <string name="group_contactPerson">Contact</string>
+    <string name="group_perpose">Purpose</string>
+    <string name="group_page_title">Mostra Gruppo</string>
+    <string name="EditGroupLabel">Modifica Gruppo</string>
+    <string name="DeleteGroupTitle">Elimina Gruppo</string>
+    <string name="LooseData2Group">Tutti i cavi, follow-up, attività e riunioni di questo gruppo saranno cancellati. Sei sicuro di voler eliminare il gruppo?</string>
+    <string name="delete_Group_success">Gruppo %1$s eliminato con successo.</string>
+    <string name="delete_Group_failure">Impossibile eliminare Gruppo %1$s.</string>
+    <string name="oppNextdate">RFP Due Date</string>
+    <string name="PREVIEW_Pre_define_text">E\'stato un piacere con te all\'evento {event-name} on mm/dd/yyyy in {event-city}</string>
+    <string name="SelectEvent_OR_Group_Label">Event o di Gruppo</string>
+    <string name="Select_new_Event_OR_Group_Label">Selezionare Event o di Gruppo</string>
+    <string name="meetingswithin">Incontri Within</string>
+    <string name="taskwithin">compiti all\'interno</string>
+    <string name="duration_label">Durata</string>
+    <string name="spinner_followup_type_label">Seleziona Tipo</string>
+    <string name="add_group_success">Gruppo %1$s aggiunto.</string>
+    <string name="edit_group_success">Group %1$s aggiornato con successo.</string>
+    
+    
+    
+    <!--  String For GCM Services -->
+    <string name="title_activity_main">Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Registrazione</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Uscita</string>
+    <!-- End GCM Strings -->
+    
+    
+    <!-- V9.3 Message -->
+    <string name="addAttachmentLabel">Attachment</string>
+    <string name="AddLeadAttachmentsLabel">Attachment</string>
+    <string name="select_year">Select Year</string>
+    <string name="AddLeadProductMessageLabel">Interessi del prodotto</string>
+    <string name="NoCustomProductFoundLabel">Nessun prodotto Custom trovato.</string>
+    <string name="NoExpenseFoundLabel">Nessuna spesa trovato.</string>
+    <string name="snapshot_lead">Eseguire la scansione del Badge</string>
+    
+     <!-- Facebook Application ID -->
+    <string name="app_fb_id">509750915782967</string>
+    <!-- App Secret ID = 9ff686d7e67644b26183d7db700c3091 -->
+
+
+    <!-- Twitter Credentials -->
+    <string name="twitter_consumerkey">lMomcqmTdbUGO7AOZUbVQ</string>
+    <string name="twitter_consumersecret">1OjHp1sseddoErDU1fcrxCEYH4JM6YAUVekv7whVfh8</string>
+    <string name="twitter_requesttokenURL">https://api.twitter.com/oauth/request_token</string>
+    <string name="twitter_authorizeURL">https://api.twitter.com/oauth/authorize</string>
+    <string name="twitter_accesstokenURL">https://api.twitter.com/oauth/access_token</string>
+    <!-- This access token can be used to make API requests on your own account's behalf -->
+    <string name="twitter_accesstoken">2148625268-m7btHblhyiSVvDrHMSJwuV4OBn9qyw41Qv7HQBa</string>
+    <string name="twitter_accesstokensecret">PCXc5qB405gZrfq7ph3KQytYLaB63JyFEuDRRitiDVqwQ</string>
+    
+    
+    <string name="exportTaskmailformat"> \n\n Please find the attachment(s) which contains the exported Task List information you have requested. </string>
+    <string name="exportTaskmailformat2"><br /><br /> \n You can now use the exported .csv file to import the data into any of your existing CRM or proprietary business systems.</string>
+    <string name="exportTaskmailformat3"><br /><br /> \n\n This is an application you\'ll cherish and improve your efforts (ROI) in networking, business development, marketing and sales! Connect, Capture, Contact and Convertyour leads, The MLeads Way! We would like to thank you for using the MLeads application. We look forward to keep you as our valued user and provide the best service.</string>
+    <string name="exportTaskmailformat4"><br /><br /> We request you to refer MLeads to your friends or colleagues. We would welcome any feedback you may have, please</string>
+    <string name="exportTaskmailformat_two">to provide the feedback.</string>
+    
+    <string name="exportMeetingmailformat"> \n\n Please find the attachment(s) which contains the exported Meeting List information you have requested. </string>
+    <string name="exportMeetingmailformat2"><br /><br /> \n You can now use the exported .csv file to import the data into any of your existing CRM or proprietary business systems.</string>
+    <string name="exportMeetingmailformat3"><br /><br /> \n\n This is an application you\'ll cherish and improve your efforts (ROI) in networking, business development, marketing and sales! Connect, Capture, Contact and Convertyour leads, The MLeads Way! We would like to thank you for using the MLeads application. We look forward to keep you as our valued user and provide the best service.</string>
+    <string name="exportMeetingmailformat4"><br /><br /> We request you to refer MLeads to your friends or colleagues. We would welcome any feedback you may have, please</string>
+    <string name="exportMeetingmailformat_two">to provide the feedback.</string>
+    
+    
+    <string name="TeamManagement">Gestire team / Reset password</string>
+    <string name="ManageExportAbility">Gestisci Export Ability</string>
+    <string name="AddTeamMember">Aggiungi Team Member</string>
+    
+    <string name="export_aweber_success">Leads exported to AWeber successfully.</string>
+    <string name="export_aweber_fails">An error occurred in export to AWeber process. Please try again.</string>
+    
+    <string name="NoPrevieousLeadHint">Sei in primo vantaggio, senza piombo Precedente trovato.</string>
+    <string name="NoNextLeadHint">Sei at Last di piombo, No Avanti piombo trovato.</string>
+    
+    <string name="NoPrevieousEventHint">Sei in Primo evento, alcun evento precedente trovato.</string>
+    <string name="NoNextEventHint">Sei in ultimo evento, alcun evento Avanti trovato.</string>
+    
+    <string name="NoPrevieousTaskHint">Sei in Prima Prova, Nessun precedente Task trovato.</string>
+    <string name="NoNextTaskHint">Sei in ultimo compito, No Avanti Task trovato.</string>
+    
+    <string name="NoPrevieousMeetingHint">Siete in prima riunione, nessun incontro precedente trovato.</string>
+    <string name="NoNextMeetingHint">Sei in ultima riunione, No Avanti Meeting trovato.</string>
+    
+    <string name="SelectDefaultLeadRetrievalHint">Selezionare Retrieval Piombo Predefinito</string>
+    <string name="SelectFollowUp">Selezionare Follow-Up</string>
+    
+    
+    <string name="termsofservice">Dal registro qui, accetti i nostri Termini di servizio e le Norme sulla privacy.</string>
+    
+    
+    
+    
+    
+    <!-- Mleads 9.6 -->
+    <string name="event_sponsors">Sponsor di eventi</string>
+    <string name="no_sponsor_info">Nessuna informazione Sponsors disponibili per questo evento.</string>
+    <string name="visible_to_me">Visibile a me Solo</string>
+    <string name="visible_to_team_member">Visibile a Team Member</string>
+    <string name="guidline_txt">In questo modo si inserisce la seguente riga all\'inizio del corpo del messaggio \n (Es: E \'stato bello a voi, al nome dell\'evento alla data dell\'evento in città)</string>
+    <string name="chbox_prefix">Inserire pre-definire il testo linea mentre l\'invio del messaggio di posta elettronica</string>
+    <string name="mleads">MLeads</string>
+    <string name="guidline_txt2">Noi personalizzare il vostro email aggiungendo \'Ciao Nome, \' all\'inizio del messaggio. \'Email Signature \' all\'estremità del corpo (se configurato nel mio profilo).</string>
+    <string name="set_reminder">Imposta Reminder</string>
+    <string name="reminder_date">Reminder Data</string>
+    <string name="reminder_time">Promemoria Tempo</string>
+    <string name="add_status_icon">Aggiungere Icona Stato :</string>
+    <string name="add_expense">Aggiungi Expense</string>
+    <string name="exp_name">Expense Nome*</string>
+    <string name="amount">importo*</string>
+    <string name="date">data*</string>
+    <string name="description">Descrizione di Expense</string>
+    <string name="add_lead">Aggiungi piombo</string>
+    <string name="touch_to_speak">Toccare l\'icona del microfono per parlare</string>
+    <string name="email_prefix">Email Prefisso</string>
+    <string name="email_speak_hint">Esempio: jsmith</string>
+    <string name="domain">dominio</string>
+    <string name="email_domain_hint">me.com</string>
+    <string name="cancel">cancellare</string>
+    <string name="Continue">continuare</string>
+    <string name="video_name_hint">Video Name *</string>
+    <string name="video_description_hint">Descrizione del video *</string>
+    <string name="video_link_hint">Video collegamento * per esempio http://www.domainname.com</string>
+    <string name="add_team_member">Aggiungi Team Member</string>
+    <string name="team_manager">Team Manager*</string>
+    <string name="industry_id">Industria Id *</string>
+    <string name="event_organizer">Organizzatore dell\'evento</string>
+    <string name="retype_email_hint">Riscrivi Email *</string>
+    <string name="copy_or_email">Copiare o mail il vostro programma di affiliazione \n sceneggiatura.</string>
+    <string name="add">aggiungere</string>
+    <string name="attendees">partecipanti</string>
+    <string name="badge_category">Badge Categoria</string>
+    <string name="besocial_label">BeSocial- \nfeed attività</string>
+    <string name="leader_board">Leader Board</string>
+    <string name="send">inviare</string>
+    <string name="msg_hint">Scrivi qui per inviare un messaggio</string>
+    <string name="msg_more_label">Carica messaggi precedenti</string>
+    <string name="no_badge_cat">Cartellini Categoria Trovato</string>
+    <string name="ticket_listing">Ticket Listing</string>
+    <string name="leads_by_lead_qualifier">% Conduce da qualificazioni piombo</string>
+    <string name="qr_code_label">QR Code</string>
+    <string name="bump_main_title1">Nota: - Per aggiungere un cavo utilizzando la tecnologia Bump, entrambi i dispositivi devono avere il sistema operativo Android</string>
+    <string name="bump_main_title2">Nota: - Attivare funzione GPS sul dispositivo per utilizzare la funzionalità Bump \n Nota: Questo funziona solo tra 2 mleads utenti registrati</string>
+    <string name="start_bump">Inizio Bump</string>
+    <string name="scanned_data">dati acquisiti</string>
+    <string name="add_lead_map_scan">Dati di scansione mappa qui sotto per i campi. \n Drag e rilasciare il testo ai campi.</string>
+    <string name="first_name">Nome</string>
+    <string name="email">Email</string>
+    <string name="scan_business_card">Scan Affari \n carta</string>
+    <string name="ocr_label">OCR</string>
+    <string name="translation_label">traduzione</string>
+    <string name="target_language">[lingua di destinazione]</string>
+    <string name="email_report_label">Email\n relazione</string>
+    <string name="no_of_leads">Numero di cavi</string>
+    <string name="leads_converted_to_customer">Conduce Convertito al Cliente</string>
+    <string name="average_days_to_convert">Giorni medi di Convert</string>
+    <string name="expense_incurred">Spesa sostenuta per convertire \n portare a cliente</string>
+    <string name="image_viewer">Image Viewer</string>
+    <string name="followup_label">Follow-Up</string>
+    <string name="followup_date_label">Follow-Up Date : </string>
+    <string name="comments_label">Commenti :</string>
+    <string name="comments_hint">Scrivi un commento</string>
+    <string name="sent_date_label">Sent Data</string>
+    <string name="interval_label">intervallo</string>
+    <string name="subject_label">soggetto</string>
+    <string name="drip_message_label">Drip Messaggio</string>
+    <string name="lead_name_label">Nome piombo</string>
+    <string name="drip_msg_detail">Drip Message Detail</string>
+    <string name="phone_hint">ad esempio Phone (012) 345-6789</string>
+    <string name="phone_hint2">(per esempio (012) 345-6789)</string>
+    <string name="other_phone_hint">Altro esempio Phone (012) 345-6789</string>
+    <string name="edit_video_link_label">Modifica il tuo link video qui</string>
+    <string name="my_qr_card">My QR Affari \n carta</string>
+    <string name="my_events_label">I miei Eventi</string>
+    <string name="my_reg_events_label">I miei eventi registrati</string>
+    <string name="expense_tracking">Gestione spese</string>
+    <string name="faq_label">FAQ</string>
+    <string name="type_label">tipo</string>
+    <string name="name_label">nome</string>
+    <string name="date_label">data</string>
+    <string name="comments">Commenti</string>
+    <string name="email_template">Email Template</string>
+    <string name="msg_label">messaggio : </string>
+    <string name="subject">soggetto : </string>
+    <string name="target_lead_label">Obiettivo di piombo</string>
+    <string name="guidlines_details">Linee guida per l\'importazione da file CSV partecipanti</string>
+    <string name="guidlines_note">Nota: file CSV verrà importato con solo il formato del campione predefinito.</string>
+    <string name="steps_title">I passaggi per salvare file CSV con il formato di esempio:</string>
+    <string name="step_1">Fase 1: collegare il dispositivo mobile al computer. In scheda SD del dispositivo, andare su sdcard -> cartella MLeads</string>
+    <string name="step_2">Passo 2: Dalla lista MLeads cartella, selezionare il file "Import_Attendees_Sample.csv", e salvarlo sul vostro computer portatile o una cartella sul desktop.</string>
+    <string name="step_3">Passo 3: Aggiungere le informazioni i partecipanti nel file secondo il formato definito nel file di esempio. Dopo aver fatto inserire le informazioni i partecipanti, si prega di salvare il file con un nome diverso.</string>
+    <string name="step_4">Fase 4: Trascinare e rilasciare il file che avete appena creato con i tuoi dati in "MLeads" Elenco cartelle.</string>
+    <string name="step_5">Fase 5: Ora torna alla domanda MLeads sul dispositivo e importare le informazioni i partecipanti utilizzando il file .csv.</string>
+    <string name="home_label">casa</string>
+    <!-- import data pop up -->
+    <string name="csv_file">CSV File</string>
+    <string name="address_book">rubrica</string>
+    <string name="gmail">Gmail</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="aweber">AWeber</string>
+    <string name="salesforce">Salesforce</string>
+    <!-- About us -->
+    <string name="version">versione 9.7.3.24</string>
+    <string name="txt_leads">MobileLeads LLC.</string>
+    <string name="txt_leads2">Business center, di Lansdale</string>
+    <string name="txt_leads3">650 Nord Cannon viale.</string>
+    <string name="txt_leads4">Lansdale, PA 19446</string>
+    <string name="txtURL2">https://www.myleadssite.com</string>
+    <string name="txtEmail2">support@myleadssite.com</string>
+    <string name="txtCall1">+1 267-263-3178</string>
+    <string name="txt_leads6">© 2011-2018. Tutti i diritti riservati e tutti i marchi di proprietà di MobileLeads LLC. Patent Pending.</string>
+    <string name="import_label">importazione</string>
+    <string name="export_label">esportazione</string>
+    <string name="name_label_with_star">nome*</string>
+    <string name="lead_image_label">Immagine di piombo</string>
+    <string name="subscription_expire_msg">Il tuo abbonamento è scaduto. \n Per favore rinnovare l\'abbonamento da pagina delle impostazioni.</string>
+    <string name="lead_action_label">azioni di piombo</string>
+    <string name="lead_research_label">ricerca piombo</string>
+    <string name="call_label">chiamata</string>
+    <string name="messaging">Messaging</string>
+    <string name="create_task_label">Crea attività</string>
+    <string name="setup_meeting_label">Impostare \nincontro</string>
+    <string name="add_to_addresdd_book">aggiungere a \nrubrica</string>
+    <string name="manual_follow_up">Manuale Follow-Up</string>
+    <string name="stop_drip_email">Antigoccia Email</string>
+    <string name="lead_follow_ups">Piombo Follow-Ups</string>
+    <string name="search_profile">ricerca \n Profilo</string>
+    <string name="website">sito web</string>
+    <string name="google_search">Google \n ricerca</string>
+    <string name="map_search">mappa \n ricerca</string>
+    <string name="fb_connect">Facebook \ncollegare</string>
+    <string name="twitter_connect">Twitter\ncollegare</string>
+    <string name="list_swipe_note">Nota: record scorrere verso sinistra e destra per rivedere i dati</string>
+    <string name="welcome_to">Benvenuti a</string>
+    <string name="login">LOGIN</string>
+    <string name="register_using">Registrati utilizzando:</string>
+    <string name="password">Password</string>
+    <string name="dont_show_again">Don\'t spettacolo di nuovo.</string>
+    <string name="user_name">Nome utente</string>
+    <string name="capture">cattura</string>
+    <string name="team_member">Team Member</string>
+    <string name="update">aggiornare</string>
+    <string name="moxtra_meeting_invitation">Invito Moxtra Meeting</string>
+    <string name="select_lead_to_invite">Selezionare Piombo a Invita in Meeting</string>
+    <string name="currency_support">Supporto valuta</string>
+    <string name="select_default_lead_retrieval">Selezionare Retrieval Piombo Predefinito</string>
+    <string name="email_id">ID Email</string>
+    <string name="phone_extension">estensione Phone</string>
+    <string name="mobile_hint">es mobile (012) 345-6789</string>
+    <string name="system_options">Opzioni di sistema</string>
+    <string name="more_info">Ulteriori informazioni</string>
+    <string name="sync_to_server">Sincronizzazione di server</string>
+    <string name="custom_product_qualifiers">Personalizzati Qualificazioni prodotto</string>
+    <string name="custom_lead_qualifiers">Qualificazioni Personalizzati</string>
+    <string name="get_started_tutorial">Inizia Tutorial</string>
+    <string name="my_reg_events_tutorial">Il mio Tutorial Registrato Eventi</string>
+    <string name="refer_mleads_to_frnd">Fare riferimento Mleads ad un amico</string>
+    <string name="add_note_here">Aggiungi il tuo commento qui ...</string>
+    <string name="add_capital">ADD</string>
+    <string name="lead_label">piombo</string>
+    <string name="event">evento</string>
+    <string name="lead_groups">Gruppi di piombo</string>
+    <string name="quick_record_lead">Record rapida Piombo</string>
+    <string name="aweber_import_options">Aweber Opzioni di importazione</string>
+    <string name="choose_option">Scegliere Opzioni</string>
+    <string name="send_email_options">Invia Email Opziones</string>
+    <string name="send_mail_to">Invia Mail to </string>
+    <string name="white_logo">Bianco Logo</string>
+    <string name="update_logo">Aggiornamento Logo</string>
+    <string name="my_purchase">il mio acquisto</string>
+    <string name="tickets">Biglietti</string>
+    <string name="services">Servizi</string>
+    <string name="sessions">Sessioni</string>
+    <string name="no_found">NON CI SONO</string>
+    <string name="quick_tips_videos">Suggerimenti rapidi \n Videos</string>
+    <string name="no_video_found">Nessun video trovato</string>
+    <string name="view_quick_note">Visualizza rapido Nota Piombo</string>
+    <string name="button_delete">cancellare</string>
+    <string name="record_voice_memo">Memo Record Voice</string>
+    <string name="play_memo">Gioca Registrato Memo vocale</string>
+    <string name="product_interest_by_per">Gli interessi prodotti Per Percentuale</string>
+    <string name="sales_cycle_report">Ciclo di vendita Relazione</string>
+    <string name="converted_leads_to_customer">Leads convertiti al cliente</string>
+    <string name="leads_by_qua"># E % di porta da Qualifiers piombo</string>
+    <string name="pipeline_report">Rapporto Pipeline</string>
+    <string name="clicks_for_sponsors"># di clic per gli sponsor</string>
+    <string name="question_label">domanda :- </string>
+    <string name="answer_label">risposta :- </string>
+    <string name="speaker_name_label">Nome Speaker</string>
+    <string name="description_label">descrizione</string>
+    <string name="expense_incurred_to_convert_lead_to_customer">Spese sostenute per convertire portare a cliente</string>
+    <string name="average_expense">spesa media</string>
+    <string name="select_campaign">Seleziona Campaign</string>
+    <string name="no_campaign_available">No Campaign Disponibile</string>
+    <string name="pipeline_sales_report">Pipeline Report vendite</string>
+    <string name="select_year_label">Seleziona Anno :</string>
+    <string name="event_session_list">Event List Session</string>
+    <string name="session_duration">sessione Durata</string>
+    <string name="custom_products">Prodotti personalizzati</string>
+    <string name="more_about">Altro / Chi</string>
+    <string name="refer_to_frnd">Suggerire ad un amico</string>
+    <string name="scan_the_badge_label">Eseguire la scansione del Badge</string>
+    <string name="scan_badge_label">Scan Badge</string>
+    <string name="snapshot_lead_now_label">Ora - L\'immagine verrà elaborata e piombo verrà aggiunto immediatamente al tuo conto.</string>
+    <string name="snapshot_lead_later_label">Più tardi - L\'immagine verrà elaborata dal backend e il conduttore verrà aggiunto automaticamente al tuo account.</string>
+    <string name="speak_dialog_title">Parla il tempo è di 20 secondi. \n Si prega di parlare in modo chiaro e veloce.</string>
+    <string name="sponsor_label">sponsor</string>
+    <string name="please_take_survey">Si prega di prendere sondaggio</string>
+    <string name="team_management_video_label">Management Team \n Puoi può trasferire o eliminare account</string>
+    <string name="current_team_hierarchy">Corrente Gerarchia della squadra</string>
+    <string name="no_team_member_found">No Team Member Trovato</string>
+    <string name="terms_and_privacy_policy">Termini e \n Privacy Policy</string>
+    <string name="terms_of_use">Termini di utilizzo</string>
+    <string name="end_user_license_agreement">CONTRATTO DI LICENZA</string>
+    <string name="intro_label">INTRODUZIONE</string>
+    <string name="transfer_team_member">Trasferimento Team Member</string>
+    <string name="email_label_with_colon">Email : </string>
+    <string name="first_name_label_with_colon">Nome : </string>
+    <string name="last_name_label_with_colon">Cognome : </string>
+    <string name="unshare">unshare</string>
+    <string name="no_leads_shared">Non Leads sono stati condivisi, al fine di Un-share</string>
+    <string name="user_manual_details">Manuale Utente \n Dettagli</string>
+    <string name="loading_video">Caricamento di video ...</string>
+    <string name="video_links">link video</string>
+    <string name="view_event">View Event</string>
+    <string name="event_type">Tipo di evento</string>
+    <string name="notes">Notes</string>
+    <string name="view_email_template">View Email\nTemplate</string>
+    <string name="view_lead_group">Vista piombo Group</string>
+    <string name="lead_group_actions">Vista piombo Group</string>
+    <string name="task">compito</string>
+    <string name="unshare_leads">Leads unshare</string>
+    <string name="transfer_leads">Cavi di trasferimento</string>
+    <string name="delete_all_leads">Elimina tutto \n Leads</string>
+    <string name="view_lead">Vista piombo</string>
+    <string name="view_opportunity_info">Guarda Opportunity info</string>
+    <string name="view_address">View Indirizzo</string>
+    <string name="view_note">Vedi Nota</string>
+    <string name="event_actions">azioni eventi</string>
+    <string name="event_agenda">evento \n ordine del giorno</string>
+    <string name="places_nearby">Places \n vicino</string>
+    <string name="view_my_register_event">Visualizza il mio Register Event</string>
+    <string name="location">posizione</string>
+    <string name="organizer_name">Nome Organizer</string>
+    <string name="about_the_event">Info sull\'evento</string>
+    <string name="purchase_history">Cronologia acquisti</string>
+    <string name="session_list">Lista Session</string>
+    <string name="fb">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="survey">sondaggio</string>
+    <string name="meeting_details">Dettagli Meeting</string>
+    <string name="leads_with_star">Leads*</string>
+    <string name="alert_time">Alert Time</string>
+    <string name="event_detail">Descrizione degli eventi :</string>
+    <string name="lead_detail">Dettaglio lead :</string>
+    <string name="view_lead_detail">Visualizza Piombo dettaglio</string>
+    <string name="task_details">attività Dettagli</string>
+    <string name="event_name">Nome evento</string>
+    <string name="event_date">evento Data</string>
+    <string name="mark_as_completed">Segna come Completato</string>
+    <string name="view_image">Visualizza immagine</string>
+    
+    
+    <!-- New Messages for MLeads9.7 -->
+    
+    
+    
+    
+    <!-- Messages -->
+    <string name="send_mail_to_all_lead_confermation">Noi personalizzare il vostro email aggiungendo \'Ciao Nome, \' all\'inizio del messaggio. \'Email Signature \' all\'estremità del corpo (se configurato nel mio profilo). </string>
+    <string name="Email_Template_sugestion">Noi PEWE consigliamo di creare / aggiornare modello di messaggio di posta elettronica dal nostro sito web myleadssite.com utilizzando il computer</string>
+
+    <!-- Login messages -->
+    <string name="activation_expire_dialog">Il tuo account è stato disattivato. Volete inviare nuovamente link di attivazione? Cliccare su OK per ricevere il link.</string>
+    <string name="activation_pending_dialog">Il tuo account non è ancora attivato, Vuoi inviare nuovamente link di attivazione? Cliccare su OK per ricevere il link altrimenti clicca su Continua.</string>
+    <string name="subscription_expired">L\'abbonamento è scaduto</string>
+    <string name="subscription_expired_days">L\'abbonamento sarà scaduto nel %1$s giorni</string>
+    <string name="no_internet">No Internet</string>
+    <string name="internet_error">Internet non è disponibile, non è possibile connettersi al server, si prega di riprovare.</string>
+    <string name="activation_link_sent">Attivazione link inviato con successo.</string>
+
+    <!-- event messages -->
+
+    <string name="view_agenda">View Agenda</string>
+    <string name="sms_lead_alert_group">Per utilizzare questa funzione gruppo dovrebbe avere almeno un comando con il numero di telefono.</string>
+    <string name="sms_lead_alert_event">Per utilizzare questa funzione evento dovrebbe avere almeno un comando con il numero di telefono.</string>
+    <string name="lead_alert_group">Per utilizzare questa funzione gruppo deve avere almeno un cavo</string>
+    <string name="lead_alert_event">Per utilizzare questo evento funzionalità dovrebbe avere almeno un cavo</string>
+    <string name="transfer_leads_success">Cavi di trasferimento completato con successo.</string>
+    <string name="transfer_leads_error_msg">Seleziona almeno un comportare un trasferimento.</string>
+    <string name="sharing_leads_success">Conduce Condivisione completato con successo.</string>
+    <string name="sharing_leads_error_msg">Verificato un errore durante la condivisione porta. Si prega di riprovare più tardi.</string>
+    <string name="delete_event_message">Tutti i follow-up in questo cavo verranno eliminati con compiti e riunioni; Sei sicuro di voler cancellare la testa?</string>
+    <string name="share_lead_validation_msg">Seleziona almeno un conduttore al fine di eseguire azioni Leads.</string>
+    <string name="transfer_lead_validation_msg">Seleziona almeno un conduttore al fine di eseguire Leads trasferimento.</string>
+    <string name="leads_delete_success">Leads cancellati con successo.</string>
+    <string name="leads_delete_error">È verificato un errore durante l\'eliminazione porta. Si prega di riprovare più tardi.</string>
+    <string name="sorry_no_more_event_for">Siamo spiacenti, non più evento per </string>
+    <string name="leads_unshared_success">Conduce con successo non condivise.</string>
+    <string name="leads_unshared_error">Errore durante Leads non condivise. Si prega di riprovare più tardi.</string>
+    <string name="besocial_error_msg">Questo feture non è abilitata per organizzatore di eventi.</string>
+    <string name="imoprt_confirmation_msg">Da dove si desidera importare i cavi?</string>
+    <string name="no_activity_found">Siamo spiacenti, trovate attività per visualizzare il file</string>
+    <string name="choose_your_file">Scegli il file</string>
+    <string name="leads_import_success">Leads importato con successo.</string>
+    <string name="import_failure">Siamo spiacenti, non è possibile importare i dati, si prega di riprovare</string>
+    <string name="wait_while_loading">Aspetti per favore ...</string>
+    <string name="import_success">Dati importato con successo</string>
+    <string name="requried">requried</string>
+    <string name="sdcard_not_found">SDcard non trovato, prego Montare il SDCard, quindi provare a importare conduce da file .csv</string>
+    <string name="total_imported">Totale importati:</string>
+    <string name="total_not_imported">Totale non importato: </string>
+    <string name="this_featured_is_disabled">Questa funzione è disattivata dall\'organizzatore dell\'evento</string>
+    <string name="the_event_organizer_has_not_setup_fbpage">L\'organizzatore dell\'evento ha non impostare la pagina facebook per questo evento</string>
+    <string name="the_event_organizer_has_not_setup_twitterpage">L\'organizzatore dell\'evento ha non impostare la pagina Twitter di questo evento</string>
+    <string name="the_event_organizer_has_not_setup_linkedinpage">L\'organizzatore dell\'evento ha non impostare il gruppo linkedin per questo evento</string>
+    <string name="select_attendees">Seleziona partecipante dalla quotazione.</string>
+    <string name="listed_attendees_are_verified">Partecipanti quotate sono già verificate.</string>
+    <string name="attendees_does_not_belong_to_ticket">I partecipanti non appartiene a questo Ticket.</string>
+    <string name="attendees_does_not_belong_to_service">I partecipanti non appartiene a questo Servizio.</string>
+    <string name="attendees_does_not_belong_to_session">I partecipanti non appartiene a questa sessione.</string>
+    <string name="server_issue_msg">Ottenere qualche problema di server. Prova dopo qualche tempo.</string>
+    <string name="no_ticket_purchased">Nessun biglietto è stato acquistato</string>
+    <string name="no_service_purchased">Nessun servizio è stato acquistato</string>
+    <string name="no_session_purchased">Nessun sessione è stato acquistato</string>
+    <string name="no_attendees_found">Nessun partecipante Trovato in questo Badge Categoria</string>
+    <string name="failed_to_send_chat">Non riescono a Send Chat</string>
+    <string name="enter_chat_text">Accedi alla chat di testo</string>
+    <string name="take_pic">Scatta foto</string>
+    <string name="select_pic">Seleziona immagine</string>
+    <string name="select_option">Selezionare l\'opzione</string>
+    <string name="no_activity_be_the_first">Non vi è alcuna attività su questo evento. Puoi essere il primo a iniziare la conversazione.</string>
+    <string name="add_your_company_product_or_services">Aggiungi la tua azienda prodotti o servizi \ \'s in modo cavi possono essere qualificati dall\'interesse prodotto</string>
+    <string name="delete_expense_warninig">Sei sicuro di voler eliminare questa spesa?</string>
+    <string name="add_image_for_lead_status">Si prega Aggiungi immagine per lo stato di piombo</string>
+    <string name="lead_status_already_exists">Stato di piombo con lo stesso nome esiste già!</string>
+    <string name="upload_lead_status_pic">Carica piombo Picture Stato</string>
+    <string name="add_custom_product">Aggiungi Prodotto personalizzato</string>
+    <string name="custom_product">Prodotto su ordinazione *</string>
+    <string name="view_custom_lead_status">Visualizzazione personalizzata dello stato di piombo</string>
+    <string name="status_icon">Icona di stato:</string>
+    <string name="edit_custom_pro">Modifica personalizzate \ nProducts Qualificazioni</string>
+    <string name="product_qualifier">Prodotti Qualificazioni</string>
+    <string name="view_custom_pro">Visualizzazione personalizzata \ nProducts Qualificazioni</string>
+    <string name="add_followup_msg_note"><b>Nota: Se si desidera che il formato HTML modello di messaggio di posta elettronica basato, quindi creare da</b> <a href="http://www.myleadssite.com">http://www.myleadssite.com</a></string>
+    <string name="email_template_note">È necessario creare un evento o gruppo guidato in primo luogo per la Modello Email per essere assegnato. Si prega di creare un evento o gruppo guidato prima di creare Modello Email.</string>
+    <string name="you_dont_have_event">Spiacente don \'t hanno un evento</string>
+    <string name="applicable_to_all_event_grp">Applicabile a tutti gli eventi e gruppi</string>
+    <string name="email_template_edit_note">Questo modello e-mail è stato creato dal sito così, effettua il login al sito web per la modifica in questo modello e-mail.</string>
+    <string name="not_valid">Non valido</string>
+    <string name="enter_valid_email">Inserisci valido Email</string>
+    <string name="error_label">ERRORE</string>
+    <string name="error_in_forgot_pass">Errore in Password dimenticata</string>
+    <string name="your_username_is_sent">Il tuo nome utente è stato inviato al tuo indirizzo email</string>
+    <string name="view_grp_note">Per utilizzare questa funzione gruppo deve avere almeno un vantaggio.</string>
+    <string name="leads_import_failure">Leads Importazione non riuscita</string>
+    <string name="wait_while_generating_csv">Attendere Prego !!! mentre la generazione di file CSV</string>
+    <string name="cannot_import_data">Siamo spiacenti, non è possibile importare i dati</string>
+    <string name="please_select_event">Seleziona evento</string>
+
+    <!-- Home messages -->
+
+    <string name="leads_by_attendees"># Di cavi da \ n partecipanti</string>
+    <string name="upload_pro_pic">Carica Picture Profile</string>
+    <string name="upload_company_logo">Carica il vostro marchio</string>
+    <string name="not_done">NOTDONE</string>
+    <string name="only_event_organizer_will_view">Solo organizzatore dell\'evento sarà in grado di visualizzare i report</string>
+    <string name="wait_while_generating_pipeline_reports">Attendi mentre la generazione di report Pipeline !!!</string>
+    <string name="sales_reports">Analisi delle vendite</string>
+    <string name="pipeline_sales_reports">Statistiche di vendita Pipeline</string>
+    <string name="clicks_for_sponsors_logo"># Di clic per \ n Sponsor loghi</string>
+    <string name="no_of_leads_by_lead_qualifier"># Di cavi da \ qualificazioni nlead</string>
+    <string name="no_and_per_of_leads_by_lead_qualifier"># E% di porta \ Nby Piombo Qualificazioni</string>
+    <string name="please_select_sponsor_name">Seleziona sponsor nome</string>
+    <string name="set_teammember_3_level_hierarchy">Impostare Visibilità Team Member Gerarchia: 3 Hierarchy Level</string>
+    <string name="set_teammember_entire_hierarchy">Impostare Visibilità Team Member Gerarchia: intera gerarchia</string>
+    <string name="team_member_full_hi">Team Member Gerarchia completa</string>
+    <string name="team_member_limited_hi">Team Member Gerarchia limitata</string>
+    <string name="team_member_full_hi_msg">Tutti i membri del team e le loro attività dell\'organizzazione sotto il livello verranno mostrati a voi. .</string>
+    <string name="team_member_limited_hi_msg">I membri del team e le loro attività fino a 3 livelli sotto di voi nella vostra organizzazione verranno mostrati a voi </string>
+    <string name="current_team_hi_3_level">Attuale Gerarchia della squadra: visibilità a 3 livelli - Toccare per Change</string>
+    <string name="current_team_hi_full">Attuale Gerarchia della squadra: Visibilità completa. Clicca per cambiare</string>
+    <string name="to_use_this_feature_u_req_team_member">Per utilizzare questa funzione è richiesto un membro del team</string>
+    <string name="delete_teammember">Elimina membro del team</string>
+    <string name="do_u_want_to_delete_teammember">Vuoi eliminare questo Team Member?</string>
+    <string name="teammem_transfered_success">Team Member trasferito con successo</string>
+    <string name="teammem_tarnsfered_failed_as_email_exist">Trasferimento Team Member riuscita come indirizzo e-mail esiste già.</string>
+    <string name="teammem_tarnsfered_failed">Team Member non trasferimento. Riprova.</string>
+    <string name="teammem_deleted_success">Team Member eliminata correttamente</string>
+    <string name="teammem_not_deleted">Team Member non Elimina. Riprova.</string>
+    <string name="transfer_team_member_alert">Tutto l\'evento (s), Gruppo (s), piombo (s), Modello Email (s) di questo Team Member sarà trasferito a un altro membro del team. Vuoi continuare?</string>
+
+    <!-- Group Messages -->
+
+    <string name="view_grp">Mostra gruppo</string>
+    <string name="wait_while_importing_data">Per favore attendi che l\'importazione dei dati ...!</string>
+    <string name="edit_custom_lead_status">Modifica personalizzato Stato Piombo</string>
+    <string name="edit_status_icon">Edit Stato Icon: </string>
+    <string name="view_followup_action">Visualizza Follow-Up \ nAction</string>
+    <string name="select_specific_leads">Selezionare specifici Leads \ n</string>
+    <string name="done">DONE</string>
+    <string name="io_error">Input/Output error</string>
+    <string name="image_cannot_be_decoded">Immagine può \ \'t essere decodificati</string>
+    <string name="downloads_are_denied">Download vengono negati</string>
+    <string name="out_of_memory">Out Of Errore di memoria</string>
+    <string name="unknown_error">errore sconosciuto</string>
+    <string name="service_listing">Listing Service</string>
+    <string name="session_listing">Session Listing</string>
+    <string name="attendee_authentication_failed">Autenticazione partecipanti non riuscita.</string>
+    <string name="no_description_found">Nessuna descrizione trovata per questo partecipante</string>
+    <string name="your_device_doesnot_support_crop_fun">Urla - il dispositivo doesn \ \'t sostenere l\'azione raccolto!</string>
+    <!--
+<string name=""></string>
+<string name=""></string>
+<string name=""></string>
+<string name=""></string>
+<string name=""></string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <!-- Lead Messages -->
+    <string name="enter_notes">Inserisci Notes</string>
+    <string name="add_lead_alert">Avete bisogno di un evento o gruppo di testa da creare prima in modo che il vantaggio di essere assegnato. Si prega di creare un evento o gruppo guidato prima di aggiungere piombo.</string>
+    <string name="add_lead_alert2">Per aggiungere il piombo, per prima cosa creare un evento, in quanto non ci sono eventi attualmente esiste</string>
+    <string name="confirm">confermare</string>
+    <string name="scan_business_renewal_subscription">Hai raggiunto il limite di utilizzo gratuito di scansione Business Card. Per continuare a utilizzare questa funzione perche il rinnovo della sottoscrizione.</string>
+    <string name="purchasing_additional_business_card">Hai raggiunto il limite di utilizzo della scansione Business Card. Per continuare a utilizzare questa funzione, ti preghiamo di considerare l\'acquisto di ulteriori scansioni di biglietti da visita.</string>
+    <string name="scan_badge_renewal_subscription">Hai raggiunto il limite di utilizzo gratuito della scansione del Badge. Per continuare a utilizzare questa funzione perche il rinnovo della sottoscrizione.</string>
+    <string name="purchasing_additional_badge_scan">Hai raggiunto il limite di utilizzo della scansione del Badge. Per continuare a utilizzare questa funzione, ti preghiamo di considerare l\'acquisto di ulteriori Badge scansioni.</string>
+    <string name="email_confirmation">Sei sicuro di e-mail?</string>
+    <string name="speak_lead">Parla di piombo</string>
+    <string name="start">inizio</string>
+    <string name="no_recognition_result_matched">Nessun risultato del riconoscimento abbinato</string>
+    <string name="please_speak_again">Si prega di parlare di nuovo</string>
+    <string name="speak_again">Parla di nuovo</string>
+    <string name="renew">rinnovare</string>
+    <string name="email_success">Email inviata correttamente.</string>
+    <string name="email_failure">Siamo spiacenti, mail non può essere inviato correttamente, riprova</string>
+    <string name="user_detail">Dettaglio utente</string>
+    <string name="gps_alert">Il vostro GPS sembra essere disabilitato, vuoi per abilitarlo?</string>
+    <string name="searching_for_gps">Ricerca del GPS Best Location ...</string>
+    <string name="wait_searching_other_user">Aspetta ... \ Nsearching Altro utente</string>
+    <string name="back_alert">Sei sicuro di voler tornare indietro?</string>
+    <string name="wait_while_scanning">Per favore attendi che Scanning ...</string>
+    <string name="capture_image">Immagine catturata</string>
+    <string name="scan">scansione</string>
+    <string name="lead_grp_date">Piombo Gruppo Data: </string>
+    <string name="no_follow_up">No Follow-Up disponibili.</string>
+    <string name="no_comment_added">No Comment Aggiunto!</string>
+    <string name="gps_setting">Impostazioni GPS</string>
+    <string name="gps_alert2">GPS non è abilitata. Vuoi aprire il menu delle impostazioni?</string>
+    <string name="export_confirmation_msg">dove si desidera esportare i cavi?</string>
+    <string name="export_alert">Ci dovrebbe essere almeno un cavo disponibile per l\'esportazione.</string>
+    <string name="badge_snapshot_lead">Badge Snapshot piombo</string>
+    <string name="export_to_aweber">Esporta in AWeber</string>
+    <string name="export_to_salesforce">Esporta in Salesforce</string>
+    <string name="error_while_fetching_email_contact">Si è verificato un errore durante il recupero contatti e-mail. Si prega di riprovare più tardi.</string>
+    <string name="load_more_leads">Caricare più contatti</string>
+    <string name="successfully_invited_via_linkedin">Invitato con successo via LinkedIn</string>
+    <string name="select_option_to_send_mail">Seleziona uno dei la possibilità di inviare e-mail a porta</string>
+    <string name="select_start_date">Selezionare Data di inizio</string>
+    <string name="select_end_date">Selezionare Data fine</string>
+    <string name="all_fields_are_mandatory">Tutti i campi sono obbligatori</string>
+    <string name="email_will_be_sent_on">Il tuo indirizzo e-mail verrà inviata</string>
+    <string name="review_quick_record_lead">Recensione Quick Record Piombo</string>
+    <string name="no_record_lead_available">Spiacente nessun cavo di registrazione rapida disponibile questa volta</string>
+    <string name="leads_export_success">Leads esportato con successo</string>
+    <string name="leads_export_failure">Leads esportazione non riuscita.</string>
+    <string name="drip_email_stop_success">Drip Email fermata con successo.</string>
+    <string name="error_while_stop_drip_email">Errore durante antigoccia Email. Si prega di riprovare più tardi.</string>
+    <string name="no_drip_email_found">No Drip Email trovata.</string>
+    <string name="no_drip_email_schedule_exists">Non esiste programma drip-mail per eseguire questa operazione</string>
+    <string name="send_mail">Invia mail</string>
+    <string name="group_detail">Gruppo Dettaglio:</string>
+    <string name="group">gruppo</string>
+    <string name="please_enter_phone_no_to_sms">Si prega di inserire il numero di telefono per effettuare un SMS</string>
+    <string name="please_select_ph_no">Seleziona numero di telefono</string>
+    <string name="add_attachment_alert">Vuoi allegare qualsiasi documento?</string>
+    <string name="swipe_feature_will_only_work">Funzione Swipe funziona solo per l\'evento o il gruppo selezionato.</string>
+    <string name="mandatory_fields">campi obbligatori</string>
+    <string name="fill_all_mandatory_fields">riempire tutti i campi tag *</string>
+    <string name="enter_valid">Inserisci Valid</string>
+    <string name="enter_valid_phone_ext">Inserisci estensione di telefono valido.</string>
+    <string name="terms_and_condition_confirmation_msg">Cliccando Registra, accetti la nostra<a href="https://www.myleadssite.com/terms.php"><b>Termini di servizio</b></a>  e <a href="https://www.myleadssite.com/terms.php#terms_new"><b>Politica Sulla Riservatezza.</b></a></string>
+    <string name="your_password_changed">La vostra password modificata correttamente</string>
+    <string name="password_changed">Password modificata</string>
+    <string name="view_task_detail">Visualizza Dettagli task</string>
+    <string name="delete_video_link">Elimina Video link</string>
+    <string name="delete">cancellare</string>
+    <string name="your_device_is_registered_with_GSM">Il dispositivo è registrata in GCM</string>
+    <string name="edit_your_note">Modificare la nota</string>
+    <string name="view_profile">Visualizza il profilo</string>
+    
+    
+    
+    <!-- Remaining -->
+    <string name="Event_restrict_to_delete_message">You cannot delete this event as you are registered for this event.</string>
+    <string name="Task_Status_label">Select Status</string>
+    <string name="ALLsponsorsfound">All Sponsors</string>
+    <string name="AddCustomLeadStatusTitleLabel" translatable="false">Aggiungi personalizzato Stato lead</string>
+    <string name="AddCustomLeadStatussHint">Si prega di inserire Stato lead</string>
+    <string name="AddCustomProductsHint">Inserisci il prodotto</string>
+    <string name="AddCustomStatusLabel">Personalizzato Stato lead *</string>
+    <string name="AddEventEndDateLabel">Data di fine</string>
+    <string name="AddExpenseAmountHint">Si prega di inserire Expense Importo</string>
+    <string name="AddExpenseNametHint">Inserisci il nome di spesa</string>
+    <string name="AddValidEventEndDateHint">Data di fine deve essere maggiore o uguale a Data di inizio.</string>
+    <string name="DeleteCustomLeadStatusDialogMessage">Sei sicuro di voler eliminare questo Stato lead personalizzato?</string>
+    <string name="DeleteCustomLeadstatusTitle">Delete Custom Lead Status</string>
+    <string name="DeleteCustomProductTitle">Delete Custom Product</string>
+    <string name="DeleteExpenseTitle">Delete Expense</string>
+    <string name="Doneimport">I dati sono stati importati correttamente da file CSV, cliccate sul pulsante OK per ricaricare queste attività</string>
+    <string name="Edit_Custom_LeadStatus_success">Personalizzato Stato lead è stato aggiornato con successo.</string>
+    <string name="ForgotPasswordLabel_title">Richiedi la mia password</string>
+    <string name="ForgotUsernamelabel">Forgot Username</string>
+    <string name="LEAD_STATUS_10">obiettivo di piombo</string>
+    <string name="LooseData4">Tutti i follow-up, i compiti e riunioni record per questo cavo verranno eliminati, Sei sicuro di voler eliminare questo cavo?</string>
+    <string name="LooseData5">Leads in this event will be deleted along with the follow-ups, task and meetings. Are you sure, you want to delete this lead ?</string>
+    <string name="MANAGER_SELECT">Selezionare Team Member</string>
+    <string name="MainTitlePipeLineSalesReport">Pipeline Report vendite</string>
+    <string name="MainTitleSalesReport">Rapporto delle vendite</string>
+    <string name="NoEvents_OnlyFoundLabel">Nessun evento trovato.</string>
+    <string name="NoGroup_OnlyFoundLabel">Nessun gruppo trovato.</string>
+    <string name="NoOpportunityFoundLabel">No Opportunity Vendite trovato</string>
+    <string name="Opp_name_label">nome</string>
+    <string name="Opp_period_label">periodo</string>
+    <string name="Opp_target_amount_label">Obiettivo Amt.</string>
+    <string name="Opp_target_date_label">Data di scadenza</string>
+    <string name="OpportunityListTitle">Lista opportunità di vendita</string>
+    <string name="OpportunitysLable">Opportunità di vendita</string>
+    <string name="OtherEmailLabel">altri E-mail</string>
+    <string name="ProductLabel">Interessi del prodotto</string>
+    <string name="ProductSelectLabel">Seleziona Interesse prodotto</string>
+    <string name="TakebyAction">Attivati da</string>
+    <string name="add_Custom_LeadStatus_failure">Personalizado de estado da ligação %$s não pode ser adicionado com sucesso.</string>
+    <string name="add_Custom_LeadStatus_success">Personalizzato Stato lead è stato aggiunto correttamente.</string>
+    <string name="add_Custom_Products_failure">Custom Producto %1$s no se podrían añadir con éxito.</string>
+    <string name="add_Expense_success">Spesa è stata aggiunta con successo.</string>
+    <string name="add_Expense_failure">Expense %1$s konnte nicht erfolgreich aufgenommen werden.</string>
+    <string name="add_Custom_Products_success">Prodotti personalizzati è stato aggiunto con successo.</string>
+    <string name="addtoaddressbook">Add to\n Address Book</string>
+    <string name="b_social">BeSocial</string>
+    <string name="badgeprint">badgeprint Distintivo Entry \n Controlla</string>
+    <string name="bump_lead">Bump Lead</string>
+    <string name="addeventPrivate_new">Visibile solo a me</string>
+    <string name="addeventPublic_new">Visibile a membri del team</string>
+    <string name="cantsccess">Can\'t access \n account</string>
+    <string name="continuelabel">continuare</string>
+    <string name="delete_Custom_LeadStatus_failure">Failed to delete Custom Lead Status %1$s.</string>
+    <string name="delete_Custom_LeadStatus_success">Personalizzato Stato lead eliminato.</string>
+    <string name="delete_Custom_Product_failure">Failed to delete Custom Product %1$s.</string>
+    <string name="delete_Custom_Product_success">Prodotto personalizzato eliminato.</string>
+    <string name="delete_Expense_failure">Failed to delete Expense %1$s.</string>
+    <string name="delete_Expense_success">Expense eliminato.</string>
+    <string name="delete_Opp_failure">Impossibile eliminare opportunità di vendita%1$s.</string>
+    <string name="delete_Opp_success">Oportunidad de venta %1$s  eliminan correctamente.</string>
+    <string name="edit_Expense_success">Expense updated successfully.</string>
+    <string name="edit_Expense_failure">Failed to update Expense Status %1$s</string>
+    <string name="edit_Custom_Products_failure">Failed to update Custom Product %1$s</string>
+    <string name="edit_Custom_Products_success">Prodotto personalizzato aggiornato con successo.</string>
+    <string name="edit_Custom_Leadstatus_failure">Custom Lead Status %1$s could not be updated successfully.</string>
+    <string name="edit_Custom_LeadStatus_success">Personalizzato Stato lead aggiornato con successo.</string>
+    <string name="edit_Custom_LeadStatus_failure">Unable to update custom lead status %1$s</string>
+    <string name="edit_opportunity_failure">Opportunity %1$s konnte nicht erfolgreich bearbeitet werden.</string>
+    <string name="edit_opportunity_success">Sales Opportunity %1$s edited successfully.</string>
+    <string name="failimport">Sorry, cannot import data, please try again</string>
+    <string name="forgotpasswordnotsent">El correo electrónico no está registrada</string>
+    <string name="helo">Aidez-moi</string>
+    <string name="jobtitle">Job Title</string>
+    <string name="later_login">Later</string>
+    <string name="logout_new">Disconnettersi</string>
+    <string name="mEndDateTime">End Date &amp; Time</string>
+    <string name="mStartDateTime">Data e ora di inizio</string>
+    <string name="new_account">conto</string>
+    <string name="new_add">aggiungere</string>
+    <string name="new_back">Indietro</string>
+    <string name="new_setting">impostazioni</string>
+    <string name="noAgendaTitle_NormalEvent">There is no agenda uploaded for this event, however you can upload agenda document from the website myleadssite.com</string>
+    <string name="ocr_lead">Scansione Business Card</string>
+    <string name="oppName">Opportunità Vendite Nome</string>
+    <string name="opp_name_VALIDATION">Si prega di inserire nome Opportunità di vendita</string>
+    <string name="oppotunityEditNote">You can not edit Sales Opportunity from here. For Edit Sales Opportunity, Goto View Lead page.</string>
+    <string name="optin">Allow MLeads platform to send product and other updates</string>
+    <string name="otheremailtext">altri E-mail</string>
+    <string name="qr_code">Scan QR Code</string>
+    <string name="quicknote">Nota rápida</string>
+    <string name="quicknotelead">Rapida Nota Piombo</string>
+    <string name="quickrecord">Record rapida</string>
+    <string name="rate_app_msg">Nous espérons que vous trouverez la plate-forme utile. Aimeriez-vous pour évaluer l\'application?</string>
+    <string name="select_Session_Duration_PromptMessage">Seleziona Durata sessione</string>
+    <string name="select_List_aweberr">Sélectionnez Liste</string>
+    <string name="select_Badge_Category">Seleziona Badge Categoria</string>
+    <string name="selectevnets" translatable="false">Selezionare evento</string>
+    <string name="selectteammember" translatable="false">Seleziona Squadra \n Member</string>
+    <string name="voicememo">Memo vocale</string>
+    <string name="view_opportunity_label">Opportunità View vendite</string>
+    <string name="type_lead">tipo Passo</string>
+    <string name="subscribe">abbonarsi</string>
+    <string name="startDate_after_endDate">Data di fine deve essere maggiore o uguale a Data di inizio.</string>
+    <string name="speakleadtitle_mail">Speak Lead’s email</string>
+    <string name="speakleadtitle_name">Parla nome di piombo</string>
+    <string name="speakleadtitle_phone">Speak Lead’s phone#</string>
+    <string name="speak">parlare</string>
+    <string name="smstoall">Messaggi per Tutti</string>
+    <string name="signup">Iscriviti adesso</string>
+    <string name="skippedimportmsg"># of rows missing required columns data to get imported successfully.  You can either populate these rows with required data and import again or continue importing with these rows being skipped.</string>
+    <string name="showmap">Visualizza Mappa</string>
+    <string name="showPreviewEmailTemplate">Anteprima dello spettacolo</string>
+    <string name="sharelead">Condividi \nLeads</string>
+    <string name="select_team_member_PromptMessage">Selezionare Team Member</string>
+    <string name="reffer_body_text1">Ciao, \ n \ nI sto usando MLeads per gestire le mie lead e organizzazione di eventi. MLeads è stato progettato per le vendite e professionisti del marketing e organizzatori di eventi. MLeads offerte di prova gratuita di 30 giorni! Spero di dare una prova! \ N \ nScarica MLeads da questo link \ n</string>
+    <string name="reffer_body_text2">\ n \ nSe si decide di iscriversi utilizzando il link qui sopra, dopo di prova gratuita, si otterrà uno sconto del 10%% sul prezzo di sottoscrizione. \ n \ nInoltre, ogni volta che si riferiscono MLeads a qualcuno che conosci, si ottiene il 10%% degli utili di commissione su abbonamento a pagamento per conto utente MLeads.</string>
+    <string name="reffer_subject_text">Check out questa piattaforma incredibile che sto usando chiamati MLeads</string>
+    <string name="refer_lable">Riferirsi</string>
+    <string name="transfer_lable">Trasferimento</string>
+    <string name="refer_mleads_to_frnd_facebook">Fare riferimento Mleads su Facebook</string>
+    <string name="reffer_body_Normal_text1">Voglio riferirmi MLeads. \n \nScarica collegamento \n</string>
+    <string name="reffer_body_Normal_text2">\nPer otterrà il 10% di sconto sul prezzo di sottoscrizione.</string>
+    <string name="custom_product_lable">Prodotti personalizzati</string>
+    <string name="custom_lead_status_lable">Stato Personalizzati</string>
+    <string name="profil_update_success_msg">Il tuo profilo è stato salvato con successo.</string>
+    <string name="manual_followup_added">Manual FollowUp Action Completed Save Sucessfully.</string>
+    <string name="manual_followup_added2">Follow-Up Action Updated Successfully</string>
+    <string name="add_opportunity_failure">Sales Opportunity %1$s could not be added successfully.</string>
+    <string name="add_opportunity_success">Sales Opportunity %1$s added successfully.</string>
+    <string name="add_speak_note">Add Speaker Notes</string>
+    <string name="csv_file_success_msg">File .CSV generato correttamente.</string>
+    <string name="TIME_VALIDATION_END_TIME">Inserisci fine Tempo</string>
+    <string name="TIME_VALIDATION_NOT_SAME">Ora fine non può essere inferiore o uguale a Start Tempo</string>
+    <string name="TIME_VALIDATION_START_TIME">Si prega di inserire iniziare Tempo</string>
+    <string name="noAgendaTitle_NormalEvent_TeamManager">Non vi è alcun ordine del giorno caricato per questo evento.</string>
+	<string name="SendalertButtonLabel">Invia Alert</string>
+	<string name="AddShowAlertNameHint">Si prega di inserire il messaggio</string>
+	<string name="showalert">Messaggio inviato con successo al organizzatore dell\'evento</string>
+	<string name="addMessageTitle"> Aggiungi un messaggio</string>
+	<string name="addMessageNote">Nota: Questo messaggio verrà inviato a tutti i partecipanti all\'evento) sul proprio dispositivo mobile.</string>
+	<string name="addMessage">su 60 caratteri rimanenti</string>
+	<string name="TodayTask">Hai 2 Attività Oggi</string>
+	<string name="MeetingTask">Hai 1 Incontri Oggi</string>
+	<string name="add_message_here">Aggiungi il tuo messaggio qui [fino a 60 caratteri]</string>
+	<string name="view_message">Visualizza Messaggio</string>
+	<string name="viewpagevoicememo">Voce\n promemoria</string>
+	<string name="VoiceMemosave"> Memo vocale salvato con successo</string>
+	<string name="email_statistics">e-mail Statistiche</string>
+	<string name="Recipient"> Destinatario</string>
+	<string name="Subject">Soggetto</string>
+	<string name="Date">Data</string>
+	<string name="map">Conduce vicino a me</string>
+	<string name="map_label">Mappa Leads</string>
+	<string name="gotomleads">Vai a Mleads</string>
+	<string name="SELECT_EMAIL_STATUS">Email Stato</string>
+	<string name="SELECT_Distance">Distanza</string>
+	<string name="dashboard_Title">la mia scrivania</string>
+	<string name="Notification">Notifica</string>
+	<string name="Notification_message">messaggio di notifica</string>
+	<string name="wait_while_not_payment">Il pagamento non è riuscita.</string>
+	<string name="wait_while_payment">È stato sottoscritto con successo.</string>
+	<string name="surveyquestionnaireLabel"> questionario</string>
+	<string name="button_purchase">Acquista</string>
+	<string name="button_email_continue"> proseguire</string>
+	<string name="email_update_profile">Aggiorna informazioni di contatto</string>
+	<string name="PHONEHint"> Si prega di inserire il numero di telefono.</string>
+	<string name="AddFollowupMessageVisibilityStatusLabel">visibilità Stato</string>
+	<string name="AddPhoneExtLabel">EXT.</string>
+	<string name="By_Register_Terms_Condition">Si prega di inserire l\'ora di fine</string>
+	<string name="NO_STATUS_TITLE">Nessun record trovato</string>
+	<string name="SelectNext">fatto</string>
+	<string name="Send_Alert">Sabbia \ n Alerts</string>
+	<string name="Surveyquestionnaire">Indagine Khuastionnir</string>
+	<string name="button_count">Rimening conteggio totale (s):</string>
+	<string name="email_count_failure">È possibile inviare e-mail 3000 e con cadenza mensile 1000 Mails s su base giornaliera. Invio il restante valore del tuo e-mail: Invia email Knnot 100 dormire U. \ N Se desiderate che il vostro acquisto e-mail aggiuntivo quindi scegliere l\'acquisto di oggi tasto Conti e poi ricevere Conti email aggiuntivi effettuare il pagamento.</string>
+	<string name="purchase_count_completed">il valore del tuo e-mail aggiuntivo arriva a 0 e si sta ora migrando alla posta elettronica normale invio di sottoscrizione di 1K limite giornaliero di posta elettronica inviare e 3K limite mensile. Se desiderate che il vostro Renu quindi fare clic su acquisto e-mail aggiuntivo di oggi tasto conti e pagamenti supplementari e ricevere i conteggi e-mail.</string>
+	<string name="select_distance">Selezionare Distanza</string>
+	<string name="send_email_info">Invia Informazioni e-mail</string>
+	<string name="txt_email_message">È possibile inviare sub di 1000 email al giorno e sub di 3000 messaggi di posta elettronica mensile \ Nuovo Caino acquistare ulteriori conteggi e-mail fino a Rs per soli $ NIL \ n \ nNota.. Una volta che il Tablet quota supplementare fino a Rs-mail Conti Huss Bean oggi Usato si migrati automaticamente alla normale e-mail l\'invio di e-mail e mensili 3000 1000 e-mail giornaliera di capacità.</string>
+	<string name="update_contact_fail">Stendere il Send Mail.</string>
+	<string name="update_contact_success">Tutte le email sono stati poi selezionati San Sksessfulli Leads).</string>
+	<string name="str_btn_find">fondi</string>
+	<string name="RetypeEmailNotMatchHint">NON RE-digitato indirizzi e-mail e indirizzi e-mail partita.</string>
+	<string name="all_email_send_success">La richiesta è stata presentata e verrà inviato a tutti i tuoi contatti di conseguenza.</string>
+	<string name="newmessageMaintitle1">Aggiorna contatto Informazioni e-mail</string>
+	<string name="sales_opportunity_by_leads">opportunità di vendita per i cavi</string>
+	<string name="PhoneNumberHint">Si prega di inserire il numero di telefono.</string>
+	<string name="select_time">Seleziona fuso orario</string>
+	<string name="select_time_error">Selezionare Time.</string>
+	<string name="select_time_zone">Seleziona fuso orario</string>
+	<string name="network_not_msg">Il tuo dispositivo non è connesso con internet in modo, non è possibile aggiornare o programma demo in modalità non in linea.</string>
+	<string name="agreement1">Con login qui siete d\'accordo con MLeads</string>
+	<string name="agreement2">Contratto di licenza per l\'utente</string>
+    <string name="custom_delete_msg">Non è possibile cancellare qualificatore prodotto scelto in quanto è già stato assegnato a uno o più contatti.</string>
+    <string name="custom_lead_delete_msg">Non è possibile eliminare lo stato di piombo personalizzato selezionato in quanto è già stato assegnato a uno o più contatti.</string>
+    <string name="follow_up_delete_msg">Non è possibile cancellare selezionati azioni di follow-up personalizzato in quanto è già stato assegnato a uno o più contatti.</string>
+	<string name="phone_hint1">ad esempio Phone (012) 345-6789</string>
+    <string name="on">su</string>
+    <string name="settingcloseaccount">Chiudere l\'account </string>
+    <string name="closeaccountmsg">Sei sicuro di voler chiudere il tuo account MLeads? Tutti gli eventi, i gruppi di lead, il lead e il modello di posta elettronica verranno eliminati.</string>
+    <string name="closemsg">La tua richiesta MLeads close è stata ricevuta e riceverai immediatamente un\'email di conferma per la stessa.</string>
+    <string name="str_badge_before_event_msg">Questo evento non è ancora iniziato e ti consigliamo di visitare la data di inizio dell\'evento.</string>
+    <string name="str_badge_before_session_msg">Questa sessione non è ancora iniziata e ti consigliamo di visitare la data di inizio sessione.</string>
+    <string name="str_badge_cancel_msg">Spiacenti, questo evento è già annullato, quindi non possiamo controllarti.</string>
+    <string name="str_badge_close_msg">Spiacenti, questo evento è chiuso, quindi non possiamo controllarti.</string>
+    <string name="str_badge_session_close_msg">Spiacenti, questa sessione è chiusa, quindi non possiamo controllarti.</string>
+    <string name="str_badge_wrong_msg">Spiacenti, questo codice QR non è valido.</string>
+    <string name="already_login">Sei già iscritto in un altro dispositivo. Si prega di disconnettersi da un altro dispositivo e quindi accedere qui.</string>
+    <string name="or">O </string>
+    <string name="load_more">Carica più</string>
+    <string name="load_more_msg">Spiacenti, nessun evento più per</string>
+    <string name="messaging_all_validation_msg">Seleziona almeno un nome di piombo.</string>
+    <string name="SendAlertFailMsg">L\'invio di un avviso non è riuscito, riprova.</string>
+    <string name="SendAlertSuccessMsg">L\'avviso è stato inviato correttamente a tutti i partecipanti all\'evento).</string>
+    <string name="changeLanguage">Cambia lingua </string>
+    <string name="Lan_Chinese_Simplified">[  Cinese (Semplificato)  ]</string>
+    <string name="Lan_Chinese_Traditional">[  Cinese (Tradizionale)   ]</string>
+    <string name="Lan_English">[  Inglese  ]</string>
+    <string name="Lan_French">[  francese  ]</string>
+    <string name="Lan_German">[  Tedesco  ]</string>
+    <string name="Lan_Italian">[  italiano  ]</string>
+    <string name="Lan_Portuguese">[  portoghese  ]</string>
+    <string name="Lan_Spanish">[  spagnolo  ]</string>
+    <string name="settingChangeLanguage">Cambia lingua </string>
+    <string name="settingChangeLanguageMsg">Sei sicuro di voler cambiare la lingua?</string>
+    <string name="unShare_company_name">Nome della ditta </string>
+	<string name="strimporthubspot">Hubspot</string>
+
+</resources>

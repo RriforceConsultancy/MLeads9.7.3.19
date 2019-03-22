@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <LinearLayout
+            android:id="@+id/Lin_back"
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/request_for_demo_title"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnAttendee_bsocial"
+            android:layout_width="80dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:gravity="center"
+            android:text="@string/attendees"
+            android:textColor="#000000"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnLeaderBord"
+            android:layout_width="80dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:gravity="center"
+            android:text="@string/leader_board"
+            android:textColor="#000000"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnSubmitRequest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/request_for_demo_button_label"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/list_blue_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Lin_TimeZone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/txt_teammember"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/select_time_zone"
+                    android:textColor="#000000" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spnTimeZone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/select_team_member_PromptMessage" >
+                </Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Lin_Date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/txt_teammember"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/select_date"
+                    android:textColor="#000000" >
+                </TextView>
+
+
+                <EditText
+                    android:id="@+id/edtDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="@string/select_date"/>
+
+                <!--<Spinner
+                    android:id="@+id/spnDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/select_team_member_PromptMessage" >
+                </Spinner>-->
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/Lin_Time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/txt_teammember"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/select_time"
+                    android:textColor="#000000" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="@string/select_time"/>
+
+                <!--<Spinner
+                    android:id="@+id/spnrUser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/select_team_member_PromptMessage" >
+                </Spinner>-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

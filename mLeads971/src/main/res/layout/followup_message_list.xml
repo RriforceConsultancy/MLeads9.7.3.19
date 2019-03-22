@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <!--
+     <FrameLayout
+		android:id="@+id/linearAddview"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp" >
+	</FrameLayout>
+    -->
+    
+    
+    <include 
+        layout="@layout/commonlayoutseperate"
+        android:id="@+id/commonlayout"
+        
+        />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/neweightfooter" >
+
+        <!-- <Button
+            android:id="@+id/BackButton"
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="@string/BackButtonLabel"
+            android:textColor="#FFFFFF" /> -->
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/email_template"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- <ImageView
+            android:id="@+id/AddLeadButton"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="1dp"
+            android:onClick="addFollowupMessage"
+            android:src="@drawable/add"
+            android:text="@string/SaveButtonLabel"
+            android:textColor="#FFFFFF" /> -->
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_team"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="@string/select_team_member"
+            android:textColor="#000000" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spnrUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/USER_SELECT" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEventSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_eventlabel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/SelectEvent_OR_Group_Label"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/EventSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/SelectEvent_OR_Group_Label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iphone_bg"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txtSubject"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/defaultSubject"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/defaultMessage"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="290dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/FollowupMessagesListLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <AbsoluteLayout
+        android:id="@+id/ActionStripAbsoluteLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/neweightfooter"
+        android:gravity="center"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/EditFollowupMessageImageView"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|left"
+                    android:gravity="center"
+                    android:src="@drawable/neweightedit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/viewEventImageView"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/neweightview" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/DeleteFollowupMessageImageView"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/neweightdelete" />
+            </LinearLayout>
+        </LinearLayout>
+    </AbsoluteLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/commonlayout"
+        layout="@layout/commonlayoutseperate" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/BackButton"
+            android:gravity="center"
+            android:text="@string/GroupsLabel"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_teammember"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="@string/select_team_member"
+            android:textColor="#000000" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spnrUser_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select_team_member_PromptMessage" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWithin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_eventswithin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="@string/GroupsWithin_Label"
+            android:textColor="#000000" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/eventsWithins_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/GroupsWithin_Label" >
+        </Spinner>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:src="#C9C9C9" />
+
+    <LinearLayout
+        android:id="@+id/llEventColum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/txtEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="@string/GroupsLabel"
+            android:textColor="#000000"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="@string/Lead_Source_Label"
+            android:textColor="#000000"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="@string/eventCityField"
+            android:textColor="#000000"
+            android:textStyle="bold" >
+        </TextView> -->
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="@string/AddEventDateLabel"
+            android:textColor="#000000"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:src="#C9C9C9" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="320dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/EventsListLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

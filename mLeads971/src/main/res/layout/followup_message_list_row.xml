@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+     <TextView
+        android:id="@+id/SubjectTextView"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/FollowupMessageSubjectLabel"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/MessageTextView"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:text="@string/FollowupMessageLabel"
+        android:textColor="#000000" 
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/Attachment_Img"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="right|center"
+        android:gravity="right"
+        android:src="@drawable/pin" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical" >
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true" />
+    
+    
+
+    <View
+        android:id="@+id/frmMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#00000000" />
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="140dp"
+        android:layout_height="450dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:content="@+id/content"
+        android:duplicateParentState="true"
+        android:handle="@+id/handle"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/content"
+            layout="@layout/slidelayout" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:src="@drawable/see_nearby" />
+    </SlidingDrawer>
+    <!-- </LinearLayout> -->
+
+</RelativeLayout>

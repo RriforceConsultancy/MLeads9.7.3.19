@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        <TextView
+            android:id="@+id/txt_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="14dp"
+            android:background="#4d4d4d"
+            android:gravity="center"
+            android:text="sucheta"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+
+        </FrameLayout>
+
+        <!--<TextView
+            android:id="@+id/txt_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Company: Triforce"
+            android:textSize="12dp"/>-->
+        <TextView
+            android:id="@+id/txt_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Company: Triforce"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/neweightattachmentbtn"
+        android:id="@+id/marker_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to view Lead"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="12dp"/>
+
+
+</LinearLayout>

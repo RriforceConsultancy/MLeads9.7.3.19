@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+   
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/AddLeadLabel"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="80dp"
+            android:layout_height="38dip"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:onClick="addLead"
+            android:text="@string/SaveButtonLabel"
+            android:textColor="#000" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_selectevent"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/SelectEvent_OR_Group_Label"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/EventSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/Select_new_Event_OR_Group_Label" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_capture"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadReCaptureImage"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/CaptureImageLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgCapture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/capture_img"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/CaptureImageImageView"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/noprofilephoto"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/FirstNameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/FirstNameLabel"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+
+                <EditText
+                    android:id="@+id/LastNameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/LastNameLabel"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/JobTitleEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/AddLeadJobTitleLable"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/CompanyNameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/CompanyNameLabel"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <EditText
+                    android:id="@+id/EmailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/EmailLabel"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/OtherEmailEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/OtherEmailLabel"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/PhoneEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/phone_hint1"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Phone_Extension_EditText"
+                    android:layout_width="190dp"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/PhoneExt"
+                    android:inputType="phone"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+
+                <EditText
+                    android:id="@+id/Phone_other_EditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/other_phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/JobTitleEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/AddLeadJobTitleLable"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout> -->
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_leadstatus"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/SELECT_LEAD_STATUS"
+                    android:textColor="#000000"></TextView>
+
+                <Spinner
+                    android:id="@+id/spnrLeadStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:prompt="@string/SELECT_LEAD_STATUS"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/txt_addfollowup"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadFollowUpMessageLabel"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/FollowUpActionTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/spinner_button_xml"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="30dp"
+                        android:singleLine="true"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/takeactionby"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/TakebyAction"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/txt_addProduct"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadProductMessageLabel"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/ProductTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/spinner_button_xml"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="30dp"
+                        android:singleLine="true"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/takeactionby"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/TakebyAction"
+                    android:inputType="text"
+                    android:singleLine="true"
+                     android:editable="false"
+                    android:focusable="false"
+                    android:textColorHint="#55595C"
+                    android:textSize="12dip" />
+            </LinearLayout> -->
+
+            <!-- <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txt_leadstatus"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/SELECT_LEAD_STATUS"
+                    android:textColor="#000000" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spnrLeadStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:prompt="@string/SELECT_LEAD_STATUS" >
+                </Spinner>
+            </LinearLayout> -->
+
+            <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" >
+
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/RecordMemoImageView"
+                        android:layout_width="22dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="5dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rec" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip" >
+
+                    <TextView
+                    android:id="@+id/txt_recordvoice"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:text="@string/AddLeadRecordMemoLabel"
+                    android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/txt_recordvoice"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadRecordMemoLabel"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip">
+
+                    <ImageView
+                        android:id="@+id/RecordMemoImageView"
+                        android:layout_width="22dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="5dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rec" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:weightSum="2">
+
+                <!-- <TextView
+                    android:id="@+id/txt_opportunity"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/opportunitytitle"
+                    android:textColor="#000000"
+                    android:visibility="gone" /> -->
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/NotesButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/neweightattachmentbtn"
+                        android:text="@string/addNoteLabel"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/AddressButtons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+
+                        android:background="@drawable/neweightattachmentbtn"
+                        android:text="@string/addleadaddressbuttontitle"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/addleadaddresstitle"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/AddressButtons"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/neweightattachmentbtn"
+                        android:text="@string/addleadaddressbuttontitle"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:weightSum="2">
+
+                <!-- <TextView
+                    android:id="@+id/txt_notes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadNotesLabel"
+                    android:textColor="#000000" /> -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/opportunitybutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/neweightattachmentbtn"
+                        android:text="@string/addoppotunitybuttontittle"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/AttachmentButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/neweightattachmentbtn"
+                        android:text="@string/addAttachmentLabel"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/SurveyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/neweightattachmentbtn"
+                    android:text="@string/surveyquestionnaireLabel"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/txt_attachment"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/AddLeadAttachmentsLabel"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/AttachmentButton"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/neweightattachmentbtn"
+                        android:text="@string/addAttachmentLabel"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout> -->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnScanQR"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_note"
+            android:text="@string/ScanQRCodecard"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llOCR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/OCR_BUTTON_TITLE"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionbg"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btnBarCode"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_note"
+                    android:text="@string/OCR_SELECT_PICTURE"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnOCRCode"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edit_note"
+                    android:text="@string/OCR_TAKE_PICTURE"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

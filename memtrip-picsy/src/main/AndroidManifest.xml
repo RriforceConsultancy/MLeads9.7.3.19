@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.memtrip.picsy">
+
+    <application android:allowBackup="false"
+        android:screenOrientation="portrait">
+
+
+
+        <activity android:name=".activity.ScanBusinessTutorial"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:label="MLeads Enterprise" ></activity>
+        </application>
+
+</manifest>

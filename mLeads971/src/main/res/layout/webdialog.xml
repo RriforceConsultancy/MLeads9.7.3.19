@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/optionbg1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/Web_Title"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtLastNameWeb"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:hint="@string/Web_LastName" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnOKWeb"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Web_OKButton"
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancelWeb"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Web_CancelButton"
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

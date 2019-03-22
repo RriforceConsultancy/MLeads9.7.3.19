@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <!--
+    <FrameLayout
+		android:id="@+id/linearAddview"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp" >
+	</FrameLayout>
+    -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            android:id="@+id/BackButton"
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="@string/BackButtonLabel"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/addoppotunitybuttontittle"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="75dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/blue_button"
+            android:ellipsize="end"
+            android:text="@string/email"
+            android:textColor="#FFFFFF" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_pie"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_pie"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/main_background"
+	android:orientation="vertical" >
+
+    <TextView
+    	android:id="@+id/textTitle"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="20dp"
+    	android:text="@string/Upgrade_Title"
+    	android:textColor="@color/black"
+    	 />
+    <ImageView
+    	android:id="@+id/imageViewLogo"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="20dp"
+    	android:src="@drawable/logo1" />
+    <TextView
+    	android:id="@+id/textDetail"
+    	android:layout_width="250dp"
+    	android:layout_height="wrap_content"
+    	
+    	android:layout_marginLeft="40dp"
+    	android:layout_marginTop="20dp"
+    	android:text="@string/Upgrade_text"
+    	android:textColor="@color/black" />
+    <Button
+    	android:id="@+id/butnRate"
+    	android:layout_width="220dp"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="20dp"
+    	android:background="@drawable/site_button"
+    	android:text="@string/Button_Rate_mlites" />
+    <Button
+    	android:id="@+id/butnUpgrade"
+    	android:layout_width="220dp"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="5dp"
+    	android:background="@drawable/site_button"
+    	android:text="@string/Button_Upgrade_Enterprise" 
+    	android:visibility="gone"
+    	/>
+    <CheckBox
+    	android:id="@+id/checkboxUpgrade"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginTop="20dp"
+    	android:paddingLeft="50dp"
+    	android:text="@string/Checkbox_Upgrade"
+    	android:textColor="@color/black" />
+    <Button
+    	android:id="@+id/butnSkip"
+    	android:layout_width="80dp"
+    	android:layout_height="40dp"
+    	android:layout_gravity="bottom|right"
+    	android:layout_marginTop="30dp"
+    	android:background="@drawable/blue_button"
+    	android:text="@string/Button_skip"
+    	android:textColor="#fff" />
+</LinearLayout>

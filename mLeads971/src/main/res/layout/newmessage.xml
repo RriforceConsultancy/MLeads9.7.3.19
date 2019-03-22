@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/neweightfooter" >
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/BackButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="2dip"
+                        android:background="@drawable/neweightback_l"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BackButtonLabel"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/IconImageView"
+                    android:layout_width="155dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/newmessageMaintitle"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:textSize="19dp" />
+
+                    <TextView
+                        android:id="@+id/IconImageView1"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/newmessageMaintitle1"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:textSize="19dp" />
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/SendButton"
+                    android:layout_width="80dp"
+                    android:layout_height="38dip"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/neweightsubmit_btn"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textColor="#000" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/IconImageViewText"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/newmessagetitle"
+                android:textColor="#000000"
+                android:textSize="15dp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edtxt_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="top|left"
+                    android:hint="@string/newmessageSubject"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:textColorHint="#000" >
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_attachment"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/neweightattachmentbtn"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="@string/AddAttachment"
+                    android:textColor="#ffffff" >
+                </Button>
+
+                <!--
+                <ListView
+                    android:id="@+id/AtchmntListview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:cacheColorHint="@android:color/transparent" 
+                    android:visibility="gone"
+                    >
+                </ListView>
+                -->
+
+
+                <!--
+                <ListView
+                    android:id="@+id/listView_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:divider="#000000"
+                    android:dividerHeight="1dp" 
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:listSelector="@drawable/mulitselection_listselector"
+                	android:cacheColorHint="@android:color/transparent"
+                    >
+
+                </ListView>
+                -->
+
+
+                <!-- <ScrollView android:id="@+id/scrollView1" android:layout_width="fill_parent" android:layout_height="250dp"> -->
+
+                <EditText
+                    android:id="@+id/edtxt_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="top"
+                    android:hint="@string/newmessagemessage"
+                    android:minHeight="200dp"
+                    android:singleLine="false"
+                    android:textColorHint="#000"
+                    android:textSize="15dp"
+                    android:visibility="visible" >
+
+                </EditText>
+                
+                <com.triforce.mobileapps.mleadsenterprise.modules.followup.message.TouchyWebView 
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
+                android:visibility="gone"
+                 />
+
+                <!-- </ScrollView> -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

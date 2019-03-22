@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <!--
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <Button
+            android:id="@+id/BackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/neweightback"
+            android:gravity="center"
+            android:onClick="OnClick"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/marqueeText_style"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/MailButton"
+            android:layout_width="60dp"
+            android:layout_height="42dip"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:onClick="OnClick"
+            android:text="Email\nReport"
+            android:textColor="@color/black" />
+    </FrameLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/Rel_Header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:onClick="OnClick"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/MailButton"
+            android:layout_width="60dp"
+            android:layout_height="42dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/neweightsubmit_btn"
+            android:ellipsize="end"
+            android:onClick="OnClick"
+            android:text="@string/email_report_label"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Rel_Header"
+        android:background="@color/red_transparent"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+
+
+    </LinearLayout>
+    
+    
+    <!-- <LinearLayout
+        android:id="@+id/Main_Lin_Sales_Cycle_Report"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Rel_Header"
+     
+        android:orientation="vertical"
+        android:background="#880000"
+         > -->
+        
+        
+<RelativeLayout 
+    android:id="@+id/Rel_temp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_below="@+id/Rel_Header"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/common_bar_salescycle_report_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/no_of_leads"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNoOFLeads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/common_block_bg"
+                android:gravity="center"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            
+            <!-- <TextView
+                android:id="@+id/txtNoOFLeads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/common_bar_salescycle_report_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Number of Leads"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/common_bar_salescycle_report_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/leads_converted_to_customer"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtConvertCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/common_block_bg"
+                android:gravity="center"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/common_bar_salescycle_report_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/average_days_to_convert"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAvgDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/common_block_bg"
+                android:gravity="center"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/comp_image" />
+    
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/expense_incurred"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#4d4d4d"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+   <!--  </LinearLayout> -->
+
+<WebView
+    android:id="@+id/webViewReport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/Rel_Header" />
+
+</RelativeLayout>

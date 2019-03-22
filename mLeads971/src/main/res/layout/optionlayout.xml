@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_btn_bg1"
+            android:gravity="center"
+            android:onClick="optionClick"
+            android:padding="5dp"
+            android:text="@string/add_capital"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/AddLeadsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/add_btn_bg"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="optionClick"
+            android:padding="5dp"
+            android:text="@string/lead_label"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/add_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/add_btn_bg"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="optionClick"
+            android:padding="5dp"
+            android:text="@string/event"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/add_Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/add_btn_bg"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="optionClick"
+            android:padding="5dp"
+            android:text="@string/lead_groups"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/add_emailTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/add_btn_bg"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="optionClick"
+            android:padding="5dp"
+            android:text="@string/email_template"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</FrameLayout>

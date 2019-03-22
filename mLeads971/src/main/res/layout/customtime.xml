@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/optionbg1" >
+
+    <LinearLayout
+        android:id="@+id/llBackOperation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/HOUR"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/MINUTE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/frameLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnHourPlus"
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center|top"
+                        android:text="+"
+                        android:textColor="#000000"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtHour"
+                        android:layout_width="65dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="55dp"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:maxLength="48" />
+
+                    <Button
+                        android:id="@+id/btnHourMinus"
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="105dp"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center" >
+
+                    <Button
+                        android:id="@+id/BtnMinutePlus"
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center|top"
+                        android:text="+"
+                        android:textColor="#000000"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtMinute"
+                        android:layout_width="65dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="55dp"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:maxLength="60" />
+
+                    <Button
+                        android:id="@+id/BtnMinuteMinus"
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="105dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_ok"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/button_cancel"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

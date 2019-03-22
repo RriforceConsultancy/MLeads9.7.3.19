@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!--
+    <RelativeLayout android:layout_width="fill_parent"
+		android:background="@drawable/title_bar" android:layout_height="50dp">
+		<Button android:id="@+id/BackButton" android:layout_width="70dip"
+			android:layout_height="30dip" android:layout_marginLeft="2dip" android:background="@drawable/back"
+			android:textColor="#FFFFFF" android:text="@string/BackButtonLabel"
+			android:onClick="onClick" android:layout_alignWithParentIfMissing="true" android:layout_centerVertical="true"/>
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="40dip" android:gravity="center" android:layout_marginTop="3dp"
+			android:src="@drawable/top_icon"  android:layout_centerHorizontal="true"
+		     />
+	</RelativeLayout>
+
+    -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/neweightfooter" >
+
+        <!--
+             <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/neweightfooter_logo" />
+
+        -->
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/settingshelp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:onClick="onClick"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/white_box"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:background="@drawable/user_manual_original" >
+        </ImageView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/btnUserLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_LOGIN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_REGISTER"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserHome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_HOME"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserEvents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_EVENTS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserAddEvent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_ADDEVENT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserEditEvent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_EDITEVENT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserLeads"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_LEADS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserAddLead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_ADDLEAD"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserEditLead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_EDITLEAD"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserEmailMessageTemplate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_EMAILMESSAGE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserAddEmailMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_ADDEMAILMESSAGE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserEditEmailMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_EDITEMAILMESSAGE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserFollowUp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_FOLLOWUP"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserAddFollowUp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_ADDFOLLOWUP"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserEditFollowUp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_EDITFOLLOWUP"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserResetPass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_RESETPASSWORD"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserSyncServer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_SYNCTOSERVER"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserManageLeadsOnWeb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_MANAGELEADS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserGoogleSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_GOOGLESEARCH"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserLinkedInSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_LINKEDINSEARCH"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserCompanyProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_COMPANYPROFILE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserAddtoContact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_ADDTOCONTACT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserReferFriend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_REFERFRIEND"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserActionsCompleted"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_ACTIONSCOMPLETED"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserLinkedINInvitation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_LINKEDININVITATION"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserSortingLeads"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_SORTINGLEADS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+            <!-- 09/08/2012	Jayesh -->
+
+            <Button
+                android:id="@+id/btnUserScheduledMeetings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_SCHEDULED_MEETINGS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnUserScheduledTasks"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/blue_button_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/USER_MANUAL_SCHEDULED_TASKS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" >
+            </Button>
+            <!-- Chnages Completed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

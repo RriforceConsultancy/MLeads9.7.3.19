@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/list_bg"
+    android:gravity="right"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+  <!--<ImageView
+  android:id="@+id/DeleteFollowupActionImageView"
+  android:layout_width="32dip"
+  android:layout_height="32dip"
+  android:scaleType="fitXY"
+  android:src="@drawable/delete"
+  android:layout_marginTop="1dip"  
+  android:layout_marginLeft="10dip"
+  android:layout_gravity="center"    
+  android:layout_toRightOf="@id/ActionNameTextView"/>
+  <ImageView
+  android:id="@+id/EditFollowupActionImageView" 
+  android:layout_width="32dip"
+  android:layout_height="32dip"
+  android:scaleType="fitXY"
+  android:src="@drawable/notes"
+  android:layout_marginTop="1dip"  
+  android:layout_marginLeft="10dip"
+  android:layout_marginRight="5dip"  
+  android:layout_toRightOf="@id/DeleteFollowupActionImageView"/>
+  
+  --><!-- @android:drawable/ic_menu_close_clear_cancel -->
+
+  
+
+  <TextView
+      android:id="@+id/ActionNameTextView"
+      style="@style/LabelStyle"
+      android:layout_width="220dip"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="8dp"
+      android:layout_toLeftOf="@+id/txtAmount"
+      android:ellipsize="marquee"
+      android:text="@string/FollowupActionListActionLabel"
+      android:textColor="#000000" />
+
+  <TextView
+      android:id="@+id/txtAmount"
+      style="@style/LabelStyle"
+      android:layout_width="110dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="8dp"
+      android:ellipsize="marquee"
+      android:gravity="right"
+      android:visibility="invisible"
+      android:text="@string/FollowupActionListActionLabel"
+      android:textColor="#000000" />
+  
+  <ImageView
+      android:id="@+id/imgCustomLeadStatusImage"
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:layout_marginRight="10dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/icon2final"
+      android:visibility="gone" />
+
+</RelativeLayout>

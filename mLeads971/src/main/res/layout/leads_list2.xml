@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <android.webkit.WebView
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" />
+    
+    
+   
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+        
+         <include 
+        layout="@layout/commonlayoutseperate"
+        android:id="@+id/commonlayout"
+        />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/neweightfooter" >
+
+           <!--  <Button
+                android:id="@+id/BackButton"
+                android:layout_width="70dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/back"
+                android:text="@string/BackButtonLabel"
+                android:textColor="#FFFFFF" /> -->
+
+            <TextView
+                android:id="@+id/leads_title"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/MyLeadsLabel"
+                android:textColor="#fff"
+                android:inputType="textMultiLine"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <!-- <ImageView
+                android:id="@+id/AddEventButton"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/add"
+                android:text="@string/SaveButtonLabel"
+                android:textColor="#FFFFFF" /> -->
+        </FrameLayout>
+
+       
+             <ScrollView
+            android:id="@+id/scrlView"
+            android:layout_width="fill_parent"
+            android:layout_height="290dip"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1" >
+    
+
+        <LinearLayout
+            android:id="@+id/LeadsListLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="320dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!--
+                     <Button
+                        android:id="@+id/loadmoreleads"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/neweightfollowbtnlead"
+                        android:text="Load more leads"
+                        android:textSize="12dp" >
+                    </Button>
+            -->
+
+        </LinearLayout>
+        
+          </ScrollView>
+
+        <ListView
+            android:id="@+id/lv_leads"
+            android:layout_width="match_parent"
+            android:layout_height="290dip"
+            android:layout_margin="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#000000"
+            android:dividerHeight="1dp"
+           
+            android:fadingEdge="none"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+        
+        <TextView
+                    android:id="@+id/txt_noleadfound"
+                    android:layout_width="fill_parent"
+                    android:layout_height="290dip"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/NoLeadsFoundLabel"
+                    android:singleLine="true"
+                     android:layout_weight="1"
+                      android:visibility="gone"
+                    android:textColor="#000000"
+                     />
+
+    </LinearLayout>
+
+</FrameLayout>

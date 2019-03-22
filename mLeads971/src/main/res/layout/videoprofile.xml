@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    
+    <include 
+        layout="@layout/commonlayoutseperate"
+        android:id="@+id/commonlayout"
+        />
+    
+    <FrameLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/neweightfooter" >
+
+        <TextView
+            android:id="@+id/IconImageView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/MyVideoProfile"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" >
+
+        </TextView>
+
+        
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/taskLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <AbsoluteLayout
+        android:id="@+id/ActionStripAbsoluteLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/neweightfooter"
+        android:gravity="center|bottom"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/linLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/neweightfooter"
+            android:weightSum="5" >
+
+            <ImageView
+                android:id="@+id/viewVideolink"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/neweightplay" />
+
+            <ImageView
+                android:id="@+id/descriptionvideolink"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/neweightview" />
+
+            <ImageView
+                android:id="@+id/updatevideolink"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/neweightedit" />
+
+            <ImageView
+                android:id="@+id/Emailvideolink"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/neweightemailwhite" />
+
+            <ImageView
+                android:id="@+id/DeleteVideo"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/neweightdelete" />
+        </LinearLayout>
+    </AbsoluteLayout>
+
+</LinearLayout>

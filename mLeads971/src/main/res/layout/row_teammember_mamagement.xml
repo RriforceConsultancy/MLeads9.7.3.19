@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/txtTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="5dp"
+        android:layout_toLeftOf="@+id/btnTransferMember"
+        android:text="Team Member"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteMember"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/teammember_delete_action"
+        android:background="@null" />
+
+    <ImageButton
+        android:id="@+id/btnTransferMember"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btnDeleteMember"
+        android:src="@drawable/teammember_transfer"
+        android:background="@null" />
+
+</RelativeLayout>

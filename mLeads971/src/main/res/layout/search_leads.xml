@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <android.webkit.WebView
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" >
+    </android.webkit.WebView>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_background"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/title_bar" >
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="70dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/back"
+                android:text="@string/BackButtonLabel"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/search_icon"
+                android:text="@string/SaveButtonLabel"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/MySearchLeadsLabel"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/blue_button"
+                android:text="@string/Action_Completed1"
+                android:textColor="#FFFFFF"
+                android:textSize="11dp"
+                android:textStyle="bold" >
+            </Button>
+
+            <ImageView
+                android:id="@+id/AddEventButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="8dp"
+                android:onClick="addLead"
+                android:src="@drawable/add"
+                android:text="@string/SaveButtonLabel"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <AbsoluteLayout
+            android:id="@+id/actionBrowser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/strip_bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/EmailLeadImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/message" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgLinkedin"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/profile" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgGoogle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/google" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgWebsite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/companysite" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/LinkedInImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/linkedin" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgGoogleMap"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mapdisplay_xml" />
+            </LinearLayout>
+        </AbsoluteLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="@string/USER_SELECT"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spnrUser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/USER_SELECT" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEventSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="@string/spinner_event_label"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/EventSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/spinner_event_label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLeadStatusSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="@string/SELECT_LEAD_STATUS"
+                android:textColor="#000000" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spnrLeadStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/SELECT_LEAD_STATUS" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#D6D6D6"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edtxt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="5"
+                android:hint="Search .." >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/iphone_bg"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/TextView07"
+                style="@style/LabelStyle"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="@string/defaultImage"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/FirstNameTextView"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/defaultName"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/sort"
+                    android:gravity="center" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/CompanyNameTextView"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/defaultCName"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="95dp"
+                    android:background="@drawable/sort"
+                    android:gravity="center" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:visibility="gone" >
+            </TextView>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrlView"
+            android:layout_width="fill_parent"
+            android:layout_height="290dip"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/LeadsListLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="320dip"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <AbsoluteLayout
+            android:id="@+id/ActionStripAbsoluteLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/strip_bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/CallLeadImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/call" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/SMSLeadImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/sms" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/DeleteLeadImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/delete" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/EditLeadImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/notes" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/viewLeadImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/view" />
+
+                <ImageView
+                    android:id="@+id/imgAddressBook"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/addprofile" />
+
+                <ImageView
+                    android:id="@+id/imgtask"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/task_xml" />
+
+                <ImageView
+                    android:id="@+id/imgMeeting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/meeting_xml" />
+            </LinearLayout>
+        </AbsoluteLayout>
+    </LinearLayout>
+
+</FrameLayout>

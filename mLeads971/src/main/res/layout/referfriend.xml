@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/neweightfooter" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/neweightback_l"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BackButtonLabel"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ReferFriendLabel"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/neweightsubmit_btn"
+            android:gravity="center"
+            android:onClick="saveEventData"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_email"
+            android:textColor="#000" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:text="@string/ReferFriendWould"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/ReferMandatory"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left"
+                        android:text="@string/YourNameLabel"
+                        android:textColor="#000000" >
+                    </TextView>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edtYourName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:completionThreshold="1"
+                        android:maxLength="120"
+                        android:singleLine="true"
+                        android:textSize="12dip" >
+                    </AutoCompleteTextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left"
+                        android:text="@string/YourEmailLabel"
+                        android:textColor="#000000" >
+                    </TextView>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edtYourEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:completionThreshold="1"
+                        android:maxLength="120"
+                        android:singleLine="true"
+                        android:textSize="12dip" >
+                    </AutoCompleteTextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_friend1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/Friend1"
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/edtF1Name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendNameLabel"
+                        android:inputType="textCapWords"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/edtF1Email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendEmailLabel"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_friend2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/Friend2"
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/EdtF2Name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendNameLabel"
+                        android:inputType="textCapWords"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/edtF2Email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendEmailLabel"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_friend3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/Friend3"
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/EdtF3Name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendNameLabel"
+                        android:inputType="textCapWords"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/edtF3Email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendEmailLabel"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_friend4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/Friend4"
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/EdtF4Name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendNameLabel"
+                        android:inputType="textCapWords"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/edtF4Email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendEmailLabel"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_friend5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/Friend5"
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/EdtF5Name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendNameLabel"
+                        android:inputType="textCapWords"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/edtF5Email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/FriendEmailLabel"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="80"
+                        android:singleLine="true"
+                        android:textColorHint="#000"
+                        android:textSize="12dip" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

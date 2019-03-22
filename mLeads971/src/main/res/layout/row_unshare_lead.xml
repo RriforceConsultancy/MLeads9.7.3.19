@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.triforce.mobileapps.mleadsenterprise.modules.lead.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="3dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/Lin_leadRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/txtLeadName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="TextView"
+            android:textColor="#000000"
+             />
+
+        <TextView
+            android:id="@+id/txtCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/img_unshare_leadid"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/other_status" />
+
+        <CheckBox
+            android:id="@+id/chforUnshared"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1.7"
+             android:button="@drawable/checkbox"
+             />
+        
+        <!-- <CheckBox
+            android:id="@+id/chforUnshared"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_weight="1.7" /> -->
+
+    </LinearLayout>
+
+</LinearLayout>
+</com.triforce.mobileapps.mleadsenterprise.modules.lead.CheckableRelativeLayout>

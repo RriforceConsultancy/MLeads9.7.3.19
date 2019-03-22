@@ -1,0 +1,76 @@
+Main SVN Server URL : https://192.168.1.51:8443/repos/MLeads/Android
+
+MLeads 9.7.3.16 : https://192.168.1.51:8443/repos/MLeads/Android/MLeads9.7.3.16
+MyEventsSite : https://192.168.1.51:8443/repos/MLeads/Android/MyEventsSite
+SecureEvite : https://192.168.1.51:8443/repos/MLeads/Android/SecureEvite
+FortJackson : https://192.168.1.51:8443/repos/MLeads/Android/Fortjackson
+MyShaleWell : https://192.168.1.51:8443/repos/MyShalewell/Android
+
+Documents for all projects : \\192.168.1.51\phplive-root\Android_Project_Triforce\Documentation
+
+MLeads Keystore :
+alias : mleads
+password: g0tr1force
+
+MyShalewell Keystore :
+alias : myshalewell
+password : g0tr1f0rce$
+
+ftpuser Pass:
+user name : ftpuser
+password  : Tr1f0rce$
+
+Gmail Account :
+Email : client.mleads@gmail.com
+Pass : TRIFORCE12*
+
+Email : triforce.tcs@gmail.com
+Pass : Micr0s0ft$
+
+Facebook :
+Email : triforce.tcs@gmail.com
+Pass: triforce12*
+
+Twitter :
+Email : triforce.tcs@gmail.com
+Pass: triforce12*
+
+LinkedIN :
+Email : triforce.tcs@gmail.com
+Pass: triforce12*
+
+
+
+Google Play Store : 
+url : https://play.google.com/apps/publish
+email : info@triforce-inc.com
+pass: Oct9tr1f0rce$%
+
+Amazon Store:
+url : https://developer.amazon.com/home.html
+email : info@triforce-inc.com
+pass: g0tr1f0rce$
+
+Samsung Store:
+url : http://seller.samsungapps.com/login/signIn.as?returnURL=%2fmain%2fsellerMain.as&ssl=Y&ssoCheck=fail 
+email : info@myleadssite.com
+pass : g0tr1force$
+
+
+
+Aweber Developer Account :
+URL : https://labs.aweber.com/apps
+Username: info@myleadssite.com
+Password: Mar10mleads12$
+
+
+Aweber Normal Login : 
+URL : https://www.aweber.com/users/
+Username: manishg
+Password: aweber123!
+
+
+Salesforce :
+URL : https://login.salesforce.com/
+Username: info@myleadssite.com
+Password: Mar10mleads12$

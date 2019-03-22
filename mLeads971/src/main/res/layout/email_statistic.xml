@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/commonlayout"
+            layout="@layout/commonlayoutseperate" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/neweightfooter" >
+
+            <!--
+                 <Button
+                android:id="@+id/BackButton"
+                android:layout_width="70dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/back"
+                android:text="@string/BackButtonLabel"
+                android:textColor="#FFFFFF" />
+            -->
+
+
+            <!--
+                 <ImageView
+                android:id="@+id/Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_marginLeft="80dp"
+                android:layout_gravity="left|center"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/search_icon"
+                android:text="@string/SaveButtonLabel"
+                android:textColor="#FFFFFF" />
+            -->
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/BackButton"
+                android:gravity="center"
+                android:text="@string/email_statistics"
+                android:textColor="#fff"
+                android:textSize="19dp"
+                android:textStyle="bold" >
+            </TextView>
+            <!--
+                 <Button android:textColor="#FFFFFF" android:background="@drawable/blue_button"
+				android:id="@+id/btnAC" android:layout_marginRight="40dp"
+				android:layout_width="75dp" android:textSize="11dp"
+				android:textStyle="bold" android:text="@string/Action_Completed1"
+				android:layout_height="30dp" android:layout_gravity="center|right"></Button>
+            -->
+
+
+            <!--
+                 <Button
+                android:id="@+id/AddEventButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/add"
+                android:onClick="addLead"
+                android:textColor="#FFFFFF" />
+            -->
+        </FrameLayout>
+        <!--
+        <AbsoluteLayout android:id="@+id/actionBrowser"
+			android:layout_width="fill_parent" android:layout_gravity="center"
+			android:background="@drawable/strip_bg" android:layout_height="wrap_content" android:visibility="gone">
+			<LinearLayout android:layout_height="40dp"
+				android:layout_width="fill_parent" android:id="@+id/LinearLayout01"
+				android:gravity="center">
+				<ImageView android:layout_width="30dp"
+					android:src="@drawable/message" android:id="@+id/EmailLeadImageView"
+					android:layout_height="30dp"></ImageView>
+				<ImageView android:id="@+id/imgLinkedin"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:background="@drawable/profile" android:layout_marginLeft="15dp"></ImageView>
+				<ImageView android:id="@+id/imgGoogle"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:layout_marginLeft="15dp" android:background="@drawable/google"></ImageView>
+				<ImageView android:id="@+id/imgWebsite"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:layout_marginLeft="15dp" android:background="@drawable/companysite"></ImageView>
+
+				<ImageView android:layout_width="30dp"
+					android:layout_height="30dp" android:id="@+id/LinkedInImageView"
+					android:layout_marginLeft="15dp" android:background="@drawable/linkedin"></ImageView>
+
+				<ImageView
+				    android:id="@+id/imgGoogleMap"
+				    android:layout_width="30dp"
+				    android:layout_height="30dp"
+				    android:layout_marginLeft="15dp"
+				    android:background="@drawable/mapdisplay_xml" />
+
+			</LinearLayout>
+		</AbsoluteLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txt_team"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="@string/select_team_member"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spnrUser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/USER_SELECT" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEventSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txt_event"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="@string/SelectEvent_OR_Group_Label"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/EventSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/SelectEvent_OR_Group_Label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLeadStatusSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="@string/SELECT_EMAIL_STATUS"
+                android:textColor="#000000" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spnrLeadStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/SELECT_LEAD_STATUS" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#D6D6D6"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edtxt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="5"
+                android:inputType="textCapWords"
+                android:hint="Search" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:padding="5dp"
+                android:src="@drawable/cancel_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/iphone_bg"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txtSubject"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/Subject"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtRecipient"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/Recipient"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/Date"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+
+        <ListView
+            android:id="@+id/lv_leads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#000000"
+            android:dividerHeight="-1dp"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/txt_noleadfound"
+            android:layout_width="fill_parent"
+            android:layout_height="290dip"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="@string/NoLeadsFoundLabel"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:textColor="#000000"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>
